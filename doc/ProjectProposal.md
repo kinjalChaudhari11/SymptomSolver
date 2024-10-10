@@ -6,10 +6,8 @@ Navigating health information can be overwhelming, especially when self-diagnosi
 ## Description 
 We are creating a web application that helps users identify potential health conditions based on their symptoms. The problem we are solving is the difficulty for non-medical individuals to even be aware of what possible illnesses the user may have based on symptoms commonly known to trained professionals. The system will work by allowing users to enter their symptoms (eg, fever, headache, nausea) into a form. The app will then cross-reference the symptoms and conditions to provide possible diagnoses and common, accessible treatments (over the counter). The app will allow the user to keep track of their medication, if they so desire, for better medication management. 
 
-## Creative Component
-We will integrate GPT-based functionality using the OpenAI API to provide users with more detailed information about the results and treatment options for their matched health conditions. The model will use the list of potential conditions they receive based on their symptoms to generate a treatment plan for the user.
-
-The GPT model will deliver responses such as detailed descriptions of the conditions, common symptoms, and possible treatment plans, including over-the-counter medications, home remedies, and advice on when to seek professional medical care.
+## Creative Component (updated based off of feedback!)
+We will integrate a GPT-based functionality using the OpenAI API, allowing users to input their symptoms as a free-response message. The GPT model will process and filter the user's input into a set of structured symptoms that matches the medical symptoms stored in our database. This ensures that user input, which may be vague or complex, is translated into a format that can be directly queried within the database. The model will then generate outputs, such as potential conditions and treatment plans, providing users with personalized information based on their symptoms. This approach ensures the solution is grounded in accurate medical knowledge while allowing users the flexibility of free-text input
 
 
 ## Usefulness
