@@ -1,12 +1,5 @@
 # Project Track 1 Stage 2
 
-## Unnormalized UML Diagram
-![image](https://github.com/user-attachments/assets/cc64c9ce-c038-4d85-89c1-6009578385d0)
-
-## Normalized UML Diagram
-![image](https://github.com/user-attachments/assets/1a846ac4-5fe1-4107-b0e9-b6126f21b65a)
-
-
 ## Entity and Relationship Justification
 ### Patient
 The Patient entity was created to store personal and identifiable information related to the user. Patient was analogous to an object in OOP, which is why it is an entity with attributes that describe it rather than another attribute itself.  Its attributes such as FirstName, LastName, Gender, and Age were included as core demographic information, while Username serves as the primary key for unique identification. The cardinality between Patient and Metadata is 1-to-many, as each patient can make multiple entries.
