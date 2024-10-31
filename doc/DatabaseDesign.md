@@ -171,7 +171,7 @@ CREATE TABLE Symptoms (
 
 CREATE TABLE Metadata (
     SymptomGroupId INT PRIMARY KEY,
-    EntryDate DATE NOT NULL
+    EntryDate DATE NOT NULL,
     Username VARCHAR(50) NOT NULL,
     FOREIGN KEY (Username) REFERENCES Patient(Username) ON DELETE CASCADE
 );
@@ -206,6 +206,11 @@ CREATE TABLE Medication (
 ```
 
 ## Table Inputs
+<img width="277" alt="Screenshot 2024-10-30 at 11 37 18 PM" src="https://github.com/user-attachments/assets/cbe8428c-b6c8-4ede-aaa7-f99b14791827">
+<img width="231" alt="Screenshot 2024-10-30 at 11 40 41 PM" src="https://github.com/user-attachments/assets/b72c1954-7fb9-48f1-9d81-84670ee0c209">
+<img width="251" alt="Screenshot 2024-10-30 at 11 42 04 PM" src="https://github.com/user-attachments/assets/26ff28bd-237a-4c51-9be9-b0f46937539f">
+<img width="245" alt="Screenshot 2024-10-30 at 11 42 30 PM" src="https://github.com/user-attachments/assets/ec238517-e431-476d-b60d-715d759bd0bd">
+
 
 ## Queries/Indexiing
 
@@ -221,7 +226,8 @@ mysql> SELECT
     ->         WHERE d2.MedicalCondition = d.MedicalCondition
     ->         GROUP BY d2.Symptoms
     ->         ORDER BY COUNT(*) DESC
-    ->         LIMIT 1
+    ->         LIMIT 1<img width="273" alt="Screenshot 2024-10-30 at 11 37 00 PM" src="https://github.com/user-attachments/assets/5dc745de-924d-46c1-944f-7ef68b637657">
+
     ->     ) AS MostCommonSymptom,
     ->     (
     ->         SELECT m.MedicationName
@@ -291,6 +297,7 @@ ORDER BY d.MedicalCondition, SymptomFrequency DESC;
 ```
 
 #### Top 15 Outputs
+
 ```
 -----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
 | MedicalCondition                        | Symptoms                                                                                                                                                                                                                    | SymptomFrequency |
