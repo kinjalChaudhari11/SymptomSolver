@@ -1,0 +1,3961 @@
+,TreatmentGroupID,MedicationName,MedicalCondition
+0,1,drug_name,medical_condition
+1,2,doxycycline,acne
+2,2,spironolactone,acne
+3,2,minocycline,acne
+4,2,accutane,acne
+5,2,clindamycin,acne
+6,2,aldactone,acne
+7,2,tretinoin,acne
+8,2,isotretinoin,acne
+9,2,bactrim,acne
+10,2,retin-a,acne
+11,2,aczone,acne
+12,2,benzoyl peroxide,acne
+13,2,differin,acne
+14,2,epiduo,acne
+15,2,adapalene,acne
+16,2,cephalexin,acne
+17,2,doryx,acne
+18,2,tetracycline,acne
+19,2,septra,acne
+20,2,solodyn,acne
+21,2,tazorac,acne
+22,2,vibramycin,acne
+23,2,acticlate,acne
+24,2,benzoyl peroxide / clindamycin,acne
+25,2,doxy 100,acne
+26,2,keflex,acne
+27,2,sulfamethoxazole / trimethoprim,acne
+28,2,benzaclin,acne
+29,2,monodox,acne
+30,2,targadox,acne
+31,2,adoxa,acne
+32,2,adoxa ck,acne
+33,2,adoxa pak,acne
+34,2,adoxa tt,acne
+35,2,avidoxy,acne
+36,2,bactrim ds,acne
+37,2,cleocin t,acne
+38,2,clindagel,acne
+39,2,doryx mpc,acne
+40,2,erythromycin,acne
+41,2,morgidox,acne
+42,2,oraxyl,acne
+43,2,claravis,acne
+44,2,clinda-derm,acne
+45,2,evoclin,acne
+46,2,minocin,acne
+47,2,yaz,acne
+48,2,adapalene / benzoyl peroxide,acne
+49,2,clindacin etz,acne
+50,2,clindacin p,acne
+51,2,clindacin pac,acne
+52,2,clindareach pledget,acne
+53,2,clindets,acne
+54,2,milk of magnesia,acne
+55,2,septra ds,acne
+56,2,yasmin,acne
+57,2,ziana,acne
+58,2,absorica,acne
+59,2,acanya,acne
+60,2,amnesteem,acne
+61,2,azelaic acid,acne
+62,2,co-trimoxazole,acne
+63,2,dapsone,acne
+64,2,duac,acne
+65,2,emcin clear,acne
+66,2,epiduo forte,acne
+67,2,erygel,acne
+68,2,ery pads,acne
+69,2,myorisan,acne
+70,2,onexton,acne
+71,2,phillips' milk of magnesia,acne
+72,2,salicylic acid,acne
+73,2,spotex,acne
+74,2,theramycin z,acne
+75,2,absorica ld,acne
+76,2,achromycin v,acne
+77,2,acne treatment,acne
+78,2,acnex,acne
+79,2,ala-tet,acne
+80,2,amzeeq,acne
+81,2,atralin,acne
+82,2,avita,acne
+83,2,azelex,acne
+84,2,benzamycin,acne
+85,2,benzoyl peroxide / erythromycin,acne
+86,2,benzoyl peroxide / sulfur,acne
+87,2,beyaz,acne
+88,2,brodspec,acne
+89,2,cleeravue-m,acne
+90,2,clindamycin / tretinoin,acne
+91,2,drospirenone / ethinyl estradiol,acne
+92,2,dynacin,acne
+93,2,estarylla,acne
+94,2,ethinyl estradiol / norgestimate,acne
+95,2,gianvi,acne
+96,2,loryna,acne
+97,2,magnesium hydroxide,acne
+98,2,minocycline,acne
+99,2,minolira,acne
+100,2,ocella,acne
+101,2,panoxyl,acne
+102,2,panoxyl 10% acne foaming wash,acne
+103,2,seysara,acne
+104,2,sotret,acne
+105,2,sulfacetamide sodium/sulfur,acne
+106,2,tazarotene,acne
+107,2,tri-previfem,acne
+108,2,tri-sprintec,acne
+109,2,veltin,acne
+110,2,ximino,acne
+111,2,zenatane,acne
+112,2,acetoxyl,acne
+113,2,acne-10,acne
+114,2,acne-clear,acne
+115,2,acnevir,acne
+116,2,acnomel,acne
+117,2,acnomel acne mask,acne
+118,2,acnomel bp 5,acne
+119,2,aklief,acne
+120,2,aktipak,acne
+121,2,akurza,acne
+122,2,aliclen,acne
+123,2,alquam-x acne therapy gel,acne
+124,2,altabax,acne
+125,2,altreno,acne
+126,2,arazlo,acne
+127,2,avar,acne
+128,2,avar-e,acne
+129,2,avar-e green,acne
+130,2,avar-e ls,acne
+131,2,avar cleanser,acne
+132,2,avar ls,acne
+133,2,avar ls cleanser,acne
+134,2,benzac,acne
+135,2,benzac ac,acne
+136,2,benzac ac wash,acne
+137,2,benzac w,acne
+138,2,benzagel,acne
+139,2,benzagel wash,acne
+140,2,benzamycin pak,acne
+141,2,benzashave,acne
+142,2,benzefoam ultra,acne
+143,2,benzepro,acne
+144,2,benziq,acne
+145,2,benzoyl peroxide / hydrocortisone,acne
+146,2,benzoyl peroxide / salicylic acid,acne
+147,2,benzoyl peroxide / tretinoin,acne
+148,2,binora,acne
+149,2,bp 10-wash,acne
+150,2,bpo 6 foaming cloths,acne
+151,2,bpo gel,acne
+152,2,bp wash,acne
+153,2,brevoxyl,acne
+154,2,brevoxyl acne wash kit,acne
+155,2,cerave sa renewing,acne
+156,2,clarifoam ef,acne
+157,2,clascoterone,acne
+158,2,cleanse & treat,acne
+159,2,cleanse & treat plus,acne
+160,2,clearskin,acne
+161,2,compound w,acne
+162,2,dermalzone,acne
+163,2,dhs salicylic acid 3%,acne
+164,2,drospirenone / ethinyl estradiol / levomefolate calcium,acne
+165,2,dulcolax milk of magnesia,acne
+166,2,durasal,acne
+167,2,enzoclear foam,acne
+168,2,ethinyl estradiol / norethindrone,acne
+169,2,ex-lax milk of magnesia,acne
+170,2,fabior,acne
+171,2,fostex,acne
+172,2,fostex medicated,acne
+173,2,fostex medicated cleansing cream,acne
+174,2,fostex wash 10%,acne
+175,2,hydrisalic,acne
+176,2,inova,acne
+177,2,inova 4/1,acne
+178,2,inova 8/2,acne
+179,2,jasmiel,acne
+180,2,liquimat light,acne
+181,2,liquimat medium,acne
+182,2,lo-zumandimine,acne
+183,2,meted,acne
+184,2,mono-linyah,acne
+185,2,neuac,acne
+186,2,neutrogena clear pore cleanser/mask,acne
+187,2,neutrogena rapid clear stubborn acne,acne
+188,2,nikki,acne
+189,2,oscion,acne
+190,2,oxy-10,acne
+191,2,oxy daily wash,acne
+192,2,p & s,acne
+193,2,panoxyl 4% acne creamy wash,acne
+194,2,pernox,acne
+195,2,persa-gel,acne
+196,2,plexion,acne
+197,2,propa ph acne med cleansing,acne
+198,2,r a acne,acne
+199,2,resinol,acne
+200,2,resorcinol / sulfur,acne
+201,2,resorcinol,acne
+202,2,retapamulin,acne
+203,2,riax,acne
+204,2,sal-plant gel,acne
+205,2,salactic film,acne
+206,2,salex,acne
+207,2,salicylic acid/sulfur,acne
+208,2,salvax,acne
+209,2,sarecycline,acne
+210,2,sastid,acne
+211,2,scalpicin scalp relief,acne
+212,2,sebulex,acne
+213,2,soluclenz rx,acne
+214,2,sss 10-4,acne
+215,2,sss 10-5,acne
+216,2,sss cleanser,acne
+217,2,stri-dex,acne
+218,2,stridex body focus,acne
+219,2,stridex maximum strength,acne
+220,2,sulfacleanse 8/4,acne
+221,2,sulfoam,acne
+222,2,sulfur,acne
+223,2,sulpho-lac soap,acne
+224,2,sumadan,acne
+225,2,sumaxin,acne
+226,2,suphera,acne
+227,2,syeda,acne
+228,2,tinamed plantar,acne
+229,2,tri-estarylla,acne
+230,2,tri-linyah,acne
+231,2,tri-lo-marzia,acne
+232,2,trifarotene,acne
+233,2,twyneo,acne
+234,2,vanoxide-hc,acne
+235,2,winlevi,acne
+236,2,z-clinz 10,acne
+237,2,zarah,acne
+238,2,zumandimine,acne
+239,3,vyvanse,adhd
+240,3,adderall,adhd
+241,3,adderall xr,adhd
+242,3,concerta,adhd
+243,3,lisdexamfetamine,adhd
+244,3,daytrana,adhd
+245,3,quillivant xr,adhd
+246,3,amantadine,adhd
+247,3,cotempla xr-odt,adhd
+248,3,jornay pm,adhd
+249,3,methylphenidate,adhd
+250,3,quillichew er,adhd
+251,3,azstarys,adhd
+252,3,qelbree,adhd
+253,3,strattera,adhd
+254,3,dexedrine,adhd
+255,3,amphetamine / dextroamphetamine,adhd
+256,3,ritalin,adhd
+257,3,dextroamphetamine,adhd
+258,3,bupropion,adhd
+259,3,clonidine,adhd
+260,3,intuniv,adhd
+261,3,desoxyn,adhd
+262,3,guanfacine,adhd
+263,3,focalin,adhd
+264,3,atomoxetine,adhd
+265,3,focalin xr,adhd
+266,3,amphetamine,adhd
+267,3,ritalin la,adhd
+268,3,kapvay,adhd
+269,3,methylin,adhd
+270,3,dexmethylphenidate,adhd
+271,3,methamphetamine,adhd
+272,3,modafinil,adhd
+273,3,metadate cd,adhd
+274,3,methylin er,adhd
+275,3,omega-3 polyunsaturated fatty acids,adhd
+276,3,procentra,adhd
+277,3,selegiline,adhd
+278,3,zenzedi,adhd
+279,3,adhansia xr,adhd
+280,3,aptensio xr,adhd
+281,3,armodafinil,adhd
+282,3,desvenlafaxine,adhd
+283,3,evekeo,adhd
+284,3,mydayis,adhd
+285,3,relexxii,adhd
+286,3,adzenys er,adhd
+287,3,adzenys xr-odt,adhd
+288,3,desipramine,adhd
+289,3,dyanavel xr,adhd
+290,3,evekeo odt,adhd
+291,3,imipramine,adhd
+292,3,dexmethylphenidate / serdexmethylphenidate,adhd
+293,3,viloxazine,adhd
+294,4,truvada,aids/hiv
+295,4,biktarvy,aids/hiv
+296,4,triumeq,aids/hiv
+297,4,genvoya,aids/hiv
+298,4,stribild,aids/hiv
+299,4,atripla,aids/hiv
+300,4,descovy,aids/hiv
+301,4,norvir,aids/hiv
+302,4,isentress,aids/hiv
+303,4,dovato,aids/hiv
+304,4,tivicay,aids/hiv
+305,4,abacavir / dolutegravir / lamivudine,aids/hiv
+306,4,prezista,aids/hiv
+307,4,bictegravir / emtricitabine / tenofovir alafenamide,aids/hiv
+308,4,cobicistat / elvitegravir / emtricitabine / tenofovir,aids/hiv
+309,4,cabenuva,aids/hiv
+310,4,dolutegravir / lamivudine,aids/hiv
+311,4,emtricitabine / tenofovir alafenamide,aids/hiv
+312,4,complera,aids/hiv
+313,4,reyataz,aids/hiv
+314,4,epzicom,aids/hiv
+315,4,ritonavir,aids/hiv
+316,4,lamivudine,aids/hiv
+317,4,tenofovir,aids/hiv
+318,4,viread,aids/hiv
+319,4,dolutegravir,aids/hiv
+320,4,kaletra,aids/hiv
+321,4,epivir,aids/hiv
+322,4,intelence,aids/hiv
+323,4,sustiva,aids/hiv
+324,4,abacavir,aids/hiv
+325,4,efavirenz / emtricitabine / tenofovir,aids/hiv
+326,4,emtricitabine / tenofovir,aids/hiv
+327,4,darunavir,aids/hiv
+328,4,efavirenz,aids/hiv
+329,4,odefsey,aids/hiv
+330,4,raltegravir,aids/hiv
+331,4,abacavir / lamivudine,aids/hiv
+332,4,prezcobix,aids/hiv
+333,4,viramune,aids/hiv
+334,4,combivir,aids/hiv
+335,4,ziagen,aids/hiv
+336,4,zidovudine,aids/hiv
+337,4,atazanavir,aids/hiv
+338,4,emtricitabine,aids/hiv
+339,4,emtriva,aids/hiv
+340,4,edurant,aids/hiv
+341,4,lexiva,aids/hiv
+342,4,nevirapine,aids/hiv
+343,4,retrovir,aids/hiv
+344,4,selzentry,aids/hiv
+345,4,juluca,aids/hiv
+346,4,symtuza,aids/hiv
+347,4,trizivir,aids/hiv
+348,4,epivir-hbv,aids/hiv
+349,4,etravirine,aids/hiv
+350,4,isentress hd,aids/hiv
+351,4,lamivudine / tenofovir,aids/hiv
+352,4,lopinavir / ritonavir,aids/hiv
+353,4,maraviroc,aids/hiv
+354,4,tivicay pd,aids/hiv
+355,4,viramune xr,aids/hiv
+356,4,accesspak for hiv pep basic,aids/hiv
+357,4,delstrigo,aids/hiv
+358,4,efavirenz / lamivudine / tenofovir,aids/hiv
+359,4,emtricitabine / rilpivirine / tenofovir,aids/hiv
+360,4,evotaz,aids/hiv
+361,4,fuzeon,aids/hiv
+362,4,lamivudine / zidovudine,aids/hiv
+363,4,pifeltro,aids/hiv
+364,4,viracept,aids/hiv
+365,4,abacavir / lamivudine / zidovudine,aids/hiv
+366,4,aptivus,aids/hiv
+367,4,cimduo,aids/hiv
+368,4,cobicistat / darunavir,aids/hiv
+369,4,cobicistat / elvitegravir / emtricitabine / tenofovir alafenamide,aids/hiv
+370,4,cobicistat,aids/hiv
+371,4,doravirine,aids/hiv
+372,4,elvitegravir,aids/hiv
+373,4,enfuvirtide,aids/hiv
+374,4,ibalizumab,aids/hiv
+375,4,immune globulin intravenous,aids/hiv
+376,4,invirase,aids/hiv
+377,4,nelfinavir,aids/hiv
+378,4,rilpivirine,aids/hiv
+379,4,rukobia,aids/hiv
+380,4,saquinavir,aids/hiv
+381,4,symfi,aids/hiv
+382,4,symfi lo,aids/hiv
+383,4,temixys,aids/hiv
+384,4,trogarzo,aids/hiv
+385,4,tybost,aids/hiv
+386,4,accesspak for hiv pep expanded with kaletra,aids/hiv
+387,4,accesspak for hiv pep expanded with viracept,aids/hiv
+388,4,atazanavir / cobicistat,aids/hiv
+389,4,cabotegravir / rilpivirine,aids/hiv
+390,4,cabotegravir,aids/hiv
+391,4,cobicistat / darunavir / emtricitabine / tenofovir alafenamide,aids/hiv
+392,4,dolutegravir / rilpivirine,aids/hiv
+393,4,doravirine / lamivudine / tenofovir,aids/hiv
+394,4,emtricitabine / lopinavir / ritonavir / tenofovir,aids/hiv
+395,4,emtricitabine / nelfinavir / tenofovir,aids/hiv
+396,4,emtricitabine / rilpivirine / tenofovir alafenamide,aids/hiv
+397,4,fosamprenavir,aids/hiv
+398,4,fostemsavir,aids/hiv
+399,4,lamivudine / nevirapine / zidovudine,aids/hiv
+400,4,tipranavir,aids/hiv
+401,4,triumeq pd,aids/hiv
+402,4,vocabria,aids/hiv
+403,5,hydroxyzine,allergies
+404,5,levocetirizine,allergies
+405,5,loratadine,allergies
+406,5,xyzal,allergies
+407,5,doxylamine,allergies
+408,5,corticotropin,allergies
+409,5,acthar,allergies
+410,5,chlorpheniramine / ibuprofen / phenylephrine,allergies
+411,5,dexbrompheniramine,allergies
+412,5,ala-hist ir,allergies
+413,5,dexbrompheniramine / phenylephrine,allergies
+414,5,equaline sleep aid,allergies
+415,5,equate sleep aid,allergies
+416,5,h.p. acthar gel,allergies
+417,6,aricept,alzheimer's
+418,6,donepezil,alzheimer's
+419,6,namenda,alzheimer's
+420,6,memantine,alzheimer's
+421,6,etanercept,alzheimer's
+422,6,exelon,alzheimer's
+423,6,galantamine,alzheimer's
+424,6,namenda xr,alzheimer's
+425,6,rivastigmine,alzheimer's
+426,6,aricept odt,alzheimer's
+427,6,namzaric,alzheimer's
+428,6,vitamin e,alzheimer's
+429,6,donepezil / memantine,alzheimer's
+430,6,razadyne,alzheimer's
+431,6,razadyne er,alzheimer's
+432,6,adlarity,alzheimer's
+433,6,hydergine,alzheimer's
+434,6,alpha e,alzheimer's
+435,6,ergoloid mesylates,alzheimer's
+436,6,aduhelm,alzheimer's
+437,6,aqua gem-e,alzheimer's
+438,6,aquasol e,alzheimer's
+439,6,e-400 clear,alzheimer's
+440,6,e-600,alzheimer's
+441,6,e-gems,alzheimer's
+442,6,e pherol,alzheimer's
+443,6,aducanumab,alzheimer's
+444,7,aspirin,angina
+445,7,nitroglycerin,angina
+446,7,ranexa,angina
+447,7,metoprolol,angina
+448,7,isosorbide mononitrate,angina
+449,7,amlodipine,angina
+450,7,nitrostat,angina
+451,7,ranolazine,angina
+452,7,enoxaparin,angina
+453,7,isosorbide dinitrate,angina
+454,7,atenolol,angina
+455,7,carvedilol,angina
+456,7,norvasc,angina
+457,7,lopressor,angina
+458,7,bayer aspirin,angina
+459,7,coreg,angina
+460,7,toprol-xl,angina
+461,7,amlodipine / atorvastatin,angina
+462,7,ecotrin,angina
+463,7,propranolol,angina
+464,7,easprin,angina
+465,7,nitrolingual pumpspray,angina
+466,7,verapamil,angina
+467,7,bayer aspirin regimen,angina
+468,7,caduet,angina
+469,7,aspir-low,angina
+470,7,katerzia,angina
+471,7,lovenox,angina
+472,7,norliqva,angina
+473,7,arthritis pain,angina
+474,7,ascriptin,angina
+475,7,aspergum,angina
+476,7,aspiritab,angina
+477,7,aspirtab,angina
+478,7,bayer aspirin extra strength plus,angina
+479,7,ecpirin,angina
+480,7,entercote,angina
+481,7,genacote,angina
+482,7,halfprin,angina
+483,7,nitro-dur,angina
+484,7,norwich aspirin,angina
+485,7,tenormin,angina
+486,7,vazalore,angina
+487,7,coreg cr,angina
+488,7,corgard,angina
+489,7,heparin,angina
+490,7,inderal la,angina
+491,7,kapspargo sprinkle,angina
+492,7,nitro-bid,angina
+493,7,fragmin,angina
+494,7,nadolol,angina
+495,7,nitro td patch-a,angina
+496,7,amyl nitrite,angina
+497,7,angiomax,angina
+498,7,bivalirudin,angina
+499,7,calan sr,angina
+500,7,dalteparin,angina
+501,7,dilatrate-sr,angina
+502,7,eptifibatide,angina
+503,7,gonitro,angina
+504,7,integrilin,angina
+505,7,isochron,angina
+506,7,isoditrate,angina
+507,7,isordil titradose,angina
+508,7,minitran,angina
+509,7,nitro-time,angina
+510,7,nitromist,angina
+511,7,timolol,angina
+512,7,verelan,angina
+513,7,verelan pm,angina
+514,7,aspruzyo sprinkle,angina
+515,8,xanax,anxiety
+516,8,clonazepam,anxiety
+517,8,alprazolam,anxiety
+518,8,lorazepam,anxiety
+519,8,buspirone,anxiety
+520,8,diazepam,anxiety
+521,8,ativan,anxiety
+522,8,hydroxyzine,anxiety
+523,8,lexapro,anxiety
+524,8,buspar,anxiety
+525,8,escitalopram,anxiety
+526,8,valium,anxiety
+527,8,gabapentin,anxiety
+528,8,propranolol,anxiety
+529,8,cymbalta,anxiety
+530,8,bupropion,anxiety
+531,8,effexor xr,anxiety
+532,8,trazodone,anxiety
+533,8,duloxetine,anxiety
+534,8,paxil,anxiety
+535,8,clonidine,anxiety
+536,8,venlafaxine,anxiety
+537,8,mirtazapine,anxiety
+538,8,paroxetine,anxiety
+539,8,alprazolam intensol,anxiety
+540,8,lamotrigine,anxiety
+541,8,tramadol,anxiety
+542,8,atenolol,anxiety
+543,8,risperidone,anxiety
+544,8,tenormin,anxiety
+545,8,tranxene,anxiety
+546,8,lorazepam intensol,anxiety
+547,8,clorazepate,anxiety
+548,8,doxepin,anxiety
+549,8,oxazepam,anxiety
+550,8,paxil cr,anxiety
+551,8,amitriptyline / perphenazine,anxiety
+552,8,chlordiazepoxide,anxiety
+553,8,desvenlafaxine,anxiety
+554,8,diazepam intensol,anxiety
+555,8,loreev xr,anxiety
+556,8,oxcarbazepine,anxiety
+557,8,pexeva,anxiety
+558,8,phenytoin,anxiety
+559,8,prochlorperazine,anxiety
+560,8,amitriptyline / chlordiazepoxide,anxiety
+561,8,compro,anxiety
+562,8,corgard,anxiety
+563,8,meprobamate,anxiety
+564,8,nadolol,anxiety
+565,8,nefazodone,anxiety
+566,8,tranxene t-tab,anxiety
+567,8,trifluoperazine,anxiety
+568,8,vilazodone,anxiety
+569,9,singulair,asthma
+570,9,montelukast,asthma
+571,9,prednisone,asthma
+572,9,trelegy ellipta,asthma
+573,9,fasenra,asthma
+574,9,nucala,asthma
+575,9,benralizumab,asthma
+576,9,fluticasone / umeclidinium / vilanterol,asthma
+577,9,mepolizumab,asthma
+578,9,tezepelumab,asthma
+579,9,tezspire,asthma
+580,9,dulera,asthma
+581,9,atrovent,asthma
+582,9,breo ellipta,asthma
+583,9,ipratropium,asthma
+584,9,methylprednisolone,asthma
+585,9,atrovent hfa,asthma
+586,9,dexamethasone,asthma
+587,9,alvesco,asthma
+588,9,levalbuterol,asthma
+589,9,ipratropium inhalation solution,asthma
+590,9,rayos,asthma
+591,9,fluticasone / vilanterol,asthma
+592,9,formoterol / mometasone,asthma
+593,9,medrol,asthma
+594,9,methylprednisolone dose pack,asthma
+595,9,triamcinolone,asthma
+596,9,dexamethasone intensol,asthma
+597,9,kenalog-40,asthma
+598,9,medrol dosepak,asthma
+599,9,depo-medrol,asthma
+600,9,solu-medrol,asthma
+601,9,xopenex,asthma
+602,9,xopenex hfa,asthma
+603,9,caffeine,asthma
+604,9,ciclesonide,asthma
+605,9,de-sone la,asthma
+606,9,dxevo,asthma
+607,9,dyphylline / guaifenesin,asthma
+608,9,ipratropium inhalation aerosol,asthma
+609,9,cinqair,asthma
+610,9,reslizumab,asthma
+611,9,salbutamol,asthma
+612,9,xopenex concentrate,asthma
+613,9,difil-g forte,asthma
+614,10,lamictal,bipolar disorder
+615,10,lamotrigine,bipolar disorder
+616,10,latuda,bipolar disorder
+617,10,seroquel,bipolar disorder
+618,10,abilify,bipolar disorder
+619,10,topiramate,bipolar disorder
+620,10,vraylar,bipolar disorder
+621,10,lithium,bipolar disorder
+622,10,lurasidone,bipolar disorder
+623,10,abilify maintena,bipolar disorder
+624,10,cariprazine,bipolar disorder
+625,10,caplyta,bipolar disorder
+626,10,lumateperone,bipolar disorder
+627,10,lybalvi,bipolar disorder
+628,10,quetiapine,bipolar disorder
+629,10,depakote,bipolar disorder
+630,10,gabapentin,bipolar disorder
+631,10,bupropion,bipolar disorder
+632,10,clonazepam,bipolar disorder
+633,10,seroquel xr,bipolar disorder
+634,10,divalproex sodium,bipolar disorder
+635,10,risperdal,bipolar disorder
+636,10,geodon,bipolar disorder
+637,10,oxcarbazepine,bipolar disorder
+638,10,sertraline,bipolar disorder
+639,10,zyprexa,bipolar disorder
+640,10,risperidone,bipolar disorder
+641,10,aripiprazole,bipolar disorder
+642,10,depakote er,bipolar disorder
+643,10,olanzapine,bipolar disorder
+644,10,saphris,bipolar disorder
+645,10,venlafaxine,bipolar disorder
+646,10,citalopram,bipolar disorder
+647,10,carbamazepine,bipolar disorder
+648,10,duloxetine,bipolar disorder
+649,10,escitalopram,bipolar disorder
+650,10,ziprasidone,bipolar disorder
+651,10,clonidine,bipolar disorder
+652,10,symbyax,bipolar disorder
+653,10,valproic acid,bipolar disorder
+654,10,armodafinil,bipolar disorder
+655,10,fluoxetine / olanzapine,bipolar disorder
+656,10,lamictal odt,bipolar disorder
+657,10,levetiracetam,bipolar disorder
+658,10,lithobid,bipolar disorder
+659,10,zyprexa zydis,bipolar disorder
+660,10,asenapine,bipolar disorder
+661,10,desvenlafaxine,bipolar disorder
+662,10,equetro,bipolar disorder
+663,10,iloperidone,bipolar disorder
+664,10,lamictal cd,bipolar disorder
+665,10,paliperidone,bipolar disorder
+666,10,perphenazine,bipolar disorder
+667,10,risperdal consta,bipolar disorder
+668,10,tiagabine,bipolar disorder
+669,10,verapamil,bipolar disorder
+670,10,abilify mycite,bipolar disorder
+671,10,depakote sprinkles,bipolar disorder
+672,10,zyprexa intramuscular,bipolar disorder
+673,10,olanzapine / samidorphan,bipolar disorder
+674,11,mucinex,bronchitis
+675,11,azithromycin,bronchitis
+676,11,azithromycin dose pack,bronchitis
+677,11,doxycycline,bronchitis
+678,11,amoxicillin,bronchitis
+679,11,guaifenesin,bronchitis
+680,11,levofloxacin,bronchitis
+681,11,augmentin,bronchitis
+682,11,levaquin,bronchitis
+683,11,zithromax,bronchitis
+684,11,amoxicillin / clavulanate,bronchitis
+685,11,clarithromycin,bronchitis
+686,11,cefdinir,bronchitis
+687,11,ciprofloxacin,bronchitis
+688,11,amoxil,bronchitis
+689,11,cefuroxime,bronchitis
+690,11,avelox,bronchitis
+691,11,cipro,bronchitis
+692,11,bactrim,bronchitis
+693,11,erythromycin,bronchitis
+694,11,sulfamethoxazole / trimethoprim,bronchitis
+695,11,bactrim ds,bronchitis
+696,11,ceftin,bronchitis
+697,11,ceftriaxone,bronchitis
+698,11,apo-amoxi,bronchitis
+699,11,beclomethasone,bronchitis
+700,11,doxy 100,bronchitis
+701,11,moxifloxacin,bronchitis
+702,11,cefixime,bronchitis
+703,11,mucinex maximum strength,bronchitis
+704,11,vibramycin,bronchitis
+705,11,cipro i.v.,bronchitis
+706,11,cipro xr,bronchitis
+707,11,doryx,bronchitis
+708,11,doryx mpc,bronchitis
+709,11,monodox,bronchitis
+710,11,morgidox,bronchitis
+711,11,oraxyl,bronchitis
+712,11,robafen,bronchitis
+713,11,septra ds,bronchitis
+714,11,augmentin xr,bronchitis
+715,11,biaxin xl,bronchitis
+716,11,cefpodoxime,bronchitis
+717,11,cefprozil,bronchitis
+718,11,ery-tab,bronchitis
+719,11,guaifenex g,bronchitis
+720,11,septra,bronchitis
+721,11,suprax,bronchitis
+722,11,tetracycline,bronchitis
+723,11,achromycin v,bronchitis
+724,11,ala-tet,bronchitis
+725,11,altarussin,bronchitis
+726,11,amibid la,bronchitis
+727,11,amoclan,bronchitis
+728,11,ampicillin,bronchitis
+729,11,balminil expectorant,bronchitis
+730,11,benylin e,bronchitis
+731,11,bidex-400,bronchitis
+732,11,brodspec,bronchitis
+733,11,cefzil,bronchitis
+734,11,co-trimoxazole,bronchitis
+735,11,dicloxacillin,bronchitis
+736,11,drituss g,bronchitis
+737,11,e.e.s. granules,bronchitis
+738,11,eryc,bronchitis
+739,11,eryped,bronchitis
+740,11,erythrocin,bronchitis
+741,11,erythrocin lactobionate,bronchitis
+742,11,fenesin ir,bronchitis
+743,11,floxin,bronchitis
+744,11,gemifloxacin,bronchitis
+745,11,guaifenex la,bronchitis
+746,11,guiatuss,bronchitis
+747,11,hytuss,bronchitis
+748,11,mucinex for kids,bronchitis
+749,11,ofloxacin,bronchitis
+750,11,pce dispertab,bronchitis
+751,11,scot-tussin expectorant,bronchitis
+752,11,sulfatrim pediatric,bronchitis
+753,11,tussin expectorant,bronchitis
+754,11,xpect,bronchitis
+755,11,zinacef,bronchitis
+756,11,avelox i.v.,bronchitis
+757,11,cefaclor,bronchitis
+758,11,cilastatin / imipenem,bronchitis
+759,11,difil-g forte,bronchitis
+760,11,dycill,bronchitis
+761,11,dynapen,bronchitis
+762,11,dyphylline / guaifenesin,bronchitis
+763,11,factive,bronchitis
+764,11,primaxin iv,bronchitis
+765,12,carboplatin,cancer
+766,12,leukeran,cancer
+767,12,chlorambucil,cancer
+768,12,fluorouracil,cancer
+769,12,doxorubicin,cancer
+770,12,etoposide,cancer
+771,12,cyclophosphamide,cancer
+772,12,vincristine,cancer
+773,12,cosmegen,cancer
+774,12,etopophos,cancer
+775,12,ifex,cancer
+776,12,toposar,cancer
+777,12,vinblastine,cancer
+778,12,hycamtin,cancer
+779,12,ifosfamide,cancer
+780,12,dactinomycin,cancer
+781,12,fludarabine,cancer
+782,12,tepadina,cancer
+783,12,thiotepa,cancer
+784,12,topotecan,cancer
+785,13,atorvastatin,cholesterol
+786,13,simvastatin,cholesterol
+787,13,lipitor,cholesterol
+788,13,zetia,cholesterol
+789,13,ezetimibe,cholesterol
+790,13,crestor,cholesterol
+791,13,repatha,cholesterol
+792,13,alirocumab,cholesterol
+793,13,evolocumab,cholesterol
+794,13,praluent,cholesterol
+795,13,rosuvastatin,cholesterol
+796,13,pravastatin,cholesterol
+797,13,lovastatin,cholesterol
+798,13,zocor,cholesterol
+799,13,gemfibrozil,cholesterol
+800,13,vytorin,cholesterol
+801,13,livalo,cholesterol
+802,13,niacin,cholesterol
+803,13,altocor,cholesterol
+804,13,niaspan,cholesterol
+805,13,welchol,cholesterol
+806,13,altoprev,cholesterol
+807,13,ezetimibe / simvastatin,cholesterol
+808,13,fenofibric acid,cholesterol
+809,13,slo-niacin,cholesterol
+810,13,colesevelam,cholesterol
+811,13,ezallor,cholesterol
+812,13,flolipid,cholesterol
+813,13,lopid,cholesterol
+814,13,pitavastatin,cholesterol
+815,13,amlodipine / atorvastatin,cholesterol
+816,13,atorvastatin / ezetimibe,cholesterol
+817,13,fluvastatin,cholesterol
+818,13,lescol xl,cholesterol
+819,13,mycophenolate mofetil,cholesterol
+820,13,niacor,cholesterol
+821,13,trilipix,cholesterol
+822,13,caduet,cholesterol
+823,13,ezetimibe / rosuvastatin,cholesterol
+824,13,fibricor,cholesterol
+825,13,inclisiran,cholesterol
+826,13,juxtapid,cholesterol
+827,13,leqvio,cholesterol
+828,13,lomitapide,cholesterol
+829,13,lypqozet,cholesterol
+830,13,roszet,cholesterol
+831,13,zypitamag,cholesterol
+832,14,benadryl,colds & flu
+833,14,diphenhydramine,colds & flu
+834,14,vicks nyquil d cold and flu nighttime relief,colds & flu
+835,14,vicks nyquil cold & flu nighttime relief,colds & flu
+836,14,chlorpheniramine,colds & flu
+837,14,coricidin hbp cold & flu,colds & flu
+838,14,vicks dayquil severe cold & flu,colds & flu
+839,14,benadryl allergy,colds & flu
+840,14,vicks dayquil cold & flu relief,colds & flu
+841,14,vicks nyquil severe cold & flu,colds & flu
+842,14,promethazine dm,colds & flu
+843,14,tylenol cold & flu severe,colds & flu
+844,14,vicks vaporub,colds & flu
+845,14,coricidin hbp maximum strength flu,colds & flu
+846,14,theraflu nighttime severe cold & cough,colds & flu
+847,14,acetaminophen / chlorpheniramine / phenylephrine,colds & flu
+848,14,sudafed pe cold & cough,colds & flu
+849,14,banophen,colds & flu
+850,14,benadryl allergy plus cold,colds & flu
+851,14,pseudoephedrine / triprolidine,colds & flu
+852,14,tussionex pennkinetic,colds & flu
+853,14,chlor-trimeton,colds & flu
+854,14,diphedryl,colds & flu
+855,14,diphen,colds & flu
+856,14,complete allergy relief,colds & flu
+857,14,tylenol cold,colds & flu
+858,14,allermax,colds & flu
+859,14,bronkaid,colds & flu
+860,14,dicopanol,colds & flu
+861,14,dytuss,colds & flu
+862,14,mucinex fast-max night time cold & flu,colds & flu
+863,14,scot-tussin allergy,colds & flu
+864,14,siladryl allergy,colds & flu
+865,14,sudafed pe sinus & allergy,colds & flu
+866,14,twilite,colds & flu
+867,14,tylenol cold multi-symptom severe,colds & flu
+868,14,valu-dryl,colds & flu
+869,14,vanamine pd,colds & flu
+870,14,virtussin dac,colds & flu
+871,14,benadryl allergy plus sinus headache,colds & flu
+872,14,primatene,colds & flu
+873,14,acetaminophen / dextromethorphan / doxylamine / pseudoephedrine,colds & flu
+874,14,acetaminophen / dextromethorphan / guaifenesin / phenylephrine,colds & flu
+875,14,acetaminophen / dextromethorphan / phenylephrine,colds & flu
+876,14,aller-chlor,colds & flu
+877,14,allergy relief,colds & flu
+878,14,brompheniramine,colds & flu
+879,14,mucinex fast-max severe cold,colds & flu
+880,14,mucinex fast-max severe congestion & cold,colds & flu
+881,14,sudafed pe pressure+pain+cold,colds & flu
+882,14,sudafed pe severe cold,colds & flu
+883,14,tylenol cold max day,colds & flu
+884,14,vicks nyquil cold & flu nighttime relief (alcohol free),colds & flu
+885,14,wal-finate,colds & flu
+886,14,acetaminophen / chlorpheniramine / dextromethorphan / pseudoephedrine,colds & flu
+887,14,acetaminophen / chlorpheniramine,colds & flu
+888,14,actifed cold and allergy,colds & flu
+889,14,advil allergy sinus,colds & flu
+890,14,alka-seltzer plus cold formula sparkling original effervescent tablets,colds & flu
+891,14,aprodine,colds & flu
+892,14,aspirin / chlorpheniramine / phenylephrine,colds & flu
+893,14,c.p.m.,colds & flu
+894,14,camphor / eucalyptus / menthol,colds & flu
+895,14,cheratussin dac,colds & flu
+896,14,chlo-amine,colds & flu
+897,14,chlor-mal,colds & flu
+898,14,chlorpheniramine / hydrocodone,colds & flu
+899,14,chlorpheniramine / phenylephrine,colds & flu
+900,14,chlortan,colds & flu
+901,14,codeine / guaifenesin / pseudoephedrine,colds & flu
+902,14,coricidin hbp nighttime multi-symptom cold,colds & flu
+903,14,dextromethorphan / promethazine,colds & flu
+904,14,diphenhydramine / phenylephrine,colds & flu
+905,14,drixoral cold and allergy,colds & flu
+906,14,ed-chlortan,colds & flu
+907,14,ed a-hist,colds & flu
+908,14,ed chlorped,colds & flu
+909,14,ed chlor ped jr.,colds & flu
+910,14,ephedrine / guaifenesin,colds & flu
+911,14,robitussin peak cold nighttime nasal relief,colds & flu
+912,14,theraflu daytime severe cold & cough,colds & flu
+913,14,tussicaps,colds & flu
+914,14,tylenol cold multi-symptom nighttime,colds & flu
+915,14,a-phedrin,colds & flu
+916,14,acetaminophen / chlorpheniramine / dextromethorphan / phenylephrine,colds & flu
+917,14,acetaminophen / dextromethorphan / doxylamine / phenylephrine,colds & flu
+918,14,acetaminophen / dextromethorphan / doxylamine,colds & flu
+919,14,acetaminophen / dextromethorphan / guaifenesin / pseudoephedrine,colds & flu
+920,14,acetaminophen / dextromethorphan / pseudoephedrine,colds & flu
+921,14,acetaminophen / diphenhydramine / phenylephrine,colds & flu
+922,14,acetaminophen / pheniramine / phenylephrine,colds & flu
+923,14,advil congestion relief,colds & flu
+924,14,advil sinus congestion & pain,colds & flu
+925,14,ala-hist pe,colds & flu
+926,14,alka-seltzer plus-d multi-symptom sinus & cold liquid gels,colds & flu
+927,14,allergy multi-symptom,colds & flu
+928,14,biotussin dac,colds & flu
+929,14,bromatan plus,colds & flu
+930,14,bromax,colds & flu
+931,14,camphor,colds & flu
+932,14,capron dm,colds & flu
+933,14,children's triacting night time,colds & flu
+934,14,childrens tylenol cold plus cough,colds & flu
+935,14,chlo hist,colds & flu
+936,14,chlophedianol / pyrilamine,colds & flu
+937,14,chlorpheniramine / ibuprofen / pseudoephedrine,colds & flu
+938,14,chlorpheniramine / phenylephrine / pyrilamine,colds & flu
+939,14,cold multi-symptom (nighttime),colds & flu
+940,14,comtrex cold and cough maximum strength,colds & flu
+941,14,comtrex cold and flu maximum strength tablet,colds & flu
+942,14,contac cold + flu (night formula),colds & flu
+943,14,delsym cough+ cold day time,colds & flu
+944,14,delsym cough+ cold night time,colds & flu
+945,14,deltuss dmx,colds & flu
+946,14,dexbrompheniramine / pseudoephedrine,colds & flu
+947,14,dextromethorphan / phenylephrine / pyrilamine,colds & flu
+948,14,dextromethorphan / phenylephrine / triprolidine,colds & flu
+949,14,diabetic tussin night time formula,colds & flu
+950,14,dologen,colds & flu
+951,14,doxylamine / phenylephrine,colds & flu
+952,14,dristan cold multi symptom formula,colds & flu
+953,14,flutabs,colds & flu
+954,14,ibuprofen / phenylephrine,colds & flu
+955,14,"mucinex children's cold, cough & sore throat",colds & flu
+956,14,ninjacof,colds & flu
+957,14,norel ad,colds & flu
+958,14,phenylephrine / promethazine,colds & flu
+959,14,poly-tussin ac,colds & flu
+960,14,poly hist forte,colds & flu
+961,14,robitussin peak cold nighttime cold + flu,colds & flu
+962,14,ru-hist forte,colds & flu
+963,14,sinus & allergy pe,colds & flu
+964,14,sudafed pe head congestion + pain,colds & flu
+965,14,sudafed pe pressure+pain+cough,colds & flu
+966,14,theraflu flu & sore throat,colds & flu
+967,14,theraflu nighttime severe cold & cough caplets,colds & flu
+968,14,theraflu sinus & cold,colds & flu
+969,14,theraflu warming relief daytime severe cold & cough,colds & flu
+970,14,theraflu warming relief nighttime severe cold & cough,colds & flu
+971,14,triaminic multi-symptom fever,colds & flu
+972,14,tylenol children’s cold + cough + runny nose,colds & flu
+973,14,tylenol children’s cold + flu,colds & flu
+974,14,tylenol cold & cough nighttime,colds & flu
+975,14,tylenol cold multi-symptom nighttime liquid,colds & flu
+976,14,tylenol plus children's cold,colds & flu
+977,14,tylenol sinus congestion & pain nighttime,colds & flu
+978,14,vicks vaposteam,colds & flu
+979,14,abatuss dmx,colds & flu
+980,14,acetaminophen / caffeine,colds & flu
+981,14,acetaminophen / chlorpheniramine / dextromethorphan / guaifenesin,colds & flu
+982,14,acetaminophen / chlorpheniramine / dextromethorphan,colds & flu
+983,14,acetaminophen / dexbrompheniramine,colds & flu
+984,14,acetaminophen / dextromethorphan / diphenhydramine,colds & flu
+985,14,acetaminophen / dextromethorphan / triprolidine,colds & flu
+986,14,acetaminophen / dextromethorphan,colds & flu
+987,14,advil children's allergy sinus,colds & flu
+988,14,alahist d,colds & flu
+989,14,allan tannate pediatric,colds & flu
+990,14,allerest pe,colds & flu
+991,14,allerfrim,colds & flu
+992,14,ambifed cd,colds & flu
+993,14,aphedrid,colds & flu
+994,14,avedana medicated chest rub,colds & flu
+995,14,benadryl allergy plus congestion,colds & flu
+996,14,bp allergy jr,colds & flu
+997,14,brompheniramine / codeine / phenylephrine,colds & flu
+998,14,c-tanna 12,colds & flu
+999,14,camphor / menthol,colds & flu
+1000,14,capron dmt,colds & flu
+1001,14,carbetapentane / chlorpheniramine,colds & flu
+1002,14,children's triacting,colds & flu
+1003,14,chlophedianol / dexbrompheniramine,colds & flu
+1004,14,chlophedianol / dexchlorpheniramine / pseudoephedrine,colds & flu
+1005,14,chlorcyclizine / phenylephrine,colds & flu
+1006,14,chlorex-a 12,colds & flu
+1007,14,chlorex a,colds & flu
+1008,14,chlorpheniramine / codeine / pseudoephedrine,colds & flu
+1009,14,chlorpheniramine / codeine,colds & flu
+1010,14,chlorpheniramine / phenylephrine / phenyltoloxamine,colds & flu
+1011,14,chlortan d,colds & flu
+1012,14,clear cough pm multi-symptom,colds & flu
+1013,14,codar ar,colds & flu
+1014,14,codeine / phenylephrine / triprolidine,colds & flu
+1015,14,codimal dm,colds & flu
+1016,14,coditussin dac,colds & flu
+1017,14,comtrex cold & cough,colds & flu
+1018,14,comtrex nighttime cold & cough,colds & flu
+1019,14,comtrex severe cold & sinus,colds & flu
+1020,14,conal,colds & flu
+1021,14,conex,colds & flu
+1022,14,contac cold + flu (night) cooling relief liquid,colds & flu
+1023,14,dallergy,colds & flu
+1024,14,dallergy drops,colds & flu
+1025,14,decorel forte plus,colds & flu
+1026,14,delsym cough & sore throat,colds & flu
+1027,14,delsym night time multi-symptom,colds & flu
+1028,14,dexbrompheniramine / phenylephrine,colds & flu
+1029,14,dexchlorpheniramine / dextromethorphan / pseudoephedrine,colds & flu
+1030,14,dextromethorphan / diphenhydramine / phenylephrine,colds & flu
+1031,14,dextromethorphan / pyrilamine,colds & flu
+1032,14,dixaphedrine,colds & flu
+1033,14,duraflu,colds & flu
+1034,14,dytan-d,colds & flu
+1035,14,dytan-dm,colds & flu
+1036,14,ed chlorped d,colds & flu
+1037,14,excedrin quick tab,colds & flu
+1038,14,excedrin tension headache,colds & flu
+1039,14,fast freeze,colds & flu
+1040,14,flu & severe cold & cough daytime powder,colds & flu
+1041,14,freeze it,colds & flu
+1042,14,gnp cold relief plus,colds & flu
+1043,14,guaifen dac,colds & flu
+1044,14,histafed,colds & flu
+1045,14,histex-ac,colds & flu
+1046,14,histex-dm,colds & flu
+1047,14,histex-pe,colds & flu
+1048,14,lortuss ex,colds & flu
+1049,14,m-end pe,colds & flu
+1050,14,medicidin-d,colds & flu
+1051,14,mucinex nightshift cold & flu,colds & flu
+1052,14,nalex-a,colds & flu
+1053,14,nalex a 12,colds & flu
+1054,14,nohist lq,colds & flu
+1055,14,novahistine,colds & flu
+1056,14,onset forte,colds & flu
+1057,14,panatuss ped,colds & flu
+1058,14,phena-plus,colds & flu
+1059,14,phenagil,colds & flu
+1060,14,pheniramine / phenylephrine,colds & flu
+1061,14,phenylephrine / triprolidine,colds & flu
+1062,14,robitussin peak cold daytime cold + flu,colds & flu
+1063,14,sutan-dm,colds & flu
+1064,14,tannic-12 s,colds & flu
+1065,14,theracaps multi-symptom cough & cold reliever,colds & flu
+1066,14,triaminic softchews cough & sore throat,colds & flu
+1067,14,tricode gf,colds & flu
+1068,14,tusnel c,colds & flu
+1069,14,tuzistra xr,colds & flu
+1070,14,tylenol allergy multi-symptom,colds & flu
+1071,14,tylenol children’s cold + cough + sore throat,colds & flu
+1072,14,tylenol cough & sore throat nightime,colds & flu
+1073,14,tylenol cough and sore throat daytime,colds & flu
+1074,14,vanacof,colds & flu
+1075,14,vi-sudo,colds & flu
+1076,14,vicks formula 44 custom care cough & cold pm,colds & flu
+1077,14,zodryl dac,colds & flu
+1078,15,docusate,constipation
+1079,15,miralax,constipation
+1080,15,colace,constipation
+1081,15,dulcolax,constipation
+1082,15,bisacodyl,constipation
+1083,15,polyethylene glycol 3350,constipation
+1084,15,dulcolax stool softener,constipation
+1085,15,milk of magnesia,constipation
+1086,15,magnesium oxide,constipation
+1087,15,magnesium citrate,constipation
+1088,15,metamucil,constipation
+1089,15,citrucel,constipation
+1090,15,doc-q-lace,constipation
+1091,15,fibercon,constipation
+1092,15,phillips' milk of magnesia,constipation
+1093,15,dok,constipation
+1094,15,fleet enema,constipation
+1095,15,glycolax,constipation
+1096,15,psyllium,constipation
+1097,15,magnesium hydroxide,constipation
+1098,15,surfak,constipation
+1099,15,enemeez mini,constipation
+1100,15,bisa-lax,constipation
+1101,15,clearlax,constipation
+1102,15,colace micro-enema,constipation
+1103,15,correctol,constipation
+1104,15,diocto,constipation
+1105,15,fleet bisacodyl,constipation
+1106,15,phillips' cramp-free,constipation
+1107,15,citrate of magnesia,constipation
+1108,15,gavilax,constipation
+1109,15,gialax,constipation
+1110,15,mag-oxide,constipation
+1111,15,peg3350,constipation
+1112,15,purelax,constipation
+1113,15,sunmark clearlax,constipation
+1114,15,uro-mag,constipation
+1115,15,citroma,constipation
+1116,15,glycerin,constipation
+1117,15,hydrocil,constipation
+1118,15,konsyl,constipation
+1119,15,methylcellulose,constipation
+1120,15,reguloid,constipation
+1121,15,sodium biphosphate / sodium phosphate,constipation
+1122,15,disposable enema,constipation
+1123,15,dulcolax milk of magnesia,constipation
+1124,15,equalactin,constipation
+1125,15,ex-lax milk of magnesia,constipation
+1126,15,fiber lax,constipation
+1127,15,fiber laxative,constipation
+1128,15,fleet glycerin suppositories adult,constipation
+1129,15,fleet phospho soda,constipation
+1130,15,mineral oil,constipation
+1131,15,natural fiber therapy,constipation
+1132,15,osmoprep,constipation
+1133,15,pedia-lax chewable tablets,constipation
+1134,15,pedia-lax liquid glycerin suppositories,constipation
+1135,15,polycarbophil,constipation
+1136,15,sani-supp,constipation
+1137,15,sorbitol,constipation
+1138,15,benzocaine / docusate,constipation
+1139,15,castor oil,constipation
+1140,15,fibertab,constipation
+1141,15,fleet glycerin suppositories pediatric,constipation
+1142,15,potassium phosphate,constipation
+1143,16,symbicort,copd
+1144,16,trelegy ellipta,copd
+1145,16,prednisone,copd
+1146,16,montelukast,copd
+1147,16,breztri aerosphere,copd
+1148,16,fluticasone / umeclidinium / vilanterol,copd
+1149,16,anoro ellipta,copd
+1150,16,breo ellipta,copd
+1151,16,daliresp,copd
+1152,16,budesonide / formoterol,copd
+1153,16,tudorza pressair,copd
+1154,16,incruse ellipta,copd
+1155,16,stiolto respimat,copd
+1156,16,rayos,copd
+1157,16,aclidinium,copd
+1158,16,fluticasone / vilanterol,copd
+1159,16,levalbuterol,copd
+1160,16,roflumilast,copd
+1161,16,umeclidinium / vilanterol,copd
+1162,16,bevespi aerosphere,copd
+1163,16,xopenex,copd
+1164,16,olodaterol / tiotropium,copd
+1165,16,striverdi respimat,copd
+1166,16,xopenex hfa,copd
+1167,16,olodaterol,copd
+1168,16,revefenacin,copd
+1169,16,umeclidinium,copd
+1170,16,xopenex concentrate,copd
+1171,16,yupelri,copd
+1172,16,aclidinium / formoterol,copd
+1173,16,breyna,copd
+1174,16,budesonide / formoterol / glycopyrrolate,copd
+1175,16,duaklir pressair,copd
+1176,16,formoterol / glycopyrrolate,copd
+1177,17,ivermectin,covid 19
+1178,17,remdesivir,covid 19
+1179,17,pfizer-biontech covid-19 vaccine,covid 19
+1180,17,paxlovid,covid 19
+1181,17,actemra,covid 19
+1182,17,tocilizumab,covid 19
+1183,17,anakinra,covid 19
+1184,17,kineret,covid 19
+1185,17,moderna covid-19 vaccine,covid 19
+1186,17,olumiant,covid 19
+1187,17,veklury,covid 19
+1188,17,molnupiravir,covid 19
+1189,17,regen-cov,covid 19
+1190,17,sotrovimab,covid 19
+1191,17,bamlanivimab / etesevimab,covid 19
+1192,17,lagevrio,covid 19
+1193,17,"sars-cov-2 (covid-19) ad26 vaccine, recombinant",covid 19
+1194,17,sars-cov-2 mrna (tozinameran) vaccine,covid 19
+1195,17,bamlanivimab and etesevimab,covid 19
+1196,17,baricitinib,covid 19
+1197,17,bebtelovimab,covid 19
+1198,17,comirnaty,covid 19
+1199,17,nirmatrelvir / ritonavir,covid 19
+1200,17,sars-cov-2 (covid-19) mrna-1273 vaccine,covid 19
+1201,17,pfizer-biontech covid-19 (5y-11y) bivalent booster vaccine pf,covid 19
+1202,17,pfizer-biontech covid-19 (12y+) bivalent booster vaccine pf,covid 19
+1203,17,sars-cov-2 (covid-19) mrna (tozinameran 5y-11y) bivalent booster vaccine,covid 19
+1204,17,sars-cov-2 (covid-19) mrna (tozinameran 12y+) bivalent booster vaccine,covid 19
+1205,17,sars-cov-2 (covid-19) mrna-1273 (bivalent booster) vaccine,covid 19
+1206,17,"sars-cov-2 (covid-19) nvx-cov2373 vaccine, recombinant",covid 19
+1207,17,sars-cov-2 mrna (tozinameran 6m-4y) vaccine,covid 19
+1208,17,sars-cov-2 mrna-1273 (6m-5y) vaccine,covid 19
+1209,17,sars-cov-2 mrna-1273 (booster only) vaccine,covid 19
+1210,17,spikevax,covid 19
+1211,18,bupropion,depression
+1212,18,cymbalta,depression
+1213,18,sertraline,depression
+1214,18,zoloft,depression
+1215,18,lexapro,depression
+1216,18,citalopram,depression
+1217,18,prozac,depression
+1218,18,fluoxetine,depression
+1219,18,wellbutrin xl,depression
+1220,18,celexa,depression
+1221,18,escitalopram,depression
+1222,18,venlafaxine,depression
+1223,18,trintellix,depression
+1224,18,abilify,depression
+1225,18,duloxetine,depression
+1226,18,effexor xr,depression
+1227,18,rexulti,depression
+1228,18,vortioxetine,depression
+1229,18,brexpiprazole,depression
+1230,18,lisdexamfetamine,depression
+1231,18,trazodone,depression
+1232,18,mirtazapine,depression
+1233,18,pristiq,depression
+1234,18,effexor,depression
+1235,18,paxil,depression
+1236,18,paroxetine,depression
+1237,18,remeron,depression
+1238,18,wellbutrin sr,depression
+1239,18,amitriptyline,depression
+1240,18,viibryd,depression
+1241,18,alprazolam,depression
+1242,18,lamotrigine,depression
+1243,18,tramadol,depression
+1244,18,seroquel xr,depression
+1245,18,aripiprazole,depression
+1246,18,quetiapine,depression
+1247,18,deplin,depression
+1248,18,nortriptyline,depression
+1249,18,zyprexa,depression
+1250,18,desyrel,depression
+1251,18,forfivo xl,depression
+1252,18,budeprion sr,depression
+1253,18,desvenlafaxine,depression
+1254,18,methylphenidate,depression
+1255,18,aplenzin,depression
+1256,18,desyrel dividose,depression
+1257,18,doxepin,depression
+1258,18,fetzima,depression
+1259,18,lithium,depression
+1260,18,olanzapine,depression
+1261,18,risperidone,depression
+1262,18,desipramine,depression
+1263,18,irenka,depression
+1264,18,modafinil,depression
+1265,18,nefazodone,depression
+1266,18,fluvoxamine,depression
+1267,18,imipramine,depression
+1268,18,l-methylfolate,depression
+1269,18,methylin er,depression
+1270,18,niacin,depression
+1271,18,parnate,depression
+1272,18,paxil cr,depression
+1273,18,remeron soltab,depression
+1274,18,symbyax,depression
+1275,18,abilify mycite,depression
+1276,18,amitriptyline / chlordiazepoxide,depression
+1277,18,amoxapine,depression
+1278,18,aventyl hydrochloride,depression
+1279,18,clomipramine,depression
+1280,18,emsam,depression
+1281,18,fluoxetine / olanzapine,depression
+1282,18,ketamine,depression
+1283,18,nardil,depression
+1284,18,norpramin,depression
+1285,18,pamelor,depression
+1286,18,pexeva,depression
+1287,18,phenelzine,depression
+1288,18,tranylcypromine,depression
+1289,18,vilazodone,depression
+1290,18,zyprexa zydis,depression
+1291,18,amitriptyline / perphenazine,depression
+1292,18,armodafinil,depression
+1293,18,atomoxetine,depression
+1294,18,isocarboxazid,depression
+1295,18,levomilnacipran,depression
+1296,18,marplan,depression
+1297,18,paliperidone,depression
+1298,18,selegiline,depression
+1299,18,tofranil,depression
+1300,18,trimipramine,depression
+1301,18,vivactil,depression
+1302,18,xaquil xr,depression
+1303,18,esketamine,depression
+1304,18,l-methylfolate forte,depression
+1305,18,protriptyline,depression
+1306,18,spravato,depression
+1307,18,surmontil,depression
+1308,18,thyroid desiccated,depression
+1309,19,humalog,diabetes (type 1)
+1310,19,lantus,diabetes (type 1)
+1311,19,novolog,diabetes (type 1)
+1312,19,insulin lispro,diabetes (type 1)
+1313,19,insulin aspart,diabetes (type 1)
+1314,19,lantus solostar,diabetes (type 1)
+1315,19,lyumjev,diabetes (type 1)
+1316,19,insulin detemir,diabetes (type 1)
+1317,19,levemir,diabetes (type 1)
+1318,19,insulin aspart/insulin aspart protamine,diabetes (type 1)
+1319,19,humalog kwikpen,diabetes (type 1)
+1320,19,novolog flexpen,diabetes (type 1)
+1321,19,apidra,diabetes (type 1)
+1322,19,insulin glargine,diabetes (type 1)
+1323,19,basaglar,diabetes (type 1)
+1324,19,tresiba,diabetes (type 1)
+1325,19,toujeo solostar,diabetes (type 1)
+1326,19,humulin n,diabetes (type 1)
+1327,19,humulin r,diabetes (type 1)
+1328,19,afrezza,diabetes (type 1)
+1329,19,novolin r,diabetes (type 1)
+1330,19,symlin,diabetes (type 1)
+1331,19,humulin 70/30,diabetes (type 1)
+1332,19,insulin regular,diabetes (type 1)
+1333,19,novolin n,diabetes (type 1)
+1334,19,admelog,diabetes (type 1)
+1335,19,fiasp,diabetes (type 1)
+1336,19,novolin 70/30,diabetes (type 1)
+1337,19,humalog mix 75/25,diabetes (type 1)
+1338,19,insulin glulisine,diabetes (type 1)
+1339,19,rezvoglar,diabetes (type 1)
+1340,19,semglee,diabetes (type 1)
+1341,19,toujeo max solostar,diabetes (type 1)
+1342,19,humulin r u-500 (concentrated),diabetes (type 1)
+1343,19,novolog mix 70/30,diabetes (type 1)
+1344,19,novolog penfill,diabetes (type 1)
+1345,19,octreotide,diabetes (type 1)
+1346,19,pramlintide,diabetes (type 1)
+1347,19,"insulin inhalation, rapid acting",diabetes (type 1)
+1348,19,insulin isophane,diabetes (type 1)
+1349,19,novolog mix 70/30 flexpen,diabetes (type 1)
+1350,19,humulin n pen,diabetes (type 1)
+1351,19,humulin r u-500 kwikpen,diabetes (type 1)
+1352,19,insulin degludec,diabetes (type 1)
+1353,19,insulin isophane / insulin regular,diabetes (type 1)
+1354,19,myxredlin,diabetes (type 1)
+1355,19,humalog mix 50/50,diabetes (type 1)
+1356,19,humalog mix 75/25 kwikpen,diabetes (type 1)
+1357,19,insulin lispro/insulin lispro protamine,diabetes (type 1)
+1358,19,symlin pen,diabetes (type 1)
+1359,19,symlinpen 60,diabetes (type 1)
+1360,19,symlinpen 120,diabetes (type 1)
+1361,19,humalog mix 50/50 kwikpen,diabetes (type 1)
+1362,19,humulin 50/50,diabetes (type 1)
+1363,19,humulin 70/30 pen,diabetes (type 1)
+1364,19,relion/novolin 70/30,diabetes (type 1)
+1365,19,tzield,diabetes (type 1)
+1366,20,metformin,diabetes (type 2)
+1367,20,farxiga,diabetes (type 2)
+1368,20,trulicity,diabetes (type 2)
+1369,20,rybelsus,diabetes (type 2)
+1370,20,dapagliflozin,diabetes (type 2)
+1371,20,dulaglutide,diabetes (type 2)
+1372,20,insulin aspart,diabetes (type 2)
+1373,20,insulin detemir,diabetes (type 2)
+1374,20,insulin lispro,diabetes (type 2)
+1375,20,lyumjev,diabetes (type 2)
+1376,20,semaglutide,diabetes (type 2)
+1377,20,soliqua,diabetes (type 2)
+1378,20,insulin aspart/insulin aspart protamine,diabetes (type 2)
+1379,20,insulin glargine / lixisenatide,diabetes (type 2)
+1380,20,januvia,diabetes (type 2)
+1381,20,mounjaro,diabetes (type 2)
+1382,20,victoza,diabetes (type 2)
+1383,20,glipizide,diabetes (type 2)
+1384,20,glimepiride,diabetes (type 2)
+1385,20,amaryl,diabetes (type 2)
+1386,20,invokana,diabetes (type 2)
+1387,20,lantus,diabetes (type 2)
+1388,20,actos,diabetes (type 2)
+1389,20,jardiance,diabetes (type 2)
+1390,20,levemir,diabetes (type 2)
+1391,20,janumet,diabetes (type 2)
+1392,20,glucotrol,diabetes (type 2)
+1393,20,byetta,diabetes (type 2)
+1394,20,ozempic,diabetes (type 2)
+1395,20,glumetza,diabetes (type 2)
+1396,20,liraglutide,diabetes (type 2)
+1397,20,pioglitazone,diabetes (type 2)
+1398,20,tradjenta,diabetes (type 2)
+1399,20,bydureon,diabetes (type 2)
+1400,20,humalog,diabetes (type 2)
+1401,20,lantus solostar,diabetes (type 2)
+1402,20,sitagliptin,diabetes (type 2)
+1403,20,novolog,diabetes (type 2)
+1404,20,glyburide,diabetes (type 2)
+1405,20,metformin / sitagliptin,diabetes (type 2)
+1406,20,onglyza,diabetes (type 2)
+1407,20,riomet,diabetes (type 2)
+1408,20,glipizide xl,diabetes (type 2)
+1409,20,insulin glargine,diabetes (type 2)
+1410,20,novolog flexpen,diabetes (type 2)
+1411,20,prandin,diabetes (type 2)
+1412,20,tresiba,diabetes (type 2)
+1413,20,canagliflozin,diabetes (type 2)
+1414,20,chromium picolinate,diabetes (type 2)
+1415,20,empagliflozin,diabetes (type 2)
+1416,20,exenatide,diabetes (type 2)
+1417,20,humulin r,diabetes (type 2)
+1418,20,repaglinide,diabetes (type 2)
+1419,20,acarbose,diabetes (type 2)
+1420,20,alogliptin,diabetes (type 2)
+1421,20,avandia,diabetes (type 2)
+1422,20,basaglar,diabetes (type 2)
+1423,20,glimepiride / pioglitazone,diabetes (type 2)
+1424,20,glucotrol xl,diabetes (type 2)
+1425,20,glyburide / metformin,diabetes (type 2)
+1426,20,humalog kwikpen,diabetes (type 2)
+1427,20,humulin n,diabetes (type 2)
+1428,20,kombiglyze xr,diabetes (type 2)
+1429,20,linagliptin,diabetes (type 2)
+1430,20,toujeo solostar,diabetes (type 2)
+1431,20,welchol,diabetes (type 2)
+1432,20,xigduo xr,diabetes (type 2)
+1433,20,adlyxin,diabetes (type 2)
+1434,20,admelog,diabetes (type 2)
+1435,20,apidra,diabetes (type 2)
+1436,20,bromocriptine,diabetes (type 2)
+1437,20,colesevelam,diabetes (type 2)
+1438,20,cycloset,diabetes (type 2)
+1439,20,dapagliflozin / metformin,diabetes (type 2)
+1440,20,diabeta,diabetes (type 2)
+1441,20,empagliflozin / metformin,diabetes (type 2)
+1442,20,glipizide / metformin,diabetes (type 2)
+1443,20,glucovance,diabetes (type 2)
+1444,20,glycron,diabetes (type 2)
+1445,20,glynase,diabetes (type 2)
+1446,20,glyset,diabetes (type 2)
+1447,20,humulin 70/30,diabetes (type 2)
+1448,20,insulin regular,diabetes (type 2)
+1449,20,janumet xr,diabetes (type 2)
+1450,20,jentadueto,diabetes (type 2)
+1451,20,lixisenatide,diabetes (type 2)
+1452,20,metformin / pioglitazone,diabetes (type 2)
+1453,20,metformin / saxagliptin,diabetes (type 2)
+1454,20,miglitol,diabetes (type 2)
+1455,20,nesina,diabetes (type 2)
+1456,20,novolin 70/30,diabetes (type 2)
+1457,20,novolin n,diabetes (type 2)
+1458,20,novolin r,diabetes (type 2)
+1459,20,pramlintide,diabetes (type 2)
+1460,20,saxagliptin,diabetes (type 2)
+1461,20,synjardy,diabetes (type 2)
+1462,20,toujeo max solostar,diabetes (type 2)
+1463,20,xultophy,diabetes (type 2)
+1464,20,actoplus met,diabetes (type 2)
+1465,20,afrezza,diabetes (type 2)
+1466,20,albiglutide,diabetes (type 2)
+1467,20,alogliptin / metformin,diabetes (type 2)
+1468,20,alogliptin / pioglitazone,diabetes (type 2)
+1469,20,bydureon bcise,diabetes (type 2)
+1470,20,canagliflozin / metformin,diabetes (type 2)
+1471,20,cr-gtf,diabetes (type 2)
+1472,20,crm,diabetes (type 2)
+1473,20,dapagliflozin / saxagliptin,diabetes (type 2)
+1474,20,duetact,diabetes (type 2)
+1475,20,empagliflozin / linagliptin / metformin,diabetes (type 2)
+1476,20,empagliflozin / linagliptin,diabetes (type 2)
+1477,20,ertugliflozin / metformin,diabetes (type 2)
+1478,20,ertugliflozin / sitagliptin,diabetes (type 2)
+1479,20,ertugliflozin,diabetes (type 2)
+1480,20,fiasp,diabetes (type 2)
+1481,20,glynase prestab,diabetes (type 2)
+1482,20,glyxambi,diabetes (type 2)
+1483,20,humalog mix 50/50,diabetes (type 2)
+1484,20,humalog mix 50/50 kwikpen,diabetes (type 2)
+1485,20,humalog mix 75/25,diabetes (type 2)
+1486,20,humalog mix 75/25 kwikpen,diabetes (type 2)
+1487,20,humulin 50/50,diabetes (type 2)
+1488,20,humulin 70/30 pen,diabetes (type 2)
+1489,20,humulin n pen,diabetes (type 2)
+1490,20,humulin r u-500 (concentrated),diabetes (type 2)
+1491,20,humulin r u-500 kwikpen,diabetes (type 2)
+1492,20,insulin degludec / liraglutide,diabetes (type 2)
+1493,20,insulin degludec,diabetes (type 2)
+1494,20,insulin glulisine,diabetes (type 2)
+1495,20,"insulin inhalation, rapid acting",diabetes (type 2)
+1496,20,insulin isophane / insulin regular,diabetes (type 2)
+1497,20,insulin isophane,diabetes (type 2)
+1498,20,insulin lispro/insulin lispro protamine,diabetes (type 2)
+1499,20,invokamet,diabetes (type 2)
+1500,20,invokamet xr,diabetes (type 2)
+1501,20,jentadueto xr,diabetes (type 2)
+1502,20,kazano,diabetes (type 2)
+1503,20,linagliptin / metformin,diabetes (type 2)
+1504,20,myxredlin,diabetes (type 2)
+1505,20,nateglinide,diabetes (type 2)
+1506,20,novolog mix 70/30,diabetes (type 2)
+1507,20,novolog mix 70/30 flexpen,diabetes (type 2)
+1508,20,novolog penfill,diabetes (type 2)
+1509,20,oseni,diabetes (type 2)
+1510,20,qtern,diabetes (type 2)
+1511,20,relion/novolin 70/30,diabetes (type 2)
+1512,20,rezvoglar,diabetes (type 2)
+1513,20,rosiglitazone,diabetes (type 2)
+1514,20,segluromet,diabetes (type 2)
+1515,20,semglee,diabetes (type 2)
+1516,20,starlix,diabetes (type 2)
+1517,20,steglatro,diabetes (type 2)
+1518,20,steglujan,diabetes (type 2)
+1519,20,symlin,diabetes (type 2)
+1520,20,symlin pen,diabetes (type 2)
+1521,20,symlinpen 60,diabetes (type 2)
+1522,20,symlinpen 120,diabetes (type 2)
+1523,20,synjardy xr,diabetes (type 2)
+1524,20,tanzeum,diabetes (type 2)
+1525,20,tirzepatide,diabetes (type 2)
+1526,20,trijardy xr,diabetes (type 2)
+1527,21,loperamide,diarrhea
+1528,21,lomotil,diarrhea
+1529,21,imodium,diarrhea
+1530,21,atropine / diphenoxylate,diarrhea
+1531,21,imodium a-d,diarrhea
+1532,21,anti-diarrheal,diarrhea
+1533,21,pepto-bismol,diarrhea
+1534,21,florastor,diarrhea
+1535,21,codeine,diarrhea
+1536,21,bismuth subsalicylate,diarrhea
+1537,21,diamode,diarrhea
+1538,21,kaopectate,diarrhea
+1539,21,rifaximin,diarrhea
+1540,21,up and up anti-diarrheal solution,diarrhea
+1541,21,neomycin,diarrhea
+1542,21,saccharomyces boulardii lyo,diarrhea
+1543,21,bismatrol,diarrhea
+1544,21,opium,diarrhea
+1545,21,octreotide,diarrhea
+1546,21,bismarex,diarrhea
+1547,21,bismatrol maximum strength,diarrhea
+1548,21,crofelemer,diarrhea
+1549,21,florastor kids,diarrhea
+1550,21,mytesi,diarrhea
+1551,21,pedialyte,diarrhea
+1552,21,peptic relief,diarrhea
+1553,21,pink bismuth,diarrhea
+1554,21,saccharomyces boulardii+mos,diarrhea
+1555,21,soothe caplets,diarrhea
+1556,21,atropine / difenoxin,diarrhea
+1557,21,ceralyte,diarrhea
+1558,21,electrolyte replacement solutions,diarrhea
+1559,21,enfalyte,diarrhea
+1560,21,equalyte,diarrhea
+1561,21,medi-lyte,diarrhea
+1562,21,motofen,diarrhea
+1563,21,oralyte,diarrhea
+1564,21,rehydralyte,diarrhea
+1565,21,revital,diarrhea
+1566,22,triamcinolone,eczema
+1567,22,mometasone,eczema
+1568,22,dupixent,eczema
+1569,22,hydrocortisone,eczema
+1570,22,methotrexate,eczema
+1571,22,clobetasol,eczema
+1572,22,dupilumab,eczema
+1573,22,elidel,eczema
+1574,22,fluocinonide,eczema
+1575,22,desonide,eczema
+1576,22,prednisone,eczema
+1577,22,elocon,eczema
+1578,22,desoximetasone,eczema
+1579,22,pimecrolimus,eczema
+1580,22,cortizone-10,eczema
+1581,22,dexamethasone,eczema
+1582,22,halobetasol,eczema
+1583,22,kenalog,eczema
+1584,22,topicort,eczema
+1585,22,fluocinolone,eczema
+1586,22,dexamethasone intensol,eczema
+1587,22,fluocinolone,eczema
+1588,22,fluticasone,eczema
+1589,22,alclometasone,eczema
+1590,22,azathioprine,eczema
+1591,22,cloderm,eczema
+1592,22,cutivate,eczema
+1593,22,cyclosporine,eczema
+1594,22,dermotic oil,eczema
+1595,22,locoid lipocream,eczema
+1596,22,aristocort a,eczema
+1597,22,aristocort r,eczema
+1598,22,beser,eczema
+1599,22,beta hc,eczema
+1600,22,cinolar,eczema
+1601,22,cordran tape,eczema
+1602,22,de-sone la,eczema
+1603,22,dermacinrx trizapak,eczema
+1604,22,dermasorb ta,eczema
+1605,22,desowen,eczema
+1606,22,dxevo,eczema
+1607,22,flurandrenolide,eczema
+1608,22,halog,eczema
+1609,22,hidex,eczema
+1610,22,juulissa pharmapak,eczema
+1611,22,locoid,eczema
+1612,22,oralone,eczema
+1613,22,silalite pak,eczema
+1614,22,treziopak,eczema
+1615,22,trianex,eczema
+1616,22,triderm,eczema
+1617,22,tritocin,eczema
+1618,22,ultravate,eczema
+1619,22,ala-cort,eczema
+1620,22,ala-scalp,eczema
+1621,22,ala-scalp hp,eczema
+1622,22,amcinonide,eczema
+1623,22,apexicon e,eczema
+1624,22,aquanil hc,eczema
+1625,22,aquax-h,eczema
+1626,22,caldecort,eczema
+1627,22,clioquinol / hydrocortisone,eczema
+1628,22,clobex,eczema
+1629,22,clocortolone,eczema
+1630,22,cordran,eczema
+1631,22,cortizone-5,eczema
+1632,22,derma-smoothe / fs (scalp),eczema
+1633,22,dermarest plus anti-itch,eczema
+1634,22,dermovate,eczema
+1635,22,dermtex hc,eczema
+1636,22,desonate,eczema
+1637,22,doxepin,eczema
+1638,22,fluocinonide-e,eczema
+1639,22,hydrocortisone / iodoquinol,eczema
+1640,22,itch-x lotion,eczema
+1641,22,nucort,eczema
+1642,22,pandel,eczema
+1643,22,prudoxin,eczema
+1644,22,sarnol-hc,eczema
+1645,22,temovate,eczema
+1646,22,texacort,eczema
+1647,22,u-cort,eczema
+1648,22,vanos,eczema
+1649,22,verdeso,eczema
+1650,22,zonalon,eczema
+1651,22,ala-quin,eczema
+1652,22,alcortin a,eczema
+1653,22,aloe polysaccharides / iodoquinol,eczema
+1654,22,aloe vera / hydrocortisone / iodoquinol,eczema
+1655,22,aloquin,eczema
+1656,22,ammonium lactate / halobetasol,eczema
+1657,22,ammonium lactate/urea,eczema
+1658,22,apexicon,eczema
+1659,22,capex,eczema
+1660,22,carb-o-lac5,eczema
+1661,22,carb-o-lac hp,eczema
+1662,22,clobevate,eczema
+1663,22,clodan,eczema
+1664,22,cordran sp,eczema
+1665,22,cormax,eczema
+1666,22,cormax scalp,eczema
+1667,22,corti-sav,eczema
+1668,22,cyclocort,eczema
+1669,22,derma-smoothe / fs,eczema
+1670,22,derma-smoothe / fs (body oil),eczema
+1671,22,dermatop,eczema
+1672,22,dermazene,eczema
+1673,22,desrx,eczema
+1674,22,diflorasone,eczema
+1675,22,embeline,eczema
+1676,22,embeline e,eczema
+1677,22,flac,eczema
+1678,22,halcinonide,eczema
+1679,22,halonate,eczema
+1680,22,kerasal ultra 20,eczema
+1681,22,lokara,eczema
+1682,22,nolix,eczema
+1683,22,olux,eczema
+1684,22,olux-e,eczema
+1685,22,prednicarbate,eczema
+1686,22,quinja,eczema
+1687,22,r a acne,eczema
+1688,22,resinol,eczema
+1689,22,resorcinol,eczema
+1690,22,synalar,eczema
+1691,22,synalar ointment,eczema
+1692,22,tovet,eczema
+1693,22,ultralytic,eczema
+1694,22,ultralytic 2,eczema
+1695,22,vytone,eczema
+1696,23,cialis,erectile dysfunction
+1697,23,sildenafil,erectile dysfunction
+1698,23,viagra,erectile dysfunction
+1699,23,tadalafil,erectile dysfunction
+1700,23,caverject impulse,erectile dysfunction
+1701,23,staxyn,erectile dysfunction
+1702,23,vardenafil,erectile dysfunction
+1703,23,alprostadil,erectile dysfunction
+1704,23,edex,erectile dysfunction
+1705,23,stendra,erectile dysfunction
+1706,23,caverject,erectile dysfunction
+1707,23,muse,erectile dysfunction
+1708,23,avanafil,erectile dysfunction
+1709,24,entereg,gastrointestinal
+1710,24,lidocaine viscous,gastrointestinal
+1711,24,alvimopan,gastrointestinal
+1712,24,lidocaine,gastrointestinal
+1713,24,glydo,gastrointestinal
+1714,24,xylocaine jelly,gastrointestinal
+1715,24,lta ii kit,gastrointestinal
+1716,25,omeprazole,gerd (heartburn)
+1717,25,pantoprazole,gerd (heartburn)
+1718,25,nexium,gerd (heartburn)
+1719,25,famotidine,gerd (heartburn)
+1720,25,protonix,gerd (heartburn)
+1721,25,prilosec,gerd (heartburn)
+1722,25,dexilant,gerd (heartburn)
+1723,25,aciphex,gerd (heartburn)
+1724,25,prilosec otc,gerd (heartburn)
+1725,25,esomeprazole,gerd (heartburn)
+1726,25,lansoprazole,gerd (heartburn)
+1727,25,prevacid,gerd (heartburn)
+1728,25,pepcid,gerd (heartburn)
+1729,25,rabeprazole,gerd (heartburn)
+1730,25,sucralfate,gerd (heartburn)
+1731,25,pepcid ac,gerd (heartburn)
+1732,25,carafate,gerd (heartburn)
+1733,25,nexium 24hr,gerd (heartburn)
+1734,25,protonix iv,gerd (heartburn)
+1735,25,acid controller maximum strength,gerd (heartburn)
+1736,25,acid controller original strength,gerd (heartburn)
+1737,25,acid reducer maximum strength,gerd (heartburn)
+1738,25,cimetidine,gerd (heartburn)
+1739,25,dexlansoprazole,gerd (heartburn)
+1740,25,heartburn relief,gerd (heartburn)
+1741,25,heartburn relief maximum strength,gerd (heartburn)
+1742,25,metoclopramide,gerd (heartburn)
+1743,25,omeprazole / sodium bicarbonate,gerd (heartburn)
+1744,25,pepcid ac chewable tablets,gerd (heartburn)
+1745,25,pepcid oral suspension,gerd (heartburn)
+1746,25,mylanta,gerd (heartburn)
+1747,25,reglan,gerd (heartburn)
+1748,25,zegerid,gerd (heartburn)
+1749,25,calcium carbonate,gerd (heartburn)
+1750,25,magnesium oxide,gerd (heartburn)
+1751,25,nexium iv,gerd (heartburn)
+1752,25,nizatidine,gerd (heartburn)
+1753,25,aluminum hydroxide / magnesium hydroxide / simethicone,gerd (heartburn)
+1754,25,bethanechol,gerd (heartburn)
+1755,25,calci-chew,gerd (heartburn)
+1756,25,mag-oxide,gerd (heartburn)
+1757,25,pepcid complete,gerd (heartburn)
+1758,25,phillips' cramp-free,gerd (heartburn)
+1759,25,prevacid otc,gerd (heartburn)
+1760,25,prevacid solutab,gerd (heartburn)
+1761,25,tagamet hb,gerd (heartburn)
+1762,25,titralac,gerd (heartburn)
+1763,25,tums regular strength,gerd (heartburn)
+1764,25,tums smoothies,gerd (heartburn)
+1765,25,uro-mag,gerd (heartburn)
+1766,25,zegerid otc,gerd (heartburn)
+1767,25,aciphex sprinkle,gerd (heartburn)
+1768,25,alamag,gerd (heartburn)
+1769,25,alka-seltzer heartburn + gas,gerd (heartburn)
+1770,25,almacone,gerd (heartburn)
+1771,25,aluminum hydroxide / magnesium carbonate,gerd (heartburn)
+1772,25,aluminum hydroxide / magnesium hydroxide,gerd (heartburn)
+1773,25,aluminum hydroxide,gerd (heartburn)
+1774,25,amphojel,gerd (heartburn)
+1775,25,axid ar,gerd (heartburn)
+1776,25,belladonna,gerd (heartburn)
+1777,25,calcium carbonate / famotidine / magnesium hydroxide,gerd (heartburn)
+1778,25,calcium carbonate / magnesium hydroxide / simethicone,gerd (heartburn)
+1779,25,calcium carbonate / simethicone,gerd (heartburn)
+1780,25,di-gel,gerd (heartburn)
+1781,25,dual action complete,gerd (heartburn)
+1782,25,duo fusion,gerd (heartburn)
+1783,25,gas-x with maalox extra strength,gerd (heartburn)
+1784,25,gelusil,gerd (heartburn)
+1785,25,mi-acid,gerd (heartburn)
+1786,25,milantex,gerd (heartburn)
+1787,25,mintox,gerd (heartburn)
+1788,25,mintox plus,gerd (heartburn)
+1789,25,mylanta coat & cool,gerd (heartburn)
+1790,25,mylanta maximum strength,gerd (heartburn)
+1791,25,mylanta tonight,gerd (heartburn)
+1792,25,rulox,gerd (heartburn)
+1793,25,sodium citrate,gerd (heartburn)
+1794,25,tricitrasol,gerd (heartburn)
+1795,25,tums chewy bites with gas relief (lemon & strawberry),gerd (heartburn)
+1796,25,zegerid with magnesium hydroxide,gerd (heartburn)
+1797,26,allopurinol,gout
+1798,26,uloric,gout
+1799,26,zyloprim,gout
+1800,26,aloprim,gout
+1801,26,febuxostat,gout
+1802,26,krystexxa,gout
+1803,26,probenecid,gout
+1804,26,pegloticase,gout
+1805,26,rilonacept,gout
+1806,27,spironolactone,hair loss
+1807,27,minoxidil,hair loss
+1808,27,azulfidine,hair loss
+1809,27,sulfasalazine,hair loss
+1810,27,olumiant,hair loss
+1811,27,aldactone,hair loss
+1812,27,rogaine,hair loss
+1813,27,kenalog-10,hair loss
+1814,27,triamcinolone,hair loss
+1815,27,aristospan,hair loss
+1816,27,rogaine men's extra strength,hair loss
+1817,27,rogaine women's,hair loss
+1818,27,hair regrowth treatment for women,hair loss
+1819,27,kenalog-40,hair loss
+1820,27,hair regrowth treatment for men,hair loss
+1821,27,azulfidine en-tabs,hair loss
+1822,27,baricitinib,hair loss
+1823,28,zyrtec,hayfever
+1824,28,cetirizine,hayfever
+1825,28,fluticasone,hayfever
+1826,28,loratadine,hayfever
+1827,28,flonase,hayfever
+1828,28,allegra,hayfever
+1829,28,montelukast,hayfever
+1830,28,claritin,hayfever
+1831,28,singulair,hayfever
+1832,28,fexofenadine,hayfever
+1833,28,astelin,hayfever
+1834,28,azelastine,hayfever
+1835,28,benadryl,hayfever
+1836,28,xyzal,hayfever
+1837,28,prednisone,hayfever
+1838,28,allegra allergy,hayfever
+1839,28,astepro,hayfever
+1840,28,diphenhydramine,hayfever
+1841,28,flonase allergy relief,hayfever
+1842,28,levocetirizine,hayfever
+1843,28,dymista,hayfever
+1844,28,medrol,hayfever
+1845,28,clarinex,hayfever
+1846,28,nasacort allergy 24hr,hayfever
+1847,28,aller-tec,hayfever
+1848,28,chlorpheniramine,hayfever
+1849,28,desloratadine,hayfever
+1850,28,mometasone,hayfever
+1851,28,phenergan,hayfever
+1852,28,triamcinolone,hayfever
+1853,28,alavert,hayfever
+1854,28,allegra-d 12 hour,hayfever
+1855,28,allegra-d 24 hour,hayfever
+1856,28,allergy relief tablets,hayfever
+1857,28,benadryl allergy,hayfever
+1858,28,budesonide,hayfever
+1859,28,claritin reditabs,hayfever
+1860,28,dexamethasone,hayfever
+1861,28,flonase sensimist,hayfever
+1862,28,methylprednisolone dose pack,hayfever
+1863,28,methylprednisolone,hayfever
+1864,28,promethazine,hayfever
+1865,28,zyrtec-d,hayfever
+1866,28,all day allergy,hayfever
+1867,28,all day allergy children's,hayfever
+1868,28,allegra odt,hayfever
+1869,28,aller-tec children's,hayfever
+1870,28,allergy relief 24 hour,hayfever
+1871,28,antinaus 50,hayfever
+1872,28,beclomethasone,hayfever
+1873,28,cetirizine / pseudoephedrine,hayfever
+1874,28,children's claritin allergy,hayfever
+1875,28,claritin-d,hayfever
+1876,28,claritin-d 24 hour,hayfever
+1877,28,clinacort,hayfever
+1878,28,cyproheptadine,hayfever
+1879,28,de-sone la,hayfever
+1880,28,depo-medrol,hayfever
+1881,28,dexamethasone intensol,hayfever
+1882,28,dxevo,hayfever
+1883,28,flunisolide,hayfever
+1884,28,hidex,hayfever
+1885,28,kenalog-40,hayfever
+1886,28,loratadine-d 24 hour,hayfever
+1887,28,medrol dosepak,hayfever
+1888,28,ohm allergy relief,hayfever
+1889,28,omnaris,hayfever
+1890,28,patanase,hayfever
+1891,28,phenadoz,hayfever
+1892,28,promethegan,hayfever
+1893,28,qnasl,hayfever
+1894,28,solu-medrol,hayfever
+1895,28,tavist nd,hayfever
+1896,28,ticanase,hayfever
+1897,28,triamcinolone,hayfever
+1898,28,wal-itin,hayfever
+1899,28,zodex,hayfever
+1900,28,zyrtec-d 12 hour,hayfever
+1901,28,acrivastine / pseudoephedrine,hayfever
+1902,28,aller-chlor,hayfever
+1903,28,aller-ease,hayfever
+1904,28,allergy relief,hayfever
+1905,28,allermax,hayfever
+1906,28,astepro allergy,hayfever
+1907,28,azelastine / fluticasone,hayfever
+1908,28,banophen,hayfever
+1909,28,beconase aq,hayfever
+1910,28,c.p.m.,hayfever
+1911,28,chlo-amine,hayfever
+1912,28,chlor-mal,hayfever
+1913,28,chlor-trimeton,hayfever
+1914,28,chlorpheniramine / phenylephrine,hayfever
+1915,28,chlortan,hayfever
+1916,28,claritin-d 12 hour,hayfever
+1917,28,complete allergy relief,hayfever
+1918,28,dexbrompheniramine / pseudoephedrine,hayfever
+1919,28,dicopanol,hayfever
+1920,28,diphedryl,hayfever
+1921,28,diphen,hayfever
+1922,28,dytuss,hayfever
+1923,28,ed-chlortan,hayfever
+1924,28,ed chlorped,hayfever
+1925,28,ed chlor ped jr.,hayfever
+1926,28,fexofenadine / pseudoephedrine,hayfever
+1927,28,loratadine / pseudoephedrine,hayfever
+1928,28,mucinex allergy,hayfever
+1929,28,nasalcrom,hayfever
+1930,28,olopatadine,hayfever
+1931,28,promethazine dm,hayfever
+1932,28,rhinocort allergy,hayfever
+1933,28,scot-tussin allergy,hayfever
+1934,28,siladryl allergy,hayfever
+1935,28,twilite,hayfever
+1936,28,valu-dryl,hayfever
+1937,28,vanamine pd,hayfever
+1938,28,wal-finate,hayfever
+1939,28,a-phedrin,hayfever
+1940,28,abatuss dmx,hayfever
+1941,28,acetaminophen / chlorpheniramine,hayfever
+1942,28,actifed cold and allergy,hayfever
+1943,28,advil allergy sinus,hayfever
+1944,28,advil children's allergy sinus,hayfever
+1945,28,alahist d,hayfever
+1946,28,alavert d-12 hour allergy and sinus,hayfever
+1947,28,allan tannate pediatric,hayfever
+1948,28,all day allergy-d,hayfever
+1949,28,allerest maximum strength,hayfever
+1950,28,allerest pe,hayfever
+1951,28,allerfrim,hayfever
+1952,28,allergy & congestion relief,hayfever
+1953,28,allergy relief d,hayfever
+1954,28,aphedrid,hayfever
+1955,28,aprodine,hayfever
+1956,28,arbinoxa,hayfever
+1957,28,benadryl allergy plus congestion,hayfever
+1958,28,bp allergy jr,hayfever
+1959,28,brohist d,hayfever
+1960,28,bromaline,hayfever
+1961,28,bromatan plus,hayfever
+1962,28,bromax,hayfever
+1963,28,brompheniramine / phenylephrine,hayfever
+1964,28,brompheniramine / pseudoephedrine,hayfever
+1965,28,brompheniramine,hayfever
+1966,28,brotapp,hayfever
+1967,28,capron dm,hayfever
+1968,28,capron dmt,hayfever
+1969,28,carbinoxamine,hayfever
+1970,28,carboxine,hayfever
+1971,28,children's triacting night time,hayfever
+1972,28,chlorex-a 12,hayfever
+1973,28,chlorpheniramine / codeine,hayfever
+1974,28,chlorpheniramine / ibuprofen / pseudoephedrine,hayfever
+1975,28,chlorpheniramine / phenylephrine / pyrilamine,hayfever
+1976,28,chlorpheniramine / pseudoephedrine,hayfever
+1977,28,chlortan d,hayfever
+1978,28,ciclesonide,hayfever
+1979,28,clarinex-d 12 hour,hayfever
+1980,28,clarinex-d 24 hour,hayfever
+1981,28,clarinex reditabs,hayfever
+1982,28,clear-atadine-d,hayfever
+1983,28,clemastine,hayfever
+1984,28,codar ar,hayfever
+1985,28,codimal dm,hayfever
+1986,28,conal,hayfever
+1987,28,conex,hayfever
+1988,28,coricidin hbp cold & flu,hayfever
+1989,28,cromolyn,hayfever
+1990,28,dallergy drops,hayfever
+1991,28,decon-a,hayfever
+1992,28,deconamine,hayfever
+1993,28,deltuss dmx,hayfever
+1994,28,desloratadine / pseudoephedrine,hayfever
+1995,28,dexchlorpheniramine / dextromethorphan / pseudoephedrine,hayfever
+1996,28,dexchlorpheniramine / phenylephrine,hayfever
+1997,28,dexchlorpheniramine,hayfever
+1998,28,dextromethorphan / diphenhydramine / phenylephrine,hayfever
+1999,28,dextromethorphan / phenylephrine / pyrilamine,hayfever
+2000,28,dextromethorphan / promethazine,hayfever
+2001,28,dextromethorphan / pyrilamine,hayfever
+2002,28,dicel,hayfever
+2003,28,dimetane decongestant,hayfever
+2004,28,dimetapp children's cold & allergy,hayfever
+2005,28,diphenhydramine / phenylephrine,hayfever
+2006,28,dixaphedrine,hayfever
+2007,28,doxylamine,hayfever
+2008,28,drixoral cold and allergy,hayfever
+2009,28,dytan-d,hayfever
+2010,28,dytan-dm,hayfever
+2011,28,ed a-hist,hayfever
+2012,28,ed chlorped d,hayfever
+2013,28,equaline sleep aid,hayfever
+2014,28,equate sleep aid,hayfever
+2015,28,grastek,hayfever
+2016,28,histafed,hayfever
+2017,28,histex ct,hayfever
+2018,28,histex ie,hayfever
+2019,28,histex pd,hayfever
+2020,28,house dust mite allergen extract,hayfever
+2021,28,karbinal er,hayfever
+2022,28,leader allergy relief d-24,hayfever
+2023,28,lodrane d,hayfever
+2024,28,lohist-d,hayfever
+2025,28,loratadine-d 12 hour,hayfever
+2026,28,mixed grass pollens allergen extract,hayfever
+2027,28,mometasone / olopatadine,hayfever
+2028,28,nalex a 12,hayfever
+2029,28,nasonex 24hr allergy,hayfever
+2030,28,nohist lq,hayfever
+2031,28,novahistine,hayfever
+2032,28,odactra,hayfever
+2033,28,oralair,hayfever
+2034,28,phena-plus,hayfever
+2035,28,phenagil,hayfever
+2036,28,pheniramine / phenylephrine,hayfever
+2037,28,phenylephrine / promethazine,hayfever
+2038,28,polmon,hayfever
+2039,28,pseudoephedrine / triprolidine,hayfever
+2040,28,ragweed pollen allergen extract,hayfever
+2041,28,ragwitek,hayfever
+2042,28,ru-hist d,hayfever
+2043,28,ru-hist forte,hayfever
+2044,28,ryaltris,hayfever
+2045,28,ryclora,hayfever
+2046,28,rymed,hayfever
+2047,28,rynex pe,hayfever
+2048,28,ryvent,hayfever
+2049,28,semprex-d,hayfever
+2050,28,sinus & allergy pe,hayfever
+2051,28,sudafed pe sinus & allergy,hayfever
+2052,28,sudogest sinus & allergy,hayfever
+2053,28,sutan-dm,hayfever
+2054,28,timothy grass pollen allergen extract,hayfever
+2055,28,tuzistra xr,hayfever
+2056,28,vi-sudo,hayfever
+2057,28,zetonna,hayfever
+2058,29,acyclovir,herpes
+2059,29,valacyclovir,herpes
+2060,29,zovirax cream,herpes
+2061,29,abreva,herpes
+2062,29,acyclovir,herpes
+2063,29,zovirax ointment,herpes
+2064,29,zovirax,herpes
+2065,29,docosanol,herpes
+2066,29,blistex ointment,herpes
+2067,29,allantoin / camphor / phenol,herpes
+2068,30,lisinopril,hypertension
+2069,30,amlodipine,hypertension
+2070,30,losartan,hypertension
+2071,30,hydrochlorothiazide,hypertension
+2072,30,metoprolol,hypertension
+2073,30,atenolol,hypertension
+2074,30,norvasc,hypertension
+2075,30,carvedilol,hypertension
+2076,30,benicar,hypertension
+2077,30,furosemide,hypertension
+2078,30,clonidine,hypertension
+2079,30,cozaar,hypertension
+2080,30,hydrochlorothiazide / lisinopril,hypertension
+2081,30,bystolic,hypertension
+2082,30,diovan,hypertension
+2083,30,lopressor,hypertension
+2084,30,toprol-xl,hypertension
+2085,30,spironolactone,hypertension
+2086,30,valsartan,hypertension
+2087,30,avapro,hypertension
+2088,30,enalapril,hypertension
+2089,30,hydralazine,hypertension
+2090,30,lasix,hypertension
+2091,30,nifedipine,hypertension
+2092,30,prinivil,hypertension
+2093,30,propranolol,hypertension
+2094,30,ramipril,hypertension
+2095,30,zestril,hypertension
+2096,30,diltiazem,hypertension
+2097,30,hydrochlorothiazide / losartan,hypertension
+2098,30,irbesartan,hypertension
+2099,30,olmesartan,hypertension
+2100,30,vasotec,hypertension
+2101,30,chlorthalidone,hypertension
+2102,30,coreg,hypertension
+2103,30,hydrochlorothiazide / triamterene,hypertension
+2104,30,katerzia,hypertension
+2105,30,norliqva,hypertension
+2106,30,verapamil,hypertension
+2107,30,amlodipine / benazepril,hypertension
+2108,30,benazepril,hypertension
+2109,30,bisoprolol,hypertension
+2110,30,diovan hct,hypertension
+2111,30,doxazosin,hypertension
+2112,30,maxzide,hypertension
+2113,30,tenormin,hypertension
+2114,30,benicar hct,hypertension
+2115,30,candesartan,hypertension
+2116,30,cartia xt,hypertension
+2117,30,coreg cr,hypertension
+2118,30,exforge,hypertension
+2119,30,kapspargo sprinkle,hypertension
+2120,30,labetalol,hypertension
+2121,30,perindopril,hypertension
+2122,30,qbrelis,hypertension
+2123,30,telmisartan,hypertension
+2124,30,aldactone,hypertension
+2125,30,altace,hypertension
+2126,30,amlodipine / valsartan,hypertension
+2127,30,aquazide h,hypertension
+2128,30,atenolol / chlorthalidone,hypertension
+2129,30,azor,hypertension
+2130,30,captopril,hypertension
+2131,30,cardizem cd,hypertension
+2132,30,carospir,hypertension
+2133,30,catapres,hypertension
+2134,30,catapres-tts,hypertension
+2135,30,dyazide,hypertension
+2136,30,esidrix,hypertension
+2137,30,felodipine,hypertension
+2138,30,hydrochlorothiazide / valsartan,hypertension
+2139,30,hyzaar,hypertension
+2140,30,indapamide,hypertension
+2141,30,inderal la,hypertension
+2142,30,innopran xl,hypertension
+2143,30,lotrel,hypertension
+2144,30,micardis,hypertension
+2145,30,microzide,hypertension
+2146,30,nebivolol,hypertension
+2147,30,nitroglycerin,hypertension
+2148,30,prazosin,hypertension
+2149,30,procardia xl,hypertension
+2150,30,quinapril,hypertension
+2151,30,terazosin,hypertension
+2152,30,accupril,hypertension
+2153,30,adalat cc,hypertension
+2154,30,afeditab cr,hypertension
+2155,30,amlodipine / atorvastatin,hypertension
+2156,30,amlodipine / hydrochlorothiazide / valsartan,hypertension
+2157,30,amlodipine / olmesartan,hypertension
+2158,30,apresoline,hypertension
+2159,30,atacand,hypertension
+2160,30,avalide,hypertension
+2161,30,benazepril / hydrochlorothiazide,hypertension
+2162,30,bendroflumethiazide / nadolol,hypertension
+2163,30,bendroflumethiazide,hypertension
+2164,30,bisoprolol / hydrochlorothiazide,hypertension
+2165,30,caduet,hypertension
+2166,30,calan sr,hypertension
+2167,30,cardizem la,hypertension
+2168,30,cardura,hypertension
+2169,30,dilacor xr,hypertension
+2170,30,dilt-xr,hypertension
+2171,30,diltia xt,hypertension
+2172,30,diltzac,hypertension
+2173,30,epaned,hypertension
+2174,30,eplerenone,hypertension
+2175,30,exforge hct,hypertension
+2176,30,fosinopril,hypertension
+2177,30,guanfacine,hypertension
+2178,30,hydrochlorothiazide / irbesartan,hypertension
+2179,30,hydrochlorothiazide / olmesartan,hypertension
+2180,30,hydrochlorothiazide / telmisartan,hypertension
+2181,30,lotensin,hypertension
+2182,30,matzim la,hypertension
+2183,30,methyldopa,hypertension
+2184,30,metolazone,hypertension
+2185,30,micardis hct,hypertension
+2186,30,minitran,hypertension
+2187,30,minoxidil,hypertension
+2188,30,nadolol,hypertension
+2189,30,nexiclon xr,hypertension
+2190,30,nitro-bid,hypertension
+2191,30,nitro-dur,hypertension
+2192,30,nitro-time,hypertension
+2193,30,nitrolingual pumpspray,hypertension
+2194,30,nitromist,hypertension
+2195,30,nitrostat,hypertension
+2196,30,nitro td patch-a,hypertension
+2197,30,taztia xt,hypertension
+2198,30,tekturna,hypertension
+2199,30,tiadylt er,hypertension
+2200,30,tiazac,hypertension
+2201,30,torsemide,hypertension
+2202,30,verelan,hypertension
+2203,30,verelan pm,hypertension
+2204,30,zestoretic,hypertension
+2205,30,ziac,hypertension
+2206,30,accuretic,hypertension
+2207,30,acebutolol,hypertension
+2208,30,aldactazide,hypertension
+2209,30,aldoril,hypertension
+2210,30,aliskiren / hydrochlorothiazide,hypertension
+2211,30,aliskiren,hypertension
+2212,30,amiloride / hydrochlorothiazide,hypertension
+2213,30,amiloride,hypertension
+2214,30,amlodipine / celecoxib,hypertension
+2215,30,amlodipine / hydrochlorothiazide / olmesartan,hypertension
+2216,30,amlodipine / perindopril,hypertension
+2217,30,amlodipine / telmisartan,hypertension
+2218,30,atacand hct,hypertension
+2219,30,azilsartan medoxomil / chlorthalidone,hypertension
+2220,30,azilsartan medoxomil,hypertension
+2221,30,betaxolol,hypertension
+2222,30,brevibloc,hypertension
+2223,30,candesartan / hydrochlorothiazide,hypertension
+2224,30,captopril / hydrochlorothiazide,hypertension
+2225,30,cardene iv,hypertension
+2226,30,chlorothiazide,hypertension
+2227,30,clevidipine,hypertension
+2228,30,cleviprex,hypertension
+2229,30,conjupri,hypertension
+2230,30,consensi,hypertension
+2231,30,corgard,hypertension
+2232,30,corzide,hypertension
+2233,30,corzide 40/5,hypertension
+2234,30,corzide 80/5,hypertension
+2235,30,demadex,hypertension
+2236,30,diuril,hypertension
+2237,30,diuril sodium,hypertension
+2238,30,dutoprol,hypertension
+2239,30,edarbi,hypertension
+2240,30,edarbyclor,hypertension
+2241,30,enalapril / hydrochlorothiazide,hypertension
+2242,30,eprosartan,hypertension
+2243,30,esmolol,hypertension
+2244,30,fosinopril / hydrochlorothiazide,hypertension
+2245,30,guanabenz,hypertension
+2246,30,hydrochlorothiazide / methyldopa,hypertension
+2247,30,hydrochlorothiazide / metoprolol,hypertension
+2248,30,hydrochlorothiazide / moexipril,hypertension
+2249,30,hydrochlorothiazide / quinapril,hypertension
+2250,30,hydrochlorothiazide / spironolactone,hypertension
+2251,30,hytrin,hypertension
+2252,30,inspra,hypertension
+2253,30,isradipine,hypertension
+2254,30,levamlodipine,hypertension
+2255,30,lopressor hct,hypertension
+2256,30,lotensin hct,hypertension
+2257,30,maxzide-25,hypertension
+2258,30,mecamylamine,hypertension
+2259,30,midamor,hypertension
+2260,30,minipress,hypertension
+2261,30,moexipril,hypertension
+2262,30,nebivolol / valsartan,hypertension
+2263,30,nicardipine,hypertension
+2264,30,nisoldipine,hypertension
+2265,30,pindolol,hypertension
+2266,30,prestalia,hypertension
+2267,30,sular,hypertension
+2268,30,tarka,hypertension
+2269,30,tekturna hct,hypertension
+2270,30,tenoretic,hypertension
+2271,30,tenoretic 50,hypertension
+2272,30,tenoretic 100,hypertension
+2273,30,timolol,hypertension
+2274,30,trandate,hypertension
+2275,30,trandolapril / verapamil,hypertension
+2276,30,trandolapril,hypertension
+2277,30,tribenzor,hypertension
+2278,30,twynsta,hypertension
+2279,30,vaseretic,hypertension
+2280,30,vecamyl,hypertension
+2281,30,zaroxolyn,hypertension
+2282,31,levothyroxine,hypothyroidism
+2283,31,synthroid,hypothyroidism
+2284,31,armour thyroid,hypothyroidism
+2285,31,levoxyl,hypothyroidism
+2286,31,cytomel,hypothyroidism
+2287,31,tirosint,hypothyroidism
+2288,31,euthyrox,hypothyroidism
+2289,31,liothyronine,hypothyroidism
+2290,31,nature-throid,hypothyroidism
+2291,31,unithroid,hypothyroidism
+2292,31,westhroid,hypothyroidism
+2293,31,levo-t,hypothyroidism
+2294,31,thyquidity,hypothyroidism
+2295,31,thyroid desiccated,hypothyroidism
+2296,31,tirosint-sol,hypothyroidism
+2297,31,np thyroid,hypothyroidism
+2298,31,triostat,hypothyroidism
+2299,31,wp thyroid,hypothyroidism
+2300,32,budesonide,ibd (bowel)
+2301,32,prednisone,ibd (bowel)
+2302,32,mesalamine,ibd (bowel)
+2303,32,sulfasalazine,ibd (bowel)
+2304,32,lialda,ibd (bowel)
+2305,32,asacol,ibd (bowel)
+2306,32,pentasa,ibd (bowel)
+2307,32,apriso,ibd (bowel)
+2308,32,remicade,ibd (bowel)
+2309,32,infliximab,ibd (bowel)
+2310,32,asacol hd,ibd (bowel)
+2311,32,azulfidine,ibd (bowel)
+2312,32,delzicol,ibd (bowel)
+2313,32,rowasa,ibd (bowel)
+2314,32,entocort ec,ibd (bowel)
+2315,32,hydrocortisone,ibd (bowel)
+2316,32,azathioprine,ibd (bowel)
+2317,32,dexamethasone,ibd (bowel)
+2318,32,mercaptopurine,ibd (bowel)
+2319,32,imuran,ibd (bowel)
+2320,32,cromolyn,ibd (bowel)
+2321,32,cyclosporine,ibd (bowel)
+2322,32,dexamethasone intensol,ibd (bowel)
+2323,32,gastrocrom,ibd (bowel)
+2324,32,acthar,ibd (bowel)
+2325,32,cortef,ibd (bowel)
+2326,32,corticotropin,ibd (bowel)
+2327,32,cortifoam,ibd (bowel)
+2328,32,mycophenolate mofetil,ibd (bowel)
+2329,32,cortenema,ibd (bowel)
+2330,32,de-sone la,ibd (bowel)
+2331,32,dxevo,ibd (bowel)
+2332,32,solu-cortef,ibd (bowel)
+2333,32,zodex,ibd (bowel)
+2334,32,azasan,ibd (bowel)
+2335,32,azulfidine en-tabs,ibd (bowel)
+2336,32,h.p. acthar gel,ibd (bowel)
+2337,33,oxybutynin,incontinence
+2338,33,myrbetriq,incontinence
+2339,33,vesicare,incontinence
+2340,33,detrol la,incontinence
+2341,33,tolterodine,incontinence
+2342,33,toviaz,incontinence
+2343,33,amitriptyline,incontinence
+2344,33,solifenacin,incontinence
+2345,33,oxytrol,incontinence
+2346,33,detrol,incontinence
+2347,33,ditropan xl,incontinence
+2348,33,hyoscyamine,incontinence
+2349,33,mirabegron,incontinence
+2350,33,duloxetine,incontinence
+2351,33,trospium,incontinence
+2352,33,gelnique,incontinence
+2353,33,botox,incontinence
+2354,33,fesoterodine,incontinence
+2355,33,darifenacin,incontinence
+2356,33,flavoxate,incontinence
+2357,33,onabotulinumtoxina,incontinence
+2358,34,trazodone,insomnia
+2359,34,ambien,insomnia
+2360,34,zolpidem,insomnia
+2361,34,belsomra,insomnia
+2362,34,suvorexant,insomnia
+2363,34,dayvigo,insomnia
+2364,34,temazepam,insomnia
+2365,34,daridorexant,insomnia
+2366,34,lemborexant,insomnia
+2367,34,quviviq,insomnia
+2368,34,amitriptyline,insomnia
+2369,34,lunesta,insomnia
+2370,34,quetiapine,insomnia
+2371,34,restoril,insomnia
+2372,34,ativan,insomnia
+2373,34,mirtazapine,insomnia
+2374,34,lorazepam,insomnia
+2375,34,clonazepam,insomnia
+2376,34,gabapentin,insomnia
+2377,34,doxepin,insomnia
+2378,34,estazolam,insomnia
+2379,34,flurazepam,insomnia
+2380,34,halcion,insomnia
+2381,34,ambien cr,insomnia
+2382,34,diphenhydramine,insomnia
+2383,34,eszopiclone,insomnia
+2384,34,rozerem,insomnia
+2385,34,silenor,insomnia
+2386,34,sonata,insomnia
+2387,34,advil pm,insomnia
+2388,34,doxylamine,insomnia
+2389,34,triazolam,insomnia
+2390,34,quazepam,insomnia
+2391,34,edluar,insomnia
+2392,34,olanzapine,insomnia
+2393,34,tylenol pm,insomnia
+2394,34,unisom sleeptabs,insomnia
+2395,34,zaleplon,insomnia
+2396,34,compoz nighttime sleep aid,insomnia
+2397,34,doral,insomnia
+2398,34,ramelteon,insomnia
+2399,34,chloral hydrate,insomnia
+2400,34,dimenhydrinate,insomnia
+2401,34,diphenhydramine / ibuprofen,insomnia
+2402,34,nytol,insomnia
+2403,34,oxazepam,insomnia
+2404,34,pentobarbital,insomnia
+2405,34,simply sleep,insomnia
+2406,34,sominex,insomnia
+2407,34,unisom sleepgels,insomnia
+2408,34,unisom sleepmelts,insomnia
+2409,34,zolpimist,insomnia
+2410,34,zzzquil,insomnia
+2411,34,acetaminophen / diphenhydramine,insomnia
+2412,34,amobarbital,insomnia
+2413,34,ibuprofen pm,insomnia
+2414,34,nighttime sleepaid,insomnia
+2415,34,nytol quickcaps,insomnia
+2416,34,phenobarbital,insomnia
+2417,34,sleep aid,insomnia
+2418,34,sleepinal,insomnia
+2419,34,twilite,insomnia
+2420,34,z-sleep,insomnia
+2421,34,aleve pm,insomnia
+2422,34,diphenhydramine / magnesium salicylate,insomnia
+2423,34,diphenhydramine / naproxen,insomnia
+2424,34,doans pm,insomnia
+2425,34,equaline sleep aid,insomnia
+2426,34,equate sleep aid,insomnia
+2427,34,headache relief pm,insomnia
+2428,34,legatrin pm,insomnia
+2429,34,midol pm,insomnia
+2430,34,motrin pm,insomnia
+2431,34,percogesic extra strength,insomnia
+2432,34,percogesic original strength,insomnia
+2433,34,zopiclone,insomnia
+2434,35,esterified estrogens / methyltestosterone,menopause
+2435,35,eemt hs,menopause
+2436,35,covaryx,menopause
+2437,35,eemt,menopause
+2438,35,bijuva,menopause
+2439,35,estradiol / progesterone,menopause
+2440,35,covaryx hs,menopause
+2441,36,sumatriptan,migraine
+2442,36,imitrex,migraine
+2443,36,zomig,migraine
+2444,36,cambia,migraine
+2445,36,nurtec odt,migraine
+2446,36,zolmitriptan,migraine
+2447,36,rizatriptan,migraine
+2448,36,maxalt,migraine
+2449,36,reyvow,migraine
+2450,36,elyxyb,migraine
+2451,36,lasmiditan,migraine
+2452,36,rimegepant,migraine
+2453,36,tosymra,migraine
+2454,36,gabapentin,migraine
+2455,36,relpax,migraine
+2456,36,excedrin migraine,migraine
+2457,36,amerge,migraine
+2458,36,cyclobenzaprine,migraine
+2459,36,fiorinal,migraine
+2460,36,treximet,migraine
+2461,36,maxalt-mlt,migraine
+2462,36,diclofenac,migraine
+2463,36,ubrelvy,migraine
+2464,36,naratriptan,migraine
+2465,36,aspirin / butalbital / caffeine,migraine
+2466,36,frova,migraine
+2467,36,botox,migraine
+2468,36,eletriptan,migraine
+2469,36,excedrin,migraine
+2470,36,reglan,migraine
+2471,36,metoclopramide,migraine
+2472,36,almotriptan,migraine
+2473,36,naproxen / sumatriptan,migraine
+2474,36,venlafaxine,migraine
+2475,36,acetaminophen / aspirin / caffeine,migraine
+2476,36,cyproheptadine,migraine
+2477,36,imitrex statdose,migraine
+2478,36,methergine,migraine
+2479,36,migranal,migraine
+2480,36,acetaminophen / aspirin / caffeine / salicylamide,migraine
+2481,36,cafergot,migraine
+2482,36,dihydroergotamine,migraine
+2483,36,frovatriptan,migraine
+2484,36,memantine,migraine
+2485,36,migergot,migraine
+2486,36,orphenadrine,migraine
+2487,36,zembrace symtouch,migraine
+2488,36,zomig-zmt,migraine
+2489,36,caffeine / ergotamine,migraine
+2490,36,celecoxib,migraine
+2491,36,d.h.e. 45,migraine
+2492,36,ergomar,migraine
+2493,36,ergotamine,migraine
+2494,36,methylergonovine,migraine
+2495,36,onabotulinumtoxina,migraine
+2496,36,onzetra xsail,migraine
+2497,36,painaid,migraine
+2498,36,prochlorperazine,migraine
+2499,36,vanquish,migraine
+2500,36,zomig nasal spray,migraine
+2501,36,anacin advanced headache formula,migraine
+2502,36,backaid inflammatory pain formula,migraine
+2503,36,fortabs,migraine
+2504,36,genace,migraine
+2505,36,goody's extra-strength headache powders,migraine
+2506,36,goody's extra strength,migraine
+2507,36,goody's headache powders,migraine
+2508,36,migraine relief,migraine
+2509,36,trudhesa,migraine
+2510,36,ubrogepant,migraine
+2511,37,meloxicam,osteoarthritis
+2512,37,celebrex,osteoarthritis
+2513,37,diclofenac,osteoarthritis
+2514,37,mobic,osteoarthritis
+2515,37,naproxen,osteoarthritis
+2516,37,celecoxib,osteoarthritis
+2517,37,ibuprofen,osteoarthritis
+2518,37,voltaren,osteoarthritis
+2519,37,chondroitin / glucosamine,osteoarthritis
+2520,37,voltaren arthritis pain gel,osteoarthritis
+2521,37,cymbalta,osteoarthritis
+2522,37,diclofenac,osteoarthritis
+2523,37,prednisone,osteoarthritis
+2524,37,aleve,osteoarthritis
+2525,37,arthrotec,osteoarthritis
+2526,37,cataflam,osteoarthritis
+2527,37,aspirin,osteoarthritis
+2528,37,medrol dosepak,osteoarthritis
+2529,37,nabumetone,osteoarthritis
+2530,37,duloxetine,osteoarthritis
+2531,37,etodolac,osteoarthritis
+2532,37,advil,osteoarthritis
+2533,37,motrin,osteoarthritis
+2534,37,vimovo,osteoarthritis
+2535,37,naprosyn,osteoarthritis
+2536,37,pennsaid,osteoarthritis
+2537,37,arthritis pain,osteoarthritis
+2538,37,ecotrin,osteoarthritis
+2539,37,zorvolex,osteoarthritis
+2540,37,aspergum,osteoarthritis
+2541,37,aspiritab,osteoarthritis
+2542,37,aspirtab,osteoarthritis
+2543,37,bayer aspirin,osteoarthritis
+2544,37,bayer aspirin extra strength plus,osteoarthritis
+2545,37,easprin,osteoarthritis
+2546,37,ecpirin,osteoarthritis
+2547,37,entercote,osteoarthritis
+2548,37,genacote,osteoarthritis
+2549,37,halfprin,osteoarthritis
+2550,37,methylprednisolone,osteoarthritis
+2551,37,norwich aspirin,osteoarthritis
+2552,37,vazalore,osteoarthritis
+2553,37,depo-medrol,osteoarthritis
+2554,37,indocin,osteoarthritis
+2555,37,indomethacin,osteoarthritis
+2556,37,proprinal,osteoarthritis
+2557,37,a-g profen,osteoarthritis
+2558,37,acetaminophen / codeine,osteoarthritis
+2559,37,actiprofen,osteoarthritis
+2560,37,addaprin,osteoarthritis
+2561,37,advil liqui-gels,osteoarthritis
+2562,37,chondroitin / glucosamine / methylsulfonylmethane,osteoarthritis
+2563,37,diclofenac / misoprostol,osteoarthritis
+2564,37,duexis,osteoarthritis
+2565,37,genpril,osteoarthritis
+2566,37,ibu-200,osteoarthritis
+2567,37,medrol,osteoarthritis
+2568,37,midol ib,osteoarthritis
+2569,37,motrin ib,osteoarthritis
+2570,37,naprelan,osteoarthritis
+2571,37,nuprin,osteoarthritis
+2572,37,osteo bi-flex,osteoarthritis
+2573,37,piroxicam,osteoarthritis
+2574,37,aflaxen,osteoarthritis
+2575,37,all day pain relief,osteoarthritis
+2576,37,all day relief,osteoarthritis
+2577,37,anaprox,osteoarthritis
+2578,37,anaprox-ds,osteoarthritis
+2579,37,cosamin ds,osteoarthritis
+2580,37,diclozor,osteoarthritis
+2581,37,diflunisal,osteoarthritis
+2582,37,dolobid,osteoarthritis
+2583,37,ec-naprosyn,osteoarthritis
+2584,37,feldene,osteoarthritis
+2585,37,flanax pain reliever,osteoarthritis
+2586,37,kenalog-40,osteoarthritis
+2587,37,ketoprofen,osteoarthritis
+2588,37,lofena,osteoarthritis
+2589,37,methylprednisolone dose pack,osteoarthritis
+2590,37,oxaprozin,osteoarthritis
+2591,37,profinac,osteoarthritis
+2592,37,salsalate,osteoarthritis
+2593,37,schiff move free,osteoarthritis
+2594,37,solu-medrol,osteoarthritis
+2595,37,sulindac,osteoarthritis
+2596,37,triamcinolone,osteoarthritis
+2597,37,xrylix,osteoarthritis
+2598,37,amlodipine / celecoxib,osteoarthritis
+2599,37,aristospan,osteoarthritis
+2600,37,betamethasone,osteoarthritis
+2601,37,bioflavonoids,osteoarthritis
+2602,37,capsaicin,osteoarthritis
+2603,37,celestone soluspan,osteoarthritis
+2604,37,clinacort,osteoarthritis
+2605,37,clinoril,osteoarthritis
+2606,37,consensi,osteoarthritis
+2607,37,cortisone,osteoarthritis
+2608,37,daypro,osteoarthritis
+2609,37,esomeprazole / naproxen,osteoarthritis
+2610,37,euflexxa,osteoarthritis
+2611,37,excedrin,osteoarthritis
+2612,37,hyaluronan,osteoarthritis
+2613,37,indocin sr,osteoarthritis
+2614,37,kenalog-10,osteoarthritis
+2615,37,limbrel,osteoarthritis
+2616,37,orthovisc,osteoarthritis
+2617,37,osteo bi-flex advanced,osteoarthritis
+2618,37,sodium hyaluronate,osteoarthritis
+2619,37,supartz,osteoarthritis
+2620,37,synvisc,osteoarthritis
+2621,37,synvisc-one,osteoarthritis
+2622,37,zilretta,osteoarthritis
+2623,37,zostrix,osteoarthritis
+2624,37,acetaminophen / aspirin / caffeine,osteoarthritis
+2625,37,acetaminophen / aspirin,osteoarthritis
+2626,37,acetaminophen / caffeine,osteoarthritis
+2627,37,arthricream,osteoarthritis
+2628,37,asper-flex,osteoarthritis
+2629,37,axsain,osteoarthritis
+2630,37,backaid inflammatory pain formula,osteoarthritis
+2631,37,boroleum,osteoarthritis
+2632,37,capsin,osteoarthritis
+2633,37,capzasin,osteoarthritis
+2634,37,capzasin-hp,osteoarthritis
+2635,37,capzasin-p,osteoarthritis
+2636,37,castiva cooling,osteoarthritis
+2637,37,castiva warming,osteoarthritis
+2638,37,choline magnesium trisalicylate,osteoarthritis
+2639,37,cidaflex,osteoarthritis
+2640,37,cosmegen,osteoarthritis
+2641,37,dactinomycin,osteoarthritis
+2642,37,diclofenac / menthol,osteoarthritis
+2643,37,diclopr,osteoarthritis
+2644,37,diclostream,osteoarthritis
+2645,37,durolane,osteoarthritis
+2646,37,eucalyptamint,osteoarthritis
+2647,37,excedrin quick tab,osteoarthritis
+2648,37,excedrin tension headache,osteoarthritis
+2649,37,exocaine plus,osteoarthritis
+2650,37,famotidine / ibuprofen,osteoarthritis
+2651,37,fenoprofen,osteoarthritis
+2652,37,fenortho,osteoarthritis
+2653,37,fenovar,osteoarthritis
+2654,37,flurbiprofen,osteoarthritis
+2655,37,gelsyn-3,osteoarthritis
+2656,37,genace,osteoarthritis
+2657,37,glucoten,osteoarthritis
+2658,37,goody's extra strength,osteoarthritis
+2659,37,gordogesic,osteoarthritis
+2660,37,heet triple action,osteoarthritis
+2661,37,hyalgan,osteoarthritis
+2662,37,hylan g-f 20,osteoarthritis
+2663,37,hymovis,osteoarthritis
+2664,37,meclofenamate,osteoarthritis
+2665,37,menthac arthritis cream with capsaicin,osteoarthritis
+2666,37,mentholatum deep heating,osteoarthritis
+2667,37,methyl salicylate,osteoarthritis
+2668,37,monovisc,osteoarthritis
+2669,37,myoflex,osteoarthritis
+2670,37,nalfon,osteoarthritis
+2671,37,optiflex complete,osteoarthritis
+2672,37,pryflex,osteoarthritis
+2673,37,relafen ds,osteoarthritis
+2674,37,relamine,osteoarthritis
+2675,37,salonpas pain patch,osteoarthritis
+2676,37,satogesic,osteoarthritis
+2677,37,sloan's liniment,osteoarthritis
+2678,37,supartz fx,osteoarthritis
+2679,37,tolmetin,osteoarthritis
+2680,37,trolamine salicylate,osteoarthritis
+2681,37,zostrix diabetic foot pain,osteoarthritis
+2682,37,zostrix sports,osteoarthritis
+2683,38,alendronate,osteoporosis
+2684,38,prolia,osteoporosis
+2685,38,fosamax,osteoporosis
+2686,38,calcium / vitamin d,osteoporosis
+2687,38,denosumab,osteoporosis
+2688,38,boniva,osteoporosis
+2689,38,actonel,osteoporosis
+2690,38,calcium carbonate,osteoporosis
+2691,38,evenity,osteoporosis
+2692,38,forteo,osteoporosis
+2693,38,reclast,osteoporosis
+2694,38,evista,osteoporosis
+2695,38,caltrate 600+d,osteoporosis
+2696,38,citracal + d,osteoporosis
+2697,38,risedronate,osteoporosis
+2698,38,caltrate,osteoporosis
+2699,38,hydrochlorothiazide,osteoporosis
+2700,38,calcium citrate,osteoporosis
+2701,38,ibandronate,osteoporosis
+2702,38,raloxifene,osteoporosis
+2703,38,premarin,osteoporosis
+2704,38,atelvia,osteoporosis
+2705,38,calcitonin,osteoporosis
+2706,38,zometa,osteoporosis
+2707,38,microzide,osteoporosis
+2708,38,teriparatide,osteoporosis
+2709,38,aquazide h,osteoporosis
+2710,38,esidrix,osteoporosis
+2711,38,zoledronic acid,osteoporosis
+2712,38,alendronate / cholecalciferol,osteoporosis
+2713,38,fosamax plus d,osteoporosis
+2714,38,binosto,osteoporosis
+2715,38,miacalcin,osteoporosis
+2716,38,tymlos,osteoporosis
+2717,38,aclasta,osteoporosis
+2718,38,calci-chew,osteoporosis
+2719,38,prempro,osteoporosis
+2720,38,abaloparatide,osteoporosis
+2721,38,calcitrate with d,osteoporosis
+2722,38,calcium gluconate,osteoporosis
+2723,38,calcium lactate,osteoporosis
+2724,38,"calcium phosphate, tribasic",osteoporosis
+2725,38,conjugated estrogens,osteoporosis
+2726,38,os-cal calcium+d3,osteoporosis
+2727,38,tums smoothies,osteoporosis
+2728,38,bazedoxifene / conjugated estrogens,osteoporosis
+2729,38,cal-glu,osteoporosis
+2730,38,cal-lac,osteoporosis
+2731,38,calcitrate,osteoporosis
+2732,38,conjugated estrogens / medroxyprogesterone,osteoporosis
+2733,38,duavee,osteoporosis
+2734,38,esterified estrogens,osteoporosis
+2735,38,estropipate,osteoporosis
+2736,38,menest,osteoporosis
+2737,38,ogen,osteoporosis
+2738,38,os-cal 500 chewable,osteoporosis
+2739,38,os-cal extra d3,osteoporosis
+2740,38,oystercal-d,osteoporosis
+2741,38,posture,osteoporosis
+2742,38,premarin intravenous,osteoporosis
+2743,38,premphase,osteoporosis
+2744,38,romosozumab,osteoporosis
+2745,38,upcal d,osteoporosis
+2746,39,tramadol,pain
+2747,39,gabapentin,pain
+2748,39,ibuprofen,pain
+2749,39,oxycodone,pain
+2750,39,acetaminophen,pain
+2751,39,hydrocodone,pain
+2752,39,tylenol,pain
+2753,39,methadone,pain
+2754,39,acetaminophen / hydrocodone,pain
+2755,39,dilaudid,pain
+2756,39,buprenorphine,pain
+2757,39,oxycontin,pain
+2758,39,buprenex,pain
+2759,39,percocet,pain
+2760,39,paracetamol,pain
+2761,39,celebrex,pain
+2762,39,naproxen,pain
+2763,39,diclofenac,pain
+2764,39,ketorolac,pain
+2765,39,ultram,pain
+2766,39,amitriptyline,pain
+2767,39,acetaminophen / oxycodone,pain
+2768,39,demerol,pain
+2769,39,nucynta,pain
+2770,39,voltaren arthritis pain gel,pain
+2771,39,aspirin,pain
+2772,39,hydromorphone,pain
+2773,39,roxicodone,pain
+2774,39,aleve,pain
+2775,39,celecoxib,pain
+2776,39,diclofenac,pain
+2777,39,tylenol arthritis pain,pain
+2778,39,acetaminophen / codeine,pain
+2779,39,advil,pain
+2780,39,codeine,pain
+2781,39,meloxicam,pain
+2782,39,morphine,pain
+2783,39,voltaren,pain
+2784,39,motrin,pain
+2785,39,fentanyl transdermal system,pain
+2786,39,hydroxyzine,pain
+2787,39,lidocaine,pain
+2788,39,nortriptyline,pain
+2789,39,pregabalin,pain
+2790,39,acetaminophen / tramadol,pain
+2791,39,etodolac,pain
+2792,39,hydrocodone / ibuprofen,pain
+2793,39,arthritis pain,pain
+2794,39,bayer aspirin,pain
+2795,39,duloxetine,pain
+2796,39,fentanyl,pain
+2797,39,oxymorphone,pain
+2798,39,tapentadol,pain
+2799,39,tylenol 8 hour,pain
+2800,39,advil liqui-gels,pain
+2801,39,altenol,pain
+2802,39,arthritis pain relief,pain
+2803,39,ascriptin,pain
+2804,39,aspergum,pain
+2805,39,aspiritab,pain
+2806,39,aspirtab,pain
+2807,39,bayer aspirin extra strength plus,pain
+2808,39,easprin,pain
+2809,39,ecotrin,pain
+2810,39,ecpirin,pain
+2811,39,entercote,pain
+2812,39,feverall,pain
+2813,39,flector patch,pain
+2814,39,genacote,pain
+2815,39,halfprin,pain
+2816,39,mapap,pain
+2817,39,meperidine,pain
+2818,39,motrin ib,pain
+2819,39,ms contin,pain
+2820,39,naprosyn,pain
+2821,39,norwich aspirin,pain
+2822,39,vazalore,pain
+2823,39,7t gummy es chewable tablets,pain
+2824,39,a-g profen,pain
+2825,39,abenol,pain
+2826,39,acephen,pain
+2827,39,actamin,pain
+2828,39,actimol children's,pain
+2829,39,actimol infant,pain
+2830,39,actiprofen,pain
+2831,39,addaprin,pain
+2832,39,advil children's,pain
+2833,39,advil infant's concentrated drops,pain
+2834,39,advil migraine,pain
+2835,39,aminofen,pain
+2836,39,anacin aspirin free,pain
+2837,39,apra,pain
+2838,39,atasol,pain
+2839,39,aurophen,pain
+2840,39,caldolor,pain
+2841,39,cataflam,pain
+2842,39,cetafen,pain
+2843,39,children's motrin,pain
+2844,39,children's silapap,pain
+2845,39,children's tylenol,pain
+2846,39,clonidine,pain
+2847,39,conzip,pain
+2848,39,dolono,pain
+2849,39,duragesic,pain
+2850,39,febrol solution,pain
+2851,39,genapap,pain
+2852,39,genebs,pain
+2853,39,genpril,pain
+2854,39,ibu-200,pain
+2855,39,indomethacin,pain
+2856,39,infant's tylenol,pain
+2857,39,jr. tylenol,pain
+2858,39,kadian,pain
+2859,39,lidocaine viscous,pain
+2860,39,m-pap,pain
+2861,39,mapap arthritis pain,pain
+2862,39,midol ib,pain
+2863,39,motrin childrens,pain
+2864,39,motrin junior strength,pain
+2865,39,nortemp children's,pain
+2866,39,nucynta er,pain
+2867,39,nuprin,pain
+2868,39,ofirmev,pain
+2869,39,pharbetol,pain
+2870,39,proprinal,pain
+2871,39,qdolo,pain
+2872,39,silapap childrens,pain
+2873,39,tactinal,pain
+2874,39,tempra quicklets,pain
+2875,39,tycolene,pain
+2876,39,tylophen,pain
+2877,39,ultracet,pain
+2878,39,vitapap,pain
+2879,39,actiq,pain
+2880,39,aflaxen,pain
+2881,39,all day pain relief,pain
+2882,39,all day relief,pain
+2883,39,anaprox,pain
+2884,39,anaprox-ds,pain
+2885,39,anjeso,pain
+2886,39,dazidox,pain
+2887,39,ec-naprosyn,pain
+2888,39,eth-oxydose,pain
+2889,39,flanax pain reliever,pain
+2890,39,hysingla er,pain
+2891,39,ketamine,pain
+2892,39,lofena,pain
+2893,39,naprelan,pain
+2894,39,oxaydo,pain
+2895,39,oxydose,pain
+2896,39,oxyfast,pain
+2897,39,piroxicam,pain
+2898,39,roxybond,pain
+2899,39,tylenol pm,pain
+2900,39,xrylix,pain
+2901,39,xtampza er,pain
+2902,39,zipsor,pain
+2903,39,zorvolex,pain
+2904,39,advil pm,pain
+2905,39,aleve pm,pain
+2906,39,aloe vera burn relief spray with lidocaine,pain
+2907,39,anecream,pain
+2908,39,anestacon,pain
+2909,39,astero,pain
+2910,39,astramorph pf,pain
+2911,39,bactine,pain
+2912,39,belbuca,pain
+2913,39,biofreeze,pain
+2914,39,butorphanol,pain
+2915,39,butrans,pain
+2916,39,capsaicin,pain
+2917,39,cidaleaze,pain
+2918,39,dermacinrx lidotral﻿,pain
+2919,39,dermacinrx lido v pak,pain
+2920,39,diphenhydramine,pain
+2921,39,duraclon,pain
+2922,39,duramorph,pain
+2923,39,duramorph pf,pain
+2924,39,eha lotion,pain
+2925,39,fentora,pain
+2926,39,glydo,pain
+2927,39,ibuprofen pm,pain
+2928,39,imipramine,pain
+2929,39,infumorph,pain
+2930,39,itch relief,pain
+2931,39,ketoprofen,pain
+2932,39,levorphanol,pain
+2933,39,lidamantle,pain
+2934,39,lidopac,pain
+2935,39,lidorx,pain
+2936,39,lidotrans 5 pak,pain
+2937,39,lidozion,pain
+2938,39,lmx 4,pain
+2939,39,lmx 5,pain
+2940,39,lta ii kit,pain
+2941,39,lydexa,pain
+2942,39,medi-quik spray,pain
+2943,39,mefenamic acid,pain
+2944,39,methadone diskets,pain
+2945,39,methadose,pain
+2946,39,mitigo,pain
+2947,39,moxicaine,pain
+2948,39,nalbuphine,pain
+2949,39,radiaguard,pain
+2950,39,recticare,pain
+2951,39,regenecare ha spray,pain
+2952,39,sprix,pain
+2953,39,sulindac,pain
+2954,39,topicaine,pain
+2955,39,tranzarel,pain
+2956,39,xylocaine jelly,pain
+2957,39,xylocaine topical,pain
+2958,39,zionodil,pain
+2959,39,acetaminophen / aspirin / caffeine / salicylamide,pain
+2960,39,acetaminophen / aspirin,pain
+2961,39,acetaminophen / benzhydrocodone,pain
+2962,39,acetaminophen / caffeine / dihydrocodeine,pain
+2963,39,acetaminophen / caffeine,pain
+2964,39,acetaminophen / diphenhydramine,pain
+2965,39,acetaminophen / ibuprofen,pain
+2966,39,acetaminophen / phenyltoloxamine / salicylamide,pain
+2967,39,activice,pain
+2968,39,alfentanil,pain
+2969,39,alka-seltzer wake-up call!,pain
+2970,39,anacin,pain
+2971,39,anbesol,pain
+2972,39,apadaz,pain
+2973,39,arctic relief,pain
+2974,39,arthricream,pain
+2975,39,asper-flex,pain
+2976,39,aspercreme max no mess roll-on,pain
+2977,39,aspercreme pain relieving heat gel,pain
+2978,39,aspirin / butalbital / caffeine,pain
+2979,39,aspirin / caffeine / dihydrocodeine,pain
+2980,39,aspirin / caffeine,pain
+2981,39,aspirin / carisoprodol / codeine,pain
+2982,39,aspirin / oxycodone,pain
+2983,39,axsain,pain
+2984,39,back & body extra strength,pain
+2985,39,bayer back & body,pain
+2986,39,bayer extra strength back & body,pain
+2987,39,bc arthritis,pain
+2988,39,bc fast pain relief,pain
+2989,39,bengay cold therapy gel,pain
+2990,39,bengay ultra strength pain relieving patch,pain
+2991,39,bengay vanishing scent,pain
+2992,39,bengay zero degrees,pain
+2993,39,benzo-jel,pain
+2994,39,benzocaine,pain
+2995,39,bio-therm pain relieving lotion,pain
+2996,39,"blue-emu maximum strength arthritis, muscle & joint pain relief",pain
+2997,39,blue gel,pain
+2998,39,bupivacaine liposome,pain
+2999,39,camphor / menthol,pain
+3000,39,capsagel extra strength,pain
+3001,39,capsaicin / diclofenac,pain
+3002,39,capsaicin / lidocaine / menthol / methyl salicylate,pain
+3003,39,capsaicin / menthol / methyl salicylate,pain
+3004,39,capsin,pain
+3005,39,capsinac,pain
+3006,39,capzasin,pain
+3007,39,capzasin-hp,pain
+3008,39,capzasin-p,pain
+3009,39,castiva warming,pain
+3010,39,celecoxib / tramadol,pain
+3011,39,cepacol fizzlers,pain
+3012,39,chiggerex,pain
+3013,39,choline magnesium trisalicylate,pain
+3014,39,clinoril,pain
+3015,39,cool 'n heat patch,pain
+3016,39,cope,pain
+3017,39,dendracin neurodendraxcin,pain
+3018,39,denti-care denti-freeze,pain
+3019,39,dermacinrx lexitral,pain
+3020,39,dermacinrx lexitral pharmapak,pain
+3021,39,dermoplast,pain
+3022,39,diclofex dc,pain
+3023,39,dicloheal-60,pain
+3024,39,diclosaicin,pain
+3025,39,diclotral pak,pain
+3026,39,diflunisal,pain
+3027,39,diphenhydramine / ibuprofen,pain
+3028,39,diphenhydramine / magnesium salicylate,pain
+3029,39,diphenhydramine / naproxen,pain
+3030,39,doan's pills,pain
+3031,39,doans pills extra strength,pain
+3032,39,doans pm,pain
+3033,39,dolobid,pain
+3034,39,dsuvia,pain
+3035,39,duraxin,pain
+3036,39,dvorah,pain
+3037,39,dyclonine,pain
+3038,39,ed-flex,pain
+3039,39,endodan,pain
+3040,39,excedrin quick tab,pain
+3041,39,excedrin tension headache,pain
+3042,39,exoten-c pain relief,pain
+3043,39,exparel,pain
+3044,39,fast freeze,pain
+3045,39,feldene,pain
+3046,39,fenoprofen,pain
+3047,39,fenortho,pain
+3048,39,fiorinal,pain
+3049,39,flexall,pain
+3050,39,flurbiprofen,pain
+3051,39,fortabs,pain
+3052,39,freeze it,pain
+3053,39,gebauer's spray and stretch,pain
+3054,39,gold bond medicated maximum strength foot,pain
+3055,39,headache relief pm,pain
+3056,39,icy hot advanced relief pain relief patch,pain
+3057,39,icy hot extra strength,pain
+3058,39,icy hot medicated spray,pain
+3059,39,icy hot vanishing scent pain relieving gel,pain
+3060,39,inavix,pain
+3061,39,indocin,pain
+3062,39,indocin sr,pain
+3063,39,kank-a,pain
+3064,39,lanacane,pain
+3065,39,laryngesic,pain
+3066,39,legatrin pm,pain
+3067,39,lidopro,pain
+3068,39,magnesium salicylate,pain
+3069,39,max-freeze,pain
+3070,39,meclofenamate,pain
+3071,39,medi-derm rx,pain
+3072,39,medicone,pain
+3073,39,medrox,pain
+3074,39,medrox-rx,pain
+3075,39,menthac arthritis cream with capsaicin,pain
+3076,39,menthol,pain
+3077,39,meperitab,pain
+3078,39,midol pm,pain
+3079,39,mineral ice,pain
+3080,39,motrin pm,pain
+3081,39,mst,pain
+3082,39,myoflex,pain
+3083,39,nalfon,pain
+3084,39,nalocet,pain
+3085,39,naloxone / pentazocine,pain
+3086,39,new terocin,pain
+3087,39,nudiclo solupak,pain
+3088,39,nuprin backache,pain
+3089,39,oliceridine,pain
+3090,39,olinvyk,pain
+3091,39,p-a-c,pain
+3092,39,p-a-c analgesic,pain
+3093,39,painaid,pain
+3094,39,pentafluoropropane / tetrafluoroethane,pain
+3095,39,percodan,pain
+3096,39,percogesic extra strength,pain
+3097,39,percogesic original strength,pain
+3098,39,pramox,pain
+3099,39,pramoxine,pain
+3100,39,prax,pain
+3101,39,precaine b,pain
+3102,39,prialt,pain
+3103,39,primlev,pain
+3104,39,prolate,pain
+3105,39,qutenza,pain
+3106,39,rematex,pain
+3107,39,salonpas-hot,pain
+3108,39,sarna sensitive,pain
+3109,39,seglentis,pain
+3110,39,sloan's liniment,pain
+3111,39,solarcaine first aid medicated spray,pain
+3112,39,soltice quick-rub,pain
+3113,39,sombra cool therapy,pain
+3114,39,sombra warm therapy,pain
+3115,39,stopain,pain
+3116,39,sufentanil,pain
+3117,39,sure result dss premium pak,pain
+3118,39,theragen hp,pain
+3119,39,therapeutic ice,pain
+3120,39,tiger balm,pain
+3121,39,tiger balm pain relieving patch,pain
+3122,39,tivorbex,pain
+3123,39,tofranil,pain
+3124,39,tolmetin,pain
+3125,39,topical anesthetic dental gel,pain
+3126,39,transderm-iq,pain
+3127,39,trezix,pain
+3128,39,trolamine salicylate,pain
+3129,39,tru-micin,pain
+3130,39,ultracin t,pain
+3131,39,xodol,pain
+3132,39,xolox,pain
+3133,39,ziclopro,pain
+3134,39,ziconotide,pain
+3135,39,zostrix,pain
+3136,39,zostrix diabetic foot pain,pain
+3137,39,zostrix sports,pain
+3138,39,zyfrel,pain
+3139,40,levofloxacin,pneumonia
+3140,40,clarithromycin,pneumonia
+3141,40,ceftriaxone,pneumonia
+3142,40,levaquin,pneumonia
+3143,40,azithromycin,pneumonia
+3144,40,doxycycline,pneumonia
+3145,40,amoxicillin,pneumonia
+3146,40,amoxil,pneumonia
+3147,40,azithromycin dose pack,pneumonia
+3148,40,augmentin,pneumonia
+3149,40,ciprofloxacin,pneumonia
+3150,40,avelox,pneumonia
+3151,40,cefdinir,pneumonia
+3152,40,zithromax,pneumonia
+3153,40,amoxicillin / clavulanate,pneumonia
+3154,40,clindamycin,pneumonia
+3155,40,cipro,pneumonia
+3156,40,cefotaxime,pneumonia
+3157,40,metronidazole,pneumonia
+3158,40,cefuroxime,pneumonia
+3159,40,moxifloxacin,pneumonia
+3160,40,sulfamethoxazole / trimethoprim,pneumonia
+3161,40,vancomycin,pneumonia
+3162,40,bactrim,pneumonia
+3163,40,bactrim ds,pneumonia
+3164,40,cefepime,pneumonia
+3165,40,ceftazidime,pneumonia
+3166,40,ceftin,pneumonia
+3167,40,apo-amoxi,pneumonia
+3168,40,flagyl,pneumonia
+3169,40,amikacin,pneumonia
+3170,40,ancef,pneumonia
+3171,40,cefpodoxime,pneumonia
+3172,40,doxy 100,pneumonia
+3173,40,erythromycin,pneumonia
+3174,40,vibramycin,pneumonia
+3175,40,zyvox,pneumonia
+3176,40,cefixime,pneumonia
+3177,40,cilastatin / imipenem,pneumonia
+3178,40,cipro i.v.,pneumonia
+3179,40,cipro xr,pneumonia
+3180,40,cleocin,pneumonia
+3181,40,doryx,pneumonia
+3182,40,doryx mpc,pneumonia
+3183,40,flagyl iv,pneumonia
+3184,40,linezolid,pneumonia
+3185,40,monodox,pneumonia
+3186,40,morgidox,pneumonia
+3187,40,oraxyl,pneumonia
+3188,40,piperacillin / tazobactam,pneumonia
+3189,40,zosyn,pneumonia
+3190,40,biaxin xl,pneumonia
+3191,40,cefazolin,pneumonia
+3192,40,cleocin hcl,pneumonia
+3193,40,cleocin pediatric,pneumonia
+3194,40,cleocin phosphate,pneumonia
+3195,40,co-trimoxazole,pneumonia
+3196,40,flagyl 375,pneumonia
+3197,40,septra,pneumonia
+3198,40,tobramycin,pneumonia
+3199,40,achromycin v,pneumonia
+3200,40,ala-tet,pneumonia
+3201,40,amoclan,pneumonia
+3202,40,ampicillin,pneumonia
+3203,40,augmentin xr,pneumonia
+3204,40,avelox i.v.,pneumonia
+3205,40,aztreonam,pneumonia
+3206,40,brodspec,pneumonia
+3207,40,cefaclor,pneumonia
+3208,40,cefzil,pneumonia
+3209,40,dicloxacillin,pneumonia
+3210,40,e.e.s. granules,pneumonia
+3211,40,ertapenem,pneumonia
+3212,40,ery-tab,pneumonia
+3213,40,eryc,pneumonia
+3214,40,eryped,pneumonia
+3215,40,erythrocin,pneumonia
+3216,40,erythrocin lactobionate,pneumonia
+3217,40,floxin,pneumonia
+3218,40,garamycin,pneumonia
+3219,40,gentamicin,pneumonia
+3220,40,invanz,pneumonia
+3221,40,maxipime,pneumonia
+3222,40,ofloxacin,pneumonia
+3223,40,pce dispertab,pneumonia
+3224,40,penicillin vk,pneumonia
+3225,40,penicillin v potassium,pneumonia
+3226,40,primaxin iv,pneumonia
+3227,40,septra ds,pneumonia
+3228,40,sulfatrim pediatric,pneumonia
+3229,40,suprax,pneumonia
+3230,40,teflaro,pneumonia
+3231,40,tetracycline,pneumonia
+3232,40,tigecycline,pneumonia
+3233,40,tygacil,pneumonia
+3234,40,vancocin,pneumonia
+3235,40,vancocin hcl,pneumonia
+3236,40,vancocin hcl pulvules,pneumonia
+3237,40,zinacef,pneumonia
+3238,40,amikin,pneumonia
+3239,40,amikin pediatric,pneumonia
+3240,40,ampicillin / sulbactam,pneumonia
+3241,40,avibactam / ceftazidime,pneumonia
+3242,40,avycaz,pneumonia
+3243,40,azactam,pneumonia
+3244,40,baciim,pneumonia
+3245,40,bacitracin,pneumonia
+3246,40,baxdela,pneumonia
+3247,40,bicillin c-r,pneumonia
+3248,40,bicillin c-r 900/300,pneumonia
+3249,40,cefotan,pneumonia
+3250,40,cefotetan,pneumonia
+3251,40,cefoxitin,pneumonia
+3252,40,cefprozil,pneumonia
+3253,40,ceftaroline,pneumonia
+3254,40,ceftolozane / tazobactam,pneumonia
+3255,40,claforan,pneumonia
+3256,40,delafloxacin,pneumonia
+3257,40,dycill,pneumonia
+3258,40,dynapen,pneumonia
+3259,40,factive,pneumonia
+3260,40,fortaz,pneumonia
+3261,40,gemifloxacin,pneumonia
+3262,40,lefamulin,pneumonia
+3263,40,nafcillin,pneumonia
+3264,40,nuzyra,pneumonia
+3265,40,omadacycline,pneumonia
+3266,40,oxacillin,pneumonia
+3267,40,penicillin g benzathine / procaine penicillin,pneumonia
+3268,40,penicillin g potassium,pneumonia
+3269,40,penicillin g sodium,pneumonia
+3270,40,pfizerpen,pneumonia
+3271,40,piperacillin,pneumonia
+3272,40,procaine penicillin,pneumonia
+3273,40,tazicef,pneumonia
+3274,40,telavancin,pneumonia
+3275,40,tobi,pneumonia
+3276,40,unasyn,pneumonia
+3277,40,vibativ,pneumonia
+3278,40,xenleta,pneumonia
+3279,40,zerbaxa,pneumonia
+3280,41,clobetasol,psoriasis
+3281,41,methotrexate,psoriasis
+3282,41,humira,psoriasis
+3283,41,stelara,psoriasis
+3284,41,triamcinolone,psoriasis
+3285,41,ustekinumab,psoriasis
+3286,41,adalimumab,psoriasis
+3287,41,cosentyx,psoriasis
+3288,41,remicade,psoriasis
+3289,41,taltz,psoriasis
+3290,41,skyrizi,psoriasis
+3291,41,tremfya,psoriasis
+3292,41,etanercept,psoriasis
+3293,41,ilumya,psoriasis
+3294,41,infliximab,psoriasis
+3295,41,avsola,psoriasis
+3296,41,duobrii,psoriasis
+3297,41,guselkumab,psoriasis
+3298,41,halobetasol / tazarotene,psoriasis
+3299,41,inflectra,psoriasis
+3300,41,ixekizumab,psoriasis
+3301,41,renflexis,psoriasis
+3302,41,risankizumab,psoriasis
+3303,41,secukinumab,psoriasis
+3304,41,tildrakizumab,psoriasis
+3305,41,fluocinonide,psoriasis
+3306,41,triamcinolone,psoriasis
+3307,41,elocon,psoriasis
+3308,41,calcipotriene,psoriasis
+3309,41,mometasone,psoriasis
+3310,41,prednisone,psoriasis
+3311,41,clobex,psoriasis
+3312,41,dovonex,psoriasis
+3313,41,hydrocortisone,psoriasis
+3314,41,desonide,psoriasis
+3315,41,acitretin,psoriasis
+3316,41,betamethasone,psoriasis
+3317,41,cyclosporine,psoriasis
+3318,41,soriatane,psoriasis
+3319,41,taclonex,psoriasis
+3320,41,tazorac,psoriasis
+3321,41,temovate,psoriasis
+3322,41,betamethasone / calcipotriene,psoriasis
+3323,41,halobetasol,psoriasis
+3324,41,kenalog-40,psoriasis
+3325,41,desoximetasone,psoriasis
+3326,41,kenalog,psoriasis
+3327,41,neoral,psoriasis
+3328,41,otrexup,psoriasis
+3329,41,trexall,psoriasis
+3330,41,dexamethasone,psoriasis
+3331,41,enstilar,psoriasis
+3332,41,fluocinolone,psoriasis
+3333,41,fluocinonide-e,psoriasis
+3334,41,methylprednisolone,psoriasis
+3335,41,rasuvo,psoriasis
+3336,41,tacrolimus,psoriasis
+3337,41,topicort,psoriasis
+3338,41,aristocort a,psoriasis
+3339,41,aristocort r,psoriasis
+3340,41,aristospan,psoriasis
+3341,41,calcitriol,psoriasis
+3342,41,cinolar,psoriasis
+3343,41,clinacort,psoriasis
+3344,41,coal tar,psoriasis
+3345,41,cortizone-10,psoriasis
+3346,41,kenalog-10,psoriasis
+3347,41,locoid,psoriasis
+3348,41,prednisolone,psoriasis
+3349,41,reditrex,psoriasis
+3350,41,taclonex scalp,psoriasis
+3351,41,tazarotene,psoriasis
+3352,41,trianex,psoriasis
+3353,41,triderm,psoriasis
+3354,41,tritocin,psoriasis
+3355,41,vectical,psoriasis
+3356,41,acthar,psoriasis
+3357,41,ala-cort,psoriasis
+3358,41,ala-scalp,psoriasis
+3359,41,ala-scalp hp,psoriasis
+3360,41,alclometasone,psoriasis
+3361,41,ammonium lactate / halobetasol,psoriasis
+3362,41,aquanil hc,psoriasis
+3363,41,beta hc,psoriasis
+3364,41,caldecort,psoriasis
+3365,41,cloderm,psoriasis
+3366,41,cordran,psoriasis
+3367,41,cordran tape,psoriasis
+3368,41,cortizone-5,psoriasis
+3369,41,derma-smoothe / fs (scalp),psoriasis
+3370,41,dermarest plus anti-itch,psoriasis
+3371,41,dermovate,psoriasis
+3372,41,dermtex hc,psoriasis
+3373,41,diflorasone,psoriasis
+3374,41,flurandrenolide,psoriasis
+3375,41,gengraf,psoriasis
+3376,41,halog,psoriasis
+3377,41,itch-x lotion,psoriasis
+3378,41,locoid lipocream,psoriasis
+3379,41,nucort,psoriasis
+3380,41,olux,psoriasis
+3381,41,olux-e,psoriasis
+3382,41,oxsoralen-ultra,psoriasis
+3383,41,pandel,psoriasis
+3384,41,psoriasin,psoriasis
+3385,41,sarnol-hc,psoriasis
+3386,41,sernivo,psoriasis
+3387,41,synalar,psoriasis
+3388,41,texacort,psoriasis
+3389,41,u-cort,psoriasis
+3390,41,vanos,psoriasis
+3391,41,abrilada,psoriasis
+3392,41,amcinonide,psoriasis
+3393,41,amjevita,psoriasis
+3394,41,ammonium lactate/urea,psoriasis
+3395,41,analpram-hc,psoriasis
+3396,41,analpram e,psoriasis
+3397,41,anthraforte,psoriasis
+3398,41,anthralin,psoriasis
+3399,41,anthrascalp,psoriasis
+3400,41,apexicon,psoriasis
+3401,41,apexicon e,psoriasis
+3402,41,balnetar,psoriasis
+3403,41,betatar gel,psoriasis
+3404,41,brodalumab,psoriasis
+3405,41,bryhali,psoriasis
+3406,41,calcitrene,psoriasis
+3407,41,capex,psoriasis
+3408,41,carb-o-lac5,psoriasis
+3409,41,carb-o-lac hp,psoriasis
+3410,41,clobevate,psoriasis
+3411,41,clocortolone,psoriasis
+3412,41,clodan,psoriasis
+3413,41,coal tar/salicylic acid/sulfur,psoriasis
+3414,41,coal tar/salicylic acid,psoriasis
+3415,41,cordran sp,psoriasis
+3416,41,cormax,psoriasis
+3417,41,cormax scalp,psoriasis
+3418,41,corticotropin,psoriasis
+3419,41,cutar,psoriasis
+3420,41,cyclocort,psoriasis
+3421,41,cyltezo,psoriasis
+3422,41,derma-smoothe / fs,psoriasis
+3423,41,derma-smoothe / fs (body oil),psoriasis
+3424,41,dermatop,psoriasis
+3425,41,desonate,psoriasis
+3426,41,desowen,psoriasis
+3427,41,dhs tar shampoo,psoriasis
+3428,41,doak tar,psoriasis
+3429,41,dritho-scalp,psoriasis
+3430,41,drithocreme,psoriasis
+3431,41,elta tar,psoriasis
+3432,41,embeline,psoriasis
+3433,41,embeline e,psoriasis
+3434,41,epifoam,psoriasis
+3435,41,estar,psoriasis
+3436,41,fototar,psoriasis
+3437,41,h.p. acthar gel,psoriasis
+3438,41,hadlima,psoriasis
+3439,41,halcinonide,psoriasis
+3440,41,halonate,psoriasis
+3441,41,hulio,psoriasis
+3442,41,hydrocortisone / pramoxine,psoriasis
+3443,41,hydroxyurea,psoriasis
+3444,41,hyrimoz,psoriasis
+3445,41,impoyz,psoriasis
+3446,41,ionil t,psoriasis
+3447,41,ixifi,psoriasis
+3448,41,kalosar,psoriasis
+3449,41,kerasal ultra 20,psoriasis
+3450,41,lokara,psoriasis
+3451,41,medotar,psoriasis
+3452,41,methoxsalen,psoriasis
+3453,41,mg217 medicated tar,psoriasis
+3454,41,neutrogena t/derm,psoriasis
+3455,41,neutrogena t/gel,psoriasis
+3456,41,nolix,psoriasis
+3457,41,novacort,psoriasis
+3458,41,oxipor vhc,psoriasis
+3459,41,pramosone,psoriasis
+3460,41,prednicarbate,psoriasis
+3461,41,proctofoam hc,psoriasis
+3462,41,r a acne,psoriasis
+3463,41,resinol,psoriasis
+3464,41,resorcinol,psoriasis
+3465,41,scytera,psoriasis
+3466,41,siliq,psoriasis
+3467,41,sorilux,psoriasis
+3468,41,synalar ointment,psoriasis
+3469,41,tarsum,psoriasis
+3470,41,theraplex t,psoriasis
+3471,41,tovet,psoriasis
+3472,41,ultralytic,psoriasis
+3473,41,ultralytic 2,psoriasis
+3474,41,ultravate,psoriasis
+3475,41,verdeso,psoriasis
+3476,41,wynzora,psoriasis
+3477,41,yusimry,psoriasis
+3478,41,zithranol,psoriasis
+3479,41,zithranol-rr,psoriasis
+3480,42,methotrexate,rheumatoid arthritis
+3481,42,enbrel,rheumatoid arthritis
+3482,42,humira,rheumatoid arthritis
+3483,42,sulfasalazine,rheumatoid arthritis
+3484,42,prednisone,rheumatoid arthritis
+3485,42,actemra,rheumatoid arthritis
+3486,42,hydroxychloroquine,rheumatoid arthritis
+3487,42,meloxicam,rheumatoid arthritis
+3488,42,celebrex,rheumatoid arthritis
+3489,42,remicade,rheumatoid arthritis
+3490,42,plaquenil,rheumatoid arthritis
+3491,42,cimzia,rheumatoid arthritis
+3492,42,etanercept,rheumatoid arthritis
+3493,42,simponi,rheumatoid arthritis
+3494,42,adalimumab,rheumatoid arthritis
+3495,42,azulfidine,rheumatoid arthritis
+3496,42,rinvoq,rheumatoid arthritis
+3497,42,rituximab,rheumatoid arthritis
+3498,42,tocilizumab,rheumatoid arthritis
+3499,42,infliximab,rheumatoid arthritis
+3500,42,anakinra,rheumatoid arthritis
+3501,42,avsola,rheumatoid arthritis
+3502,42,certolizumab,rheumatoid arthritis
+3503,42,golimumab,rheumatoid arthritis
+3504,42,inflectra,rheumatoid arthritis
+3505,42,kineret,rheumatoid arthritis
+3506,42,olumiant,rheumatoid arthritis
+3507,42,renflexis,rheumatoid arthritis
+3508,42,upadacitinib,rheumatoid arthritis
+3509,42,leflunomide,rheumatoid arthritis
+3510,42,diclofenac,rheumatoid arthritis
+3511,42,arava,rheumatoid arthritis
+3512,42,mobic,rheumatoid arthritis
+3513,42,naproxen,rheumatoid arthritis
+3514,42,celecoxib,rheumatoid arthritis
+3515,42,orencia,rheumatoid arthritis
+3516,42,ibuprofen,rheumatoid arthritis
+3517,42,rituxan,rheumatoid arthritis
+3518,42,xeljanz,rheumatoid arthritis
+3519,42,acetaminophen / hydrocodone,rheumatoid arthritis
+3520,42,aspirin,rheumatoid arthritis
+3521,42,atorvastatin,rheumatoid arthritis
+3522,42,aleve,rheumatoid arthritis
+3523,42,arthritis pain,rheumatoid arthritis
+3524,42,aspergum,rheumatoid arthritis
+3525,42,aspiritab,rheumatoid arthritis
+3526,42,aspirtab,rheumatoid arthritis
+3527,42,bayer aspirin,rheumatoid arthritis
+3528,42,bayer aspirin extra strength plus,rheumatoid arthritis
+3529,42,easprin,rheumatoid arthritis
+3530,42,ecotrin,rheumatoid arthritis
+3531,42,ecpirin,rheumatoid arthritis
+3532,42,entercote,rheumatoid arthritis
+3533,42,genacote,rheumatoid arthritis
+3534,42,halfprin,rheumatoid arthritis
+3535,42,methylprednisolone,rheumatoid arthritis
+3536,42,nabumetone,rheumatoid arthritis
+3537,42,norwich aspirin,rheumatoid arthritis
+3538,42,rayos,rheumatoid arthritis
+3539,42,vazalore,rheumatoid arthritis
+3540,42,vimovo,rheumatoid arthritis
+3541,42,voltaren,rheumatoid arthritis
+3542,42,advil,rheumatoid arthritis
+3543,42,doxycycline,rheumatoid arthritis
+3544,42,etodolac,rheumatoid arthritis
+3545,42,motrin,rheumatoid arthritis
+3546,42,naprosyn,rheumatoid arthritis
+3547,42,proprinal,rheumatoid arthritis
+3548,42,a-g profen,rheumatoid arthritis
+3549,42,actiprofen,rheumatoid arthritis
+3550,42,addaprin,rheumatoid arthritis
+3551,42,azathioprine,rheumatoid arthritis
+3552,42,cataflam,rheumatoid arthritis
+3553,42,duexis,rheumatoid arthritis
+3554,42,genpril,rheumatoid arthritis
+3555,42,ibu-200,rheumatoid arthritis
+3556,42,medrol,rheumatoid arthritis
+3557,42,midol ib,rheumatoid arthritis
+3558,42,motrin ib,rheumatoid arthritis
+3559,42,nuprin,rheumatoid arthritis
+3560,42,rasuvo,rheumatoid arthritis
+3561,42,xeljanz xr,rheumatoid arthritis
+3562,42,aflaxen,rheumatoid arthritis
+3563,42,all day pain relief,rheumatoid arthritis
+3564,42,all day relief,rheumatoid arthritis
+3565,42,anaprox,rheumatoid arthritis
+3566,42,anaprox-ds,rheumatoid arthritis
+3567,42,arthrotec,rheumatoid arthritis
+3568,42,depo-medrol,rheumatoid arthritis
+3569,42,dexamethasone,rheumatoid arthritis
+3570,42,ec-naprosyn,rheumatoid arthritis
+3571,42,flanax pain reliever,rheumatoid arthritis
+3572,42,imuran,rheumatoid arthritis
+3573,42,indomethacin,rheumatoid arthritis
+3574,42,lofena,rheumatoid arthritis
+3575,42,medrol dosepak,rheumatoid arthritis
+3576,42,methylprednisolone dose pack,rheumatoid arthritis
+3577,42,naprelan,rheumatoid arthritis
+3578,42,otrexup,rheumatoid arthritis
+3579,42,piroxicam,rheumatoid arthritis
+3580,42,reditrex,rheumatoid arthritis
+3581,42,simponi aria,rheumatoid arthritis
+3582,42,sulindac,rheumatoid arthritis
+3583,42,trexall,rheumatoid arthritis
+3584,42,triamcinolone,rheumatoid arthritis
+3585,42,abatacept,rheumatoid arthritis
+3586,42,acetaminophen / tramadol,rheumatoid arthritis
+3587,42,aristospan,rheumatoid arthritis
+3588,42,auranofin,rheumatoid arthritis
+3589,42,azulfidine en-tabs,rheumatoid arthritis
+3590,42,clinacort,rheumatoid arthritis
+3591,42,cortisone,rheumatoid arthritis
+3592,42,cyclosporine,rheumatoid arthritis
+3593,42,daypro,rheumatoid arthritis
+3594,42,de-sone la,rheumatoid arthritis
+3595,42,dexamethasone intensol,rheumatoid arthritis
+3596,42,diclofenac / misoprostol,rheumatoid arthritis
+3597,42,dxevo,rheumatoid arthritis
+3598,42,esomeprazole / naproxen,rheumatoid arthritis
+3599,42,feldene,rheumatoid arthritis
+3600,42,indocin,rheumatoid arthritis
+3601,42,indocin sr,rheumatoid arthritis
+3602,42,kenalog-10,rheumatoid arthritis
+3603,42,kenalog-40,rheumatoid arthritis
+3604,42,ketoprofen,rheumatoid arthritis
+3605,42,kevzara,rheumatoid arthritis
+3606,42,minocycline,rheumatoid arthritis
+3607,42,mycophenolate mofetil,rheumatoid arthritis
+3608,42,oxaprozin,rheumatoid arthritis
+3609,42,phenytoin,rheumatoid arthritis
+3610,42,ridaura,rheumatoid arthritis
+3611,42,salsalate,rheumatoid arthritis
+3612,42,solu-medrol,rheumatoid arthritis
+3613,42,tofacitinib,rheumatoid arthritis
+3614,42,abrilada,rheumatoid arthritis
+3615,42,acetaminophen / aspirin,rheumatoid arthritis
+3616,42,acthar,rheumatoid arthritis
+3617,42,alemtuzumab,rheumatoid arthritis
+3618,42,amjevita,rheumatoid arthritis
+3619,42,arthricream,rheumatoid arthritis
+3620,42,asper-flex,rheumatoid arthritis
+3621,42,azasan,rheumatoid arthritis
+3622,42,baricitinib,rheumatoid arthritis
+3623,42,boroleum,rheumatoid arthritis
+3624,42,camphor / menthol / methyl salicylate,rheumatoid arthritis
+3625,42,castiva cooling,rheumatoid arthritis
+3626,42,clinoril,rheumatoid arthritis
+3627,42,corticotropin,rheumatoid arthritis
+3628,42,cuprimine,rheumatoid arthritis
+3629,42,cyclophosphamide,rheumatoid arthritis
+3630,42,cyltezo,rheumatoid arthritis
+3631,42,d-penamine,rheumatoid arthritis
+3632,42,depen,rheumatoid arthritis
+3633,42,diflunisal,rheumatoid arthritis
+3634,42,dolobid,rheumatoid arthritis
+3635,42,erelzi,rheumatoid arthritis
+3636,42,eticovo,rheumatoid arthritis
+3637,42,eucalyptamint,rheumatoid arthritis
+3638,42,exocaine plus,rheumatoid arthritis
+3639,42,famotidine / ibuprofen,rheumatoid arthritis
+3640,42,fenoprofen,rheumatoid arthritis
+3641,42,fenortho,rheumatoid arthritis
+3642,42,flurbiprofen,rheumatoid arthritis
+3643,42,gengraf,rheumatoid arthritis
+3644,42,gordogesic,rheumatoid arthritis
+3645,42,h.p. acthar gel,rheumatoid arthritis
+3646,42,hadlima,rheumatoid arthritis
+3647,42,heet triple action,rheumatoid arthritis
+3648,42,hulio,rheumatoid arthritis
+3649,42,hyrimoz,rheumatoid arthritis
+3650,42,interferon gamma-1b,rheumatoid arthritis
+3651,42,ixifi,rheumatoid arthritis
+3652,42,meclofenamate,rheumatoid arthritis
+3653,42,mentholatum deep heating,rheumatoid arthritis
+3654,42,methyl salicylate,rheumatoid arthritis
+3655,42,myoflex,rheumatoid arthritis
+3656,42,nalfon,rheumatoid arthritis
+3657,42,neoral,rheumatoid arthritis
+3658,42,penicillamine,rheumatoid arthritis
+3659,42,relafen ds,rheumatoid arthritis
+3660,42,riabni,rheumatoid arthritis
+3661,42,salonpas pain patch,rheumatoid arthritis
+3662,42,sarilumab,rheumatoid arthritis
+3663,42,satogesic,rheumatoid arthritis
+3664,42,tetracycline,rheumatoid arthritis
+3665,42,tolmetin,rheumatoid arthritis
+3666,42,trolamine salicylate,rheumatoid arthritis
+3667,42,ximino,rheumatoid arthritis
+3668,42,xodol,rheumatoid arthritis
+3669,42,yusimry,rheumatoid arthritis
+3670,43,seroquel,schizophrenia
+3671,43,latuda,schizophrenia
+3672,43,abilify,schizophrenia
+3673,43,risperidone,schizophrenia
+3674,43,clozapine,schizophrenia
+3675,43,olanzapine,schizophrenia
+3676,43,zyprexa,schizophrenia
+3677,43,vraylar,schizophrenia
+3678,43,risperdal,schizophrenia
+3679,43,abilify maintena,schizophrenia
+3680,43,quetiapine,schizophrenia
+3681,43,rexulti,schizophrenia
+3682,43,fanapt,schizophrenia
+3683,43,aristada,schizophrenia
+3684,43,clozaril,schizophrenia
+3685,43,caplyta,schizophrenia
+3686,43,lurasidone,schizophrenia
+3687,43,cariprazine,schizophrenia
+3688,43,brexpiprazole,schizophrenia
+3689,43,geodon,schizophrenia
+3690,43,aripiprazole,schizophrenia
+3691,43,lumateperone,schizophrenia
+3692,43,lybalvi,schizophrenia
+3693,43,invega,schizophrenia
+3694,43,seroquel xr,schizophrenia
+3695,43,chlorpromazine,schizophrenia
+3696,43,saphris,schizophrenia
+3697,43,invega sustenna,schizophrenia
+3698,43,ziprasidone,schizophrenia
+3699,43,risperdal consta,schizophrenia
+3700,43,loxapine,schizophrenia
+3701,43,paliperidone,schizophrenia
+3702,43,zyprexa zydis,schizophrenia
+3703,43,trifluoperazine,schizophrenia
+3704,43,zyprexa relprevv,schizophrenia
+3705,43,invega trinza,schizophrenia
+3706,43,thioridazine,schizophrenia
+3707,43,abilify mycite,schizophrenia
+3708,43,aristada initio,schizophrenia
+3709,43,fazaclo,schizophrenia
+3710,43,perseris,schizophrenia
+3711,43,thiothixene,schizophrenia
+3712,43,amisulpride,schizophrenia
+3713,43,asenapine,schizophrenia
+3714,43,zyprexa intramuscular,schizophrenia
+3715,43,versacloz,schizophrenia
+3716,43,adasuve,schizophrenia
+3717,43,iloperidone,schizophrenia
+3718,43,secuado,schizophrenia
+3719,43,invega hafyera,schizophrenia
+3720,43,olanzapine / samidorphan,schizophrenia
+3721,44,keppra,seizures
+3722,44,levetiracetam,seizures
+3723,44,diazepam,seizures
+3724,44,topiramate,seizures
+3725,44,diastat,seizures
+3726,44,dilantin,seizures
+3727,44,trokendi xr,seizures
+3728,44,valtoco,seizures
+3729,44,vimpat,seizures
+3730,44,midazolam,seizures
+3731,44,nayzilam,seizures
+3732,44,sabril,seizures
+3733,44,vigabatrin,seizures
+3734,44,phenobarbital,seizures
+3735,44,trileptal,seizures
+3736,44,zonisamide,seizures
+3737,44,phenytoin,seizures
+3738,44,oxcarbazepine,seizures
+3739,44,zonegran,seizures
+3740,44,keppra xr,seizures
+3741,44,valium,seizures
+3742,44,topamax,seizures
+3743,44,valproic acid,seizures
+3744,44,primidone,seizures
+3745,44,mysoline,seizures
+3746,44,aptiom,seizures
+3747,44,diastat acudial,seizures
+3748,44,zarontin,seizures
+3749,44,lacosamide,seizures
+3750,44,phenytoin sodium,seizures
+3751,44,diazepam intensol,seizures
+3752,44,gabitril,seizures
+3753,44,oxtellar xr,seizures
+3754,44,diastat pediatric,seizures
+3755,44,qudexy xr,seizures
+3756,44,vitamin b6,seizures
+3757,44,briviact,seizures
+3758,44,elepsia xr,seizures
+3759,44,eprontia,seizures
+3760,44,ethosuximide,seizures
+3761,44,roweepra,seizures
+3762,44,spritam,seizures
+3763,44,fycompa,seizures
+3764,44,phenytek,seizures
+3765,44,roweepra xr,seizures
+3766,44,xcopri,seizures
+3767,44,progesterone,seizures
+3768,44,pyridoxine,seizures
+3769,44,aminoxin,seizures
+3770,44,brivaracetam,seizures
+3771,44,celontin,seizures
+3772,44,cenobamate,seizures
+3773,44,eslicarbazepine,seizures
+3774,44,methsuximide,seizures
+3775,44,perampanel,seizures
+3776,44,tiagabine,seizures
+3777,44,zonisade,seizures
+3778,44,ganaxolone,seizures
+3779,44,vigadrone,seizures
+3780,44,ztalmy,seizures
+3781,45,plavix,stroke
+3782,45,clopidogrel,stroke
+3783,45,aspirin,stroke
+3784,45,activase,stroke
+3785,45,bayer aspirin,stroke
+3786,45,easprin,stroke
+3787,45,ecotrin,stroke
+3788,45,alteplase,stroke
+3789,45,arthritis pain,stroke
+3790,45,ascriptin,stroke
+3791,45,aspergum,stroke
+3792,45,aspir-low,stroke
+3793,45,bayer aspirin regimen,stroke
+3794,45,genacote,stroke
+3795,45,halfprin,stroke
+3796,45,aspiritab,stroke
+3797,45,aspirtab,stroke
+3798,45,ecpirin,stroke
+3799,45,entercote,stroke
+3800,45,nimodipine,stroke
+3801,45,norwich aspirin,stroke
+3802,45,vazalore,stroke
+3803,45,bayer aspirin extra strength plus,stroke
+3804,46,tamiflu,swine flu
+3805,46,oseltamivir,swine flu
+3806,46,relenza,swine flu
+3807,46,zanamivir,swine flu
+3808,46,peramivir,swine flu
+3809,47,ciprofloxacin,uti
+3810,47,nitrofurantoin,uti
+3811,47,macrobid,uti
+3812,47,cipro,uti
+3813,47,sulfamethoxazole / trimethoprim,uti
+3814,47,bactrim,uti
+3815,47,amoxicillin,uti
+3816,47,amoxil,uti
+3817,47,doxycycline,uti
+3818,47,bactrim ds,uti
+3819,47,augmentin,uti
+3820,47,levofloxacin,uti
+3821,47,levaquin,uti
+3822,47,amoxicillin / clavulanate,uti
+3823,47,ceftriaxone,uti
+3824,47,macrodantin,uti
+3825,47,cefuroxime,uti
+3826,47,methenamine,uti
+3827,47,ceftin,uti
+3828,47,trimethoprim,uti
+3829,47,vibramycin,uti
+3830,47,ampicillin,uti
+3831,47,apo-amoxi,uti
+3832,47,septra,uti
+3833,47,septra ds,uti
+3834,47,uribel,uti
+3835,47,doxy 100,uti
+3836,47,cefixime,uti
+3837,47,cipro i.v.,uti
+3838,47,cipro xr,uti
+3839,47,doryx,uti
+3840,47,doryx mpc,uti
+3841,47,hiprex,uti
+3842,47,monodox,uti
+3843,47,morgidox,uti
+3844,47,oraxyl,uti
+3845,47,suprax,uti
+3846,47,ancef,uti
+3847,47,cefepime,uti
+3848,47,cefotaxime,uti
+3849,47,co-trimoxazole,uti
+3850,47,furadantin,uti
+3851,47,ofloxacin,uti
+3852,47,zosyn,uti
+3853,47,amikacin,uti
+3854,47,amoclan,uti
+3855,47,ampicillin / sulbactam,uti
+3856,47,augmentin xr,uti
+3857,47,cefadroxil,uti
+3858,47,cefazolin,uti
+3859,47,ceftazidime,uti
+3860,47,cilastatin / imipenem,uti
+3861,47,duricef,uti
+3862,47,ertapenem,uti
+3863,47,floxin,uti
+3864,47,hyophen,uti
+3865,47,invanz,uti
+3866,47,maxipime,uti
+3867,47,piperacillin / tazobactam,uti
+3868,47,sulfatrim pediatric,uti
+3869,47,unasyn,uti
+3870,47,urelle,uti
+3871,47,uro-mp,uti
+3872,47,urogesic blue,uti
+3873,47,ustell,uti
+3874,47,uta,uti
+3875,47,utira-c,uti
+3876,47,zinacef,uti
+3877,47,acetohydroxamic acid,uti
+3878,47,amikin,uti
+3879,47,amikin pediatric,uti
+3880,47,avibactam / ceftazidime,uti
+3881,47,avycaz,uti
+3882,47,azactam,uti
+3883,47,aztreonam,uti
+3884,47,azuphen mb,uti
+3885,47,benzoic acid / hyoscyamine / methenamine / methylene blue / phenyl salicylate,uti
+3886,47,cefaclor,uti
+3887,47,cefiderocol,uti
+3888,47,cefotan,uti
+3889,47,cefotetan,uti
+3890,47,cefoxitin,uti
+3891,47,ceftolozane / tazobactam,uti
+3892,47,cilastatin / imipenem / relebactam,uti
+3893,47,claforan,uti
+3894,47,fetroja,uti
+3895,47,fortaz,uti
+3896,47,hyolev mb,uti
+3897,47,hyoscyamine / methenamine / methylene blue / phenyl salicylate / sodium biphosphate,uti
+3898,47,hyoscyamine / methenamine / methylene blue / sodium biphosphate,uti
+3899,47,lithostat,uti
+3900,47,meropenem / vaborbactam,uti
+3901,47,phosphasal,uti
+3902,47,piperacillin,uti
+3903,47,plazomicin,uti
+3904,47,primaxin iv,uti
+3905,47,primsol,uti
+3906,47,recarbrio,uti
+3907,47,tazicef,uti
+3908,47,uretron ds,uti
+3909,47,urimar-t,uti
+3910,47,urin d/s,uti
+3911,47,urised,uti
+3912,47,uro-458,uti
+3913,47,uro-sp,uti
+3914,47,uroav-81,uti
+3915,47,uroav-b,uti
+3916,47,uticap,uti
+3917,47,utrona-c,uti
+3918,47,vabomere,uti
+3919,47,vilamit mb,uti
+3920,47,vilevev mb,uti
+3921,47,zemdri,uti
+3922,47,zerbaxa,uti
+3923,48,phentermine,weight loss
+3924,48,topiramate,weight loss
+3925,48,adipex-p,weight loss
+3926,48,semaglutide,weight loss
+3927,48,topamax,weight loss
+3928,48,contrave,weight loss
+3929,48,desoxyn,weight loss
+3930,48,alli,weight loss
+3931,48,bupropion,weight loss
+3932,48,orlistat,weight loss
+3933,48,xenical,weight loss
+3934,48,phendimetrazine,weight loss
+3935,48,diethylpropion,weight loss
+3936,48,qsymia,weight loss
+3937,48,saxenda,weight loss
+3938,48,methamphetamine,weight loss
+3939,48,pregnyl,weight loss
+3940,48,wegovy,weight loss
+3941,48,bupropion / naltrexone,weight loss
+3942,48,liraglutide,weight loss
+3943,48,phentermine / topiramate,weight loss
+3944,48,amphetamine,weight loss
+3945,48,bontril pdm,weight loss
+3946,48,chorionic gonadotropin (hcg),weight loss
+3947,48,cimetidine,weight loss
+3948,48,lomaira,weight loss
+3949,48,methylphenidate,weight loss
+3950,48,atti-plex p,weight loss
+3951,48,benzphetamine,weight loss
+3952,48,desvenlafaxine,weight loss
+3953,48,tagamet hb,weight loss
+3954,48,evekeo,weight loss
+3955,48,fenfluramine,weight loss
+3956,48,fendique er,weight loss
+3957,48,imcivree,weight loss
+3958,48,setmelanotide,weight loss
+3959,48,tirzepatide,weight loss

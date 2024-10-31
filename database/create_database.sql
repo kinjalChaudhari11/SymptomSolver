@@ -25,25 +25,23 @@ CREATE TABLE Patient (
 
 -- Diagnosis table
 CREATE TABLE Diagnosis (
-    Condition VARCHAR(255),
-    SymptomGroupId INT,
-    PRIMARY KEY (Condition, SymptomGroupId),
-    FOREIGN KEY (SymptomGroupId) REFERENCES Metadata(SymptomGroupId) ON DELETE CASCADE
+    MedicalCondition VARCHAR(255) PRIMARY KEY,
+    Symptoms VARCHAR(255)
 );
 
 -- PossibleTreatments table
 CREATE TABLE PossibleTreatments (
     TreatmentGroupId INT,
     MedicationName VARCHAR(255),
-    Condition VARCHAR(255),
+    MedicalCondition VARCHAR(255),
     PRIMARY KEY (TreatmentGroupId, MedicationName),
     FOREIGN KEY (MedicationName) REFERENCES Medication(MedicationName) ON DELETE CASCADE,
-    FOREIGN KEY (Condition) REFERENCES Diagnosis(Condition) ON DELETE CASCADE
+    FOREIGN KEY (MedicalCondition) REFERENCES Diagnosis(MedicalCondition) ON DELETE CASCADE
 );
 
 -- Medication table
 CREATE TABLE Medication (
     MedicationName VARCHAR(100) PRIMARY KEY,
     Dosage VARCHAR(50),
-    TimeIntervals VARCHAR(100),
+    TimeIntervals VARCHAR(100)
 );
