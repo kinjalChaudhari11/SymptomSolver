@@ -35,8 +35,10 @@ CREATE TABLE Diagnosis (
 CREATE TABLE PossibleTreatments (
     TreatmentGroupId INT,
     MedicationName VARCHAR(255),
+    Condition VARCHAR(255),
     PRIMARY KEY (TreatmentGroupId, MedicationName),
-    FOREIGN KEY (MedicationName) REFERENCES Medication(MedicationName) ON DELETE CASCADE
+    FOREIGN KEY (MedicationName) REFERENCES Medication(MedicationName) ON DELETE CASCADE,
+    FOREIGN KEY (Condition) REFERENCES Diagnosis(Condition) ON DELETE CASCADE
 );
 
 -- Medication table
