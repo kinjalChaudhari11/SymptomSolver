@@ -205,8 +205,7 @@ CREATE TABLE Medication (
 );
 ```
 
-## Table Inputs
-<img width="277" alt="Screenshot 2024-10-30 at 11 37 18 PM" src="https://github.com/user-attachments/assets/cbe8428c-b6c8-4ede-aaa7-f99b14791827">
+<img width="174" alt="Screenshot 2024-10-30 at 11 45 06 PM" src="https://github.com/user-attachments/assets/44af6efc-50e2-4526-9baf-2f6a03de8c15">
 <img width="231" alt="Screenshot 2024-10-30 at 11 40 41 PM" src="https://github.com/user-attachments/assets/b72c1954-7fb9-48f1-9d81-84670ee0c209">
 <img width="251" alt="Screenshot 2024-10-30 at 11 42 04 PM" src="https://github.com/user-attachments/assets/26ff28bd-237a-4c51-9be9-b0f46937539f">
 <img width="245" alt="Screenshot 2024-10-30 at 11 42 30 PM" src="https://github.com/user-attachments/assets/ec238517-e431-476d-b60d-715d759bd0bd">
