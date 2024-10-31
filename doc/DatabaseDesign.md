@@ -336,20 +336,55 @@ The original query aimed to retrieve the most common symptom combinations associ
 
 ### Query 3
 ```
-```
-#### Top 15 Outputs
-```
-```
-#### Indexing 
-```
-```
+SELECT 
+    d.MedicalCondition,
+    d.Symptoms,
+    COUNT(*) AS SymptomFrequency
+FROM 
+    Diagnosis d
+JOIN (
+    SELECT 
+        MedicalCondition,
+        COUNT(DISTINCT Symptoms) AS UniqueSymptomCount
+    FROM 
+        Diagnosis
+    WHERE 
+        Symptoms LIKE '%fever%' 
+        OR Symptoms LIKE '%cough%' 
+        OR Symptoms LIKE '%fatigue%' 
+        OR Symptoms LIKE '%shortness of breath%'
+    GROUP BY 
+        MedicalCondition
+    ORDER BY 
+        UniqueSymptomCount DESC
+    LIMIT 15
+) AS TopConditions ON d.MedicalCondition = TopConditions.MedicalCondition
+GROUP BY 
+    d.MedicalCondition, d.Symptoms
+ORDER BY 
+    UniqueSymptomCount DESC, d.MedicalCondition, SymptomFrequency DESC;
 
-### Query 4
-```
 ```
 #### Top 15 Outputs
 ```
-```
-#### Indexing 
-```
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| MedicalCondition | Symptoms                                                                                                                                                                                                                    | SymptomFrequency |
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| AIDS             | muscle_wasting, patches_in_throat, high_fever, extra_marital_contacts                                                                                                                                                       |                1 |
+| Bronchial Asthma | fatigue, cough, high_fever, breathlessness, family_history, mucoid_sputum                                                                                                                                                   |                1 |
+| Chicken pox      | itching, skin_rash, fatigue, lethargy, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body                                                                                |                1 |
+| Common Cold      | continuous_sneezing, chills, fatigue, cough, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain |                1 |
+| Dengue           | skin_rash, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, muscle_pain, red_spots_over_body                                                         |                1 |
+| Diabetes         | fatigue, weight_loss, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria                                                                  |                1 |
+| GERD             | stomach_pain, acidity, ulcers_on_tongue, vomiting, cough, chest_pain                                                                                                                                                        |                1 |
+| hepatitis A      | joint_pain, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain                                                                           |                1 |
+| Hepatitis B      | itching, fatigue, lethargy, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections                             |                1 |
+| Hepatitis C      | fatigue, yellowish_skin, nausea, loss_of_appetite, family_history                                                                                                                                                           |                1 |
+| Hepatitis D      | joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes                                                                                                      |                1 |
+| Hepatitis E      | joint_pain, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, coma, stomach_bleeding                                                                  |                1 |
+| Hyperthyroidism  | fatigue, mood_swings, weight_loss, restlessness, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation                                                               |                1 |
+| Hypoglycemia     | vomiting, fatigue, anxiety, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, slurred_speech, irritability, palpitations                                                                          |                1 |
+| Hypothyroidism   | fatigue, weight_gain, cold_hands_and_feets, mood_swings, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremeties, depression, irritability, abnormal_menstruation                    |                1 |
++------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+15 rows in set (0.00 sec)
 ```
