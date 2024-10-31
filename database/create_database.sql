@@ -39,6 +39,7 @@ CREATE TABLE PossibleTreatments (
     FOREIGN KEY (MedicalCondition) REFERENCES Diagnosis(MedicalCondition) ON DELETE CASCADE
 );
 
+
 -- Medication table
 CREATE TABLE Medication (
     MedicationName VARCHAR(100) PRIMARY KEY,
