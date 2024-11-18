@@ -1,0 +1,440 @@
+0,acetaminophen and dextromethorphan liquid,otc,4905
+1,acetaminophen aspirin caffeine and salicylamide tablets,rx/otc,4890
+2,acetaminophen aspirin and caffeine powder packet,otc,4890
+3,acetaminophen aspirin and caffeine tablets,otc,4890
+4,acetaminophen chlorpheniramine dextromethorphan phenylephrine liquid,otc,4905
+5,acetaminophen chlorpheniramine dextromethorphan phenylephrine suspension,otc,4905
+6,acetaminophen chlorpheniramine dextromethorphan and guaifenesin,otc,4905
+7,acetaminophen chlorpheniramine and dextromethorphan liquid and syrup,otc,4905
+8,acetaminophen chlorpheniramine and phenylephrine effervescent tablets,rx/otc,4905
+9,acetaminophen chlorpheniramine and phenylephrine tablets,rx/otc,4905
+10,acetaminophen dextromethorphan guaifenesin phenylephrine caps & tabs,rx/otc,4905
+11,acetaminophen dextromethorphan and doxylamine liquid,otc,4905
+12,acetaminophen dextromethorphan and phenylephrine capsules and tablets,otc,4905
+13,acetaminophen dextromethorphan and pseudoephedrine capsules and tablets,otc,4905
+14,acetaminophen diphenhydramine and phenylephrine liquid,rx/otc,4905
+15,acetaminophen diphenhydramine and phenylephrine tablets,rx/otc,4905
+16,acetaminophen/chlorpheniramine/dextromethorphan/phenylephrine caps & tabs,otc,4905
+17,acetaminophen/chlorpheniramine/dextromethorphan/pseudoephedrine caps & tabs,otc,4905
+18,acetaminophen/chlorpheniramine/dextromethorphan/pseudoephedrine liq & syrup,otc,4905
+19,benzoyl peroxide cream,otc,4916
+20,benzoyl peroxide pads with vitamin e capsules,rx,4916
+21,benzoyl peroxide wash and cleanser,otc,4916
+22,benzoyl peroxide wash and cleanser,rx/otc,4916
+23,benzoyl peroxide/sulfur gel,rx,4916
+24,caffeine brand names: nodoz  vivarin  revive stay awake  enerjets lucidex,rx/otc,4888
+25,camphor cream and ointment,rx/otc,4905
+26,camphor inhalation liquid,rx/otc,4905
+27,chlophedianol and dexbrompheniramine,otc,4905
+28,chlophedianol and pyrilamine,otc,4905
+29,chlorpheniramine and phenylephrine liquid,rx/otc,4905
+30,chlorpheniramine pseudoephedrine and codeine liquid,rx/otc,4905
+31,chlorpheniramine pseudoephedrine and codeine suspension,rx/otc,4905
+32,coal tar and salicylic acid,otc,4918
+33,dexbrompheniramine and acetaminophen caplets,otc,4905
+34,dexbrompheniramine and pseudoephedrine sustained-release tablets,rx/otc,4905
+35,dexchlorpheniramine dextromethorphan and pseudoephedrine liquid,rx/otc,4905
+36,diphenhydramine capsules and tablets,rx/otc,4905
+37,diphenhydramine chewable tablets and orally-disintegrating tablets,rx/otc,4905
+38,doxycycline injection,rx,4916
+39,doxycycline tablets and capsules,rx,4916
+40,ephedrine and guaifenesin,rx/otc,4905
+41,ergotamine and caffeine suppositories,rx,4890
+42,ethinyl estradiol and drospirenone,rx,4916
+43,ethinyl estradiol and norgestimate,rx,4916
+44,glyburide,rx,4886
+45,guaifenesin pseudoephedrine and codeine,rx/otc,4905
+46,isotretinoin (systemic),rx,4916
+47,ibuprofen and phenylephrine,otc,4905
+48,ipratropium inhalation aerosol,rx,4888
+49,ipratropium inhalation solution,rx,4888
+50,magnesium hydroxide suspension,rx/otc,4916
+51,methenamine phenyl salicylate methylene blue benzoic acid hyoscyamine,rx,4917
+52,methenamine sodium phos mono phenyl salicylate methyl blue hyoscyamine,rx,4917
+53,penicillin v potassium oral solution,rx,4906
+54,phenylephrine/ pyrilamine/ dextromethorphan syrup,rx/otc,4905
+55,phenylephrine/pyrilamine/dextromethorphan syrup,rx/otc,4905
+56,piperacillin,rx,4906
+57,pramoxine and hydrocortisone cream gel and ointment,rx,4918
+58,pramoxine and hydrocortisone foam,rx,4918
+59,pramoxine and hydrocortisone rectal cream,rx,4918
+60,pramoxine and hydrocortisone rectal foam,rx,4918
+61,retin-a,rx,4916
+62,salicylic acid cream gel liquid and lotion (acne),rx/otc,4916
+63,salicylic acid pads (acne),rx/otc,4916
+64,salicylic acid pads and plaster (corns),rx/otc,4916
+65,sulfur and salicylic acid lotion,otc,4916
+66,sulfur and salicylic acid shampoo,otc,4916
+67,sulfur and salicylic acid soap,otc,4916
+68,sulfur and sulfacetamide cleanser emulsion and wash,rx,4916
+69,sulfur and sulfacetamide cream and gel,rx,4916
+70,sulfur and sulfacetamide foam,rx,4916
+71,tofacitinib extended-release tablets,rx,4914
+72,triprolidine and phenylephrine syrup,otc,4905
+73,triprolidine and phenylephrine syrup,rx/otc,4905
+74,triprolidine and pseudoephedrine liquid,rx/otc,4905
+75,triprolidine phenylephrine and dextromethorphan syrup,otc,4905
+76,ustekinumab brand name: stelara,rx,4918
+77,vancomycin capsules,rx,4906
+78,abatacept,rx,4914
+79,acarbose,rx,4886
+80,acetaminophen and caffeine,otc,4905
+81,acetaminophen and chlorpheniramine,otc,4905
+82,acetaminophen and dextromethorphan,otc,4905
+83,acetaminophen and pseudoephedrine,rx/otc,4905
+84,acetaminophen aspirin and caffeine,otc,4890
+85,acetaminophen aspirin caffeine,otc,4890
+86,acetaminophen chlorpheniramine and dextromethorphan,otc,4905
+87,acetaminophen chlorpheniramine and phenylephrine,rx/otc,4905
+88,acetaminophen chlorpheniramine dextromethorphan and pseudoephedrine,otc,4905
+89,acetaminophen dextromethorphan and diphenhydramine,otc,4905
+90,acetaminophen dextromethorphan and doxylamine,otc,4905
+91,acetaminophen dextromethorphan and phenylephrine,otc,4905
+92,acetaminophen dextromethorphan and triprolidine,otc,4905
+93,acetaminophen dextromethorphan doxylamine and phenylephrine,otc,4905
+94,acetaminophen dextromethorphan doxylamine and pseudoephedrine,otc,4905
+95,acetaminophen dextromethorphan guaifenesin and phenylephrine,rx/otc,4905
+96,acetaminophen dextromethorphan guaifenesin and pseudoephedrine,rx/otc,4905
+97,acetaminophen diphenhydramine and phenylephrine,rx/otc,4905
+98,acetaminophen pheniramine and phenylephrine,otc,4905
+99,acetohydroxamic acid,rx,4917
+100,acitretin,rx,4918
+101,adalimumab,rx,4918
+102,adalimumab-adaz (subcutaneous route),rx,4918
+103,adalimumab-adbm (subcutaneous route),rx,4918
+104,adalimumab-afzb (subcutaneous route),rx,4918
+105,adalimumab-aqvh (subcutaneous route),rx,4918
+106,adalimumab-atto (subcutaneous route),rx,4918
+107,adalimumab-bwwd (subcutaneous route),rx,4918
+108,adalimumab-fkjp (subcutaneous route),rx,4918
+109,adapalene and benzoyl peroxide (topical),rx,4916
+110,adapalene topical,rx/otc,4916
+111,albiglutide,rx,4886
+112,alemtuzumab,rx,4914
+113,almotriptan,rx,4890
+114,alogliptin,rx,4886
+115,alogliptin and metformin,rx,4886
+116,alogliptin and pioglitazone,rx,4886
+117,amikacin,rx,4906
+118,amikacin (injection route),rx,4906
+119,ampicillin and sulbactam,rx,4906
+120,anthralin (topical route),rx,4918
+121,aspirin butalbital and caffeine,rx,4890
+122,aspirin chlorpheniramine and phenylephrine,otc,4905
+123,atropine hyoscyamine methenamine methylene blue phenyl salicylate and benzoic acid (oral route),rx,4917
+124,auranofin,rx,4914
+125,avibactam and ceftazidime,rx,4906
+126,azelaic acid topical,rx,4916
+127,aztreonam (inhalation),rx,4906
+128,aztreonam (injection),rx,4906
+129,bacitracin (injection),rx,4906
+130,benralizumab,rx,4888
+131,benralizumab brand name: fasenra,rx,4888
+132,benzoyl peroxide,otc,4916
+133,benzoyl peroxide,rx,4916
+134,benzoyl peroxide (topical route),otc,4916
+135,benzoyl peroxide (topical route),rx,4916
+136,benzoyl peroxide (topical route),rx/otc,4916
+137,benzoyl peroxide and clindamycin topical,rx,4916
+138,benzoyl peroxide and erythromycin topical,rx,4916
+139,benzoyl peroxide and hydrocortisone topical,rx,4916
+140,benzoyl peroxide and salicylic acid (topical),rx,4916
+141,benzoyl peroxide and tretinoin,rx,4916
+142,benzoyl peroxide and tretinoin topical,rx,4916
+143,benzoyl peroxide topical,otc,4916
+144,benzoyl peroxide topical,rx,4916
+145,benzoyl peroxide topical,rx/otc,4916
+146,betamethasone and calcipotriene (topical application route),rx,4918
+147,betamethasone and calcipotriene topical,rx,4918
+148,betamethasone topical,rx,4918
+149,brodalumab,rx,4918
+150,bromocriptine,rx,4886
+151,bromocriptine (parlodel),rx,4886
+152,brompheniramine maleate,rx/otc,4905
+153,brompheniramine codeine and phenylephrine,rx,4905
+154,butalbital aspirin and caffeine (oral route),rx,4890
+155,caffeine and ergotamine (oral/rectal),rx,4890
+156,calcipotriene,rx,4918
+157,calcipotriene topical,rx,4918
+158,calcitriol (topical),rx,4918
+159,camphor and menthol topical,otc,4905
+160,camphor eucalyptus and menthol topical,otc,4905
+161,camphor menthol and methyl salicylate (topical),otc,4914
+162,canagliflozin,rx,4886
+163,canagliflozin and metformin,rx,4886
+164,carbetapentane and chlorpheniramine,rx,4905
+165,cefadroxil,rx,4917
+166,cefadroxil (oral route),rx,4917
+167,cefazolin (injection route),rx,4906
+168,cefazolin (injection),rx,4906
+169,cefepime (injection),rx,4906
+170,cefiderocol,rx,4917
+171,cefotaxime,rx,4906
+172,cefotetan,rx,4906
+173,cefoxitin,rx,4906
+174,ceftaroline,rx,4906
+175,ceftazidime (injection),rx,4906
+176,ceftolozane and tazobactam,rx,4906
+177,celecoxib,rx,4890
+178,cephalexin,rx,4916
+179,certolizumab,rx,4914
+180,chlophedianol dexchlorpheniramine and pseudoephedrine,otc,4905
+181,chlophedianol dexchlorpheniramine and pseudoephedrine,rx,4905
+182,chlophedianol dexchlorpheniramine and pseudoephedrine,rx/otc,4905
+183,chlorcyclizine and phenylephrine,otc,4905
+184,chlorpheniramine,rx/otc,4905
+185,chlorpheniramine and codeine,rx/otc,4905
+186,chlorpheniramine and hydrocodone,rx,4905
+187,chlorpheniramine and hydrocodone>,rx,4905
+188,chlorpheniramine and phenylephrine,rx/otc,4905
+189,chlorpheniramine ibuprofen and pseudoephedrine,otc,4905
+190,chlorpheniramine phenylephrine and phenyltoloxamine,rx/otc,4905
+191,chlorpheniramine phenylephrine and pyrilamine,rx,4905
+192,chromium picolinate,otc,4886
+193,ciclesonide (inhalation),rx,4888
+194,clascoterone,rx,4916
+195,clascoterone topical,rx,4916
+196,clindamycin,rx,4906
+197,clindamycin (intramuscular route intravenous route),rx,4906
+198,clindamycin (oral route),rx,4906
+199,clindamycin (oral/injection),rx,4906
+200,clindamycin (topical route),rx,4916
+201,clindamycin and tretinoin (topical),rx,4916
+202,clindamycin topical,rx,4916
+203,clobetasol topical,rx,4918
+204,coal tar (topical route),rx/otc,4918
+205,coal tar topical,rx/otc,4918
+206,codeine guaifenesin and pseudoephedrine,rx/otc,4905
+207,codeine phenylephrine and triprolidine,rx,4905
+208,cyclobenzaprine,rx,4890
+209,cyclosporine (oral route),rx,4918
+210,dapagliflozin,rx,4886
+211,dapagliflozin brand name: farxiga,rx,4886
+212,dapagliflozin and metformin,rx,4886
+213,dapagliflozin and saxagliptin,rx,4886
+214,dapsone topical,rx,4916
+215,delafloxacin (oral/injection),rx,4906
+216,dexamethasone,rx,4888
+217,dexamethasone (injection),rx,4888
+218,dexamethasone (oral route),rx,4888
+219,dexamethasone (oral),rx,4888
+220,dexbrompheniramine and phenylephrine,otc,4905
+221,dexbrompheniramine and pseudoephedrine,rx/otc,4905
+222,dexchlorpheniramine dextromethorphan and pseudoephedrine,rx/otc,4905
+223,dextromethorphan and promethazine,rx,4905
+224,dextromethorphan and pyrilamine,otc,4905
+225,dextromethorphan diphenhydramine and phenylephrine,rx/otc,4905
+226,diclofenac,rx,4890
+227,dihydroergotamine (injection route),rx,4890
+228,dihydroergotamine (injection),rx,4890
+229,dihydroergotamine (nasal),rx,4890
+230,dihydroergotamine mesylate,rx,4890
+231,diphenhydramine,rx/otc,4905
+232,diphenhydramine and phenylephrine,rx/otc,4905
+233,diphenhydramine hydrochloride,rx/otc,4905
+234,diphenhydramine hydrochloride and phenylephrine hydrochloride,rx/otc,4905
+235,doxycycline,rx,4916
+236,doxycycline (oral route),rx,4916
+237,doxylamine and phenylephrine,otc,4905
+238,drospirenone and ethinyl estradiol,rx,4916
+239,drospirenone ethinyl estradiol and levomefolate,rx,4916
+240,dulaglutide,rx,4886
+241,dyphylline and guaifenesin,rx,4888
+242,eletriptan,rx,4890
+243,empagliflozin,rx,4886
+244,empagliflozin and linagliptin,rx,4886
+245,empagliflozin and metformin,rx,4886
+246,empagliflozin linagliptin and metformin,rx,4886
+247,ergotamine,rx,4890
+248,ergotamine and caffeine (oral route),rx,4890
+249,ertapenem,rx,4906
+250,ertugliflozin,rx,4886
+251,ertugliflozin and metformin,rx,4886
+252,ertugliflozin and sitagliptin,rx,4886
+253,erythromycin,rx,4916
+254,erythromycin and benzoyl peroxide,rx,4916
+255,erythromycin and benzoyl peroxide (topical route),rx,4916
+256,erythromycin topical,rx,4916
+257,etanercept,rx,4914
+258,etanercept-ykro (subcutaneous route),rx,4914
+259,ethinyl estradiol and norethindrone (hrt),rx,4916
+260,ethinyl estradiol and norgestimate,rx,4916
+261,ethinyl estradiol and norgestimate (oral route),rx,4916
+262,exenatide,rx,4886
+263,exenatide (bydureon),rx,4886
+264,exenatide (byetta),rx,4886
+265,fluticasone and vilanterol,rx,4888
+266,fluticasone umeclidinium and vilanterol,rx,4888
+267,formoterol and mometasone,rx,4888
+268,frovatriptan,rx,4890
+269,gentamicin,rx,4906
+270,glimepiride,rx,4886
+271,glimepiride and pioglitazone,rx,4886
+272,glipizide,rx,4886
+273,glipizide (oral route),rx,4886
+274,glipizide and metformin,rx,4886
+275,glyburide,rx,4886
+276,glyburide (oral route),rx,4886
+277,glyburide and metformin,rx,4886
+278,golimumab,rx,4914
+279,guaifenesin pseudoephedrine hydrochloride dextromethorphan hydrobromide and acetaminophen,rx/otc,4905
+280,guselkumab,rx,4918
+281,guselkumab brand name: tremfya,rx,4918
+282,halobetasol and tazarotene topical,rx,4918
+283,halobetasol topical,rx,4918
+284,hydrocortisone acetate and pramoxine hydrochloride,rx,4918
+285,hydrocortisone and pramoxine (topical/rectal),rx,4918
+286,hydroxychloroquine,rx,4914
+287,hydroxyurea,rx,4918
+288,hyoscyamine methenamine methylene blue and sodium biphosphate,rx,4917
+289,hyoscyamine methenamine methylene blue phenyl salicylate sodium biphosphate monobasic,rx,4917
+290,hyoscyamine methenamine methylene blue phenyl salicylate and sodium phosphate (oral route),rx,4917
+291,hyoscyamine methenamine methylene blue phenyl salicylate sodium biphosphate,rx,4917
+292,ibuprofen and phenylephrine,otc,4905
+293,imipenem cilastatin and relebactam,rx,4917
+294,infliximab-abda,rx,4918
+295,infliximab-axxq,rx,4918
+296,infliximab-dyyb,rx,4918
+297,infliximab-qbtx (intravenous route),rx,4918
+298,insulin degludec and liraglutide,rx,4886
+299,insulin glargine and lixisenatide,rx,4886
+300,interferon gamma-1b,rx,4914
+301,ipratropium (inhalation route),rx,4888
+302,ipratropium inhalation,rx,4888
+303,isotretinoin (oral),rx,4916
+304,ixekizumab,rx,4918
+305,ixekizumab brand name: taltz,rx,4918
+306,lasmiditan,rx,4890
+307,lasmiditan brand name: reyvow,rx,4890
+308,lefamulin (oral/injection),rx,4906
+309,leflunomide,rx,4914
+310,levalbuterol inhalation,rx,4888
+311,levothyroxine,rx,4910
+312,levothyroxine (oral route),rx,4910
+313,levothyroxine (oral/injection),rx,4910
+314,levothyroxine sodium,rx,4910
+315,linagliptin,rx,4886
+316,linagliptin and metformin,rx,4886
+317,linezolid (oral/injection),rx,4906
+318,liothyronine,rx,4910
+319,liothyronine (intravenous route),rx,4910
+320,liraglutide,rx,4886
+321,lixisenatide,rx,4886
+322,magnesium hydroxide,rx/otc,4916
+323,mepolizumab,rx,4888
+324,meropenem and vaborbactam,rx,4917
+325,metformin,rx,4886
+326,metformin and pioglitazone,rx,4886
+327,metformin and saxagliptin,rx,4886
+328,metformin and sitagliptin,rx,4886
+329,methenamine,rx/otc,4917
+330,methenamine sodium phosphate monobasic anhydrous phenyl salicylate methylene blue and hyoscyamine sulfate,rx,4917
+331,methenamine sodium phosphate monobasic monohydrate phenyl salicylate methylene blue and hyoscyamine sulfate,rx,4917
+332,methotrexate (injection route subcutaneous route),rx,4918
+333,methotrexate (injection),rx,4918
+334,methotrexate (oral),rx,4918
+335,methoxsalen (oral),rx,4918
+336,methylergonovine (oral and injection),rx,4890
+337,methylprednisolone (injection),rx,4888
+338,methylprednisolone (oral),rx,4888
+339,metronidazole,rx,4906
+340,metronidazole (intravenous route),rx,4906
+341,metronidazole (oral/injection),rx,4906
+342,miglitol,rx,4886
+343,minocycline,rx,4916
+344,minocycline (mucous membrane powder),rx,4916
+345,minocycline (oral route),rx,4916
+346,minocycline (topical application route),rx,4916
+347,minocycline topical,rx,4916
+348,montelukast,rx,4888
+349,nafcillin (injection),rx,4906
+350,naproxen and sumatriptan,rx,4890
+351,naratriptan,rx,4890
+352,nateglinide (oral),rx,4886
+353,nitrofurantoin,rx,4917
+354,nitrofurantoin (oral route),rx,4917
+355,omadacycline (oral/injection),rx,4906
+356,orphenadrine,rx,4890
+357,oxacillin (injection),rx,4906
+358,penicillamine,rx,4914
+359,penicillin g benzathine and penicillin g procaine,rx,4906
+360,penicillin g potassium,rx,4906
+361,penicillin g sodium,rx,4906
+362,penicillin v,rx,4906
+363,pheniramine and phenylephrine,otc,4905
+364,phenylephrine and promethazine,rx,4905
+365,pioglitazone (oral),rx,4886
+366,piperacillin and tazobactam,rx,4906
+367,plazomicin,rx,4917
+368,prednisolone,rx,4918
+369,prednisone,rx,4888
+370,procaine penicillin,rx,4906
+371,pseudoephedrine and triprolidine,rx/otc,4905
+372,repaglinide (oral),rx,4886
+373,reslizumab,rx,4888
+374,resorcinol (topical),rx/otc,4916
+375,resorcinol and sulfur (topical route),otc,4916
+376,retapamulin topical,rx,4916
+377,rimegepant,rx,4890
+378,risankizumab,rx,4918
+379,rituximab,rx,4914
+380,rituximab rituximab-arrx rituximab-pvvr rituximab-abbs brand names: rituxan  riabni  ruxience  truxima,rx,4914
+381,rizatriptan,rx,4890
+382,rosiglitazone,rx,4886
+383,salbutamol brand names: ventolin airomir asthalin asmatol azmasol ... show all 8 brands salair salamol respigen and more,rx,4888
+384,salicylic acid (topical route),rx/otc,4916
+385,salicylic acid and sulfur (topical route),otc,4916
+386,salicylic acid topical,rx/otc,4916
+387,sarecycline,rx,4916
+388,sarilumab,rx,4914
+389,saxagliptin,rx,4886
+390,secukinumab,rx,4918
+391,secukinumab brand name: cosentyx,rx,4918
+392,semaglutide,rx,4886
+393,semaglutide brand names: ozempic  wegovy  rybelsus,rx,4886
+394,semaglutide injection,rx,4886
+395,sitagliptin,rx,4886
+396,spironolactone,rx,4916
+397,sulfacetamide sodium and sulfur,rx,4916
+398,sulfacetamide sodium and sulfur topical,rx,4916
+399,sulfacetamide sodium sulfur,rx,4916
+400,sulfamethoxazole and trimethoprim,rx,4916
+401,sulfamethoxazole and trimethoprim (oral route),rx,4916
+402,sulfamethoxazole and trimethoprim (oral),rx,4916
+403,sulfamethoxazole and trimethoprim (oral/injection),rx,4916
+404,sulfur topical,rx/otc,4916
+405,sumatriptan,rx,4890
+406,sumatriptan (injection),rx,4890
+407,sumatriptan (nasal route),rx,4890
+408,sumatriptan (oral/nasal),rx,4890
+409,tacrolimus topical,rx,4918
+410,tazarotene topical,rx,4916
+411,telavancin,rx,4906
+412,tetracycline,rx,4916
+413,tetracycline hydrochloride,rx,4916
+414,tezepelumab,rx,4888
+415,tezepelumab-ekko,rx,4888
+416,thyroid desiccated,rx,4910
+417,tigecycline,rx,4906
+418,tildrakizumab,rx,4918
+419,tirzepatide,rx,4886
+420,tirzepatide (mown-jahr-oh),rx,4886
+421,tobramycin (inhalation),rx,4906
+422,tofacitinib brand names: xeljanz  xeljanz xr,rx,4914
+423,tofacitinib brand names: xeljanz xeljanz xr,rx,4914
+424,tretinoin topical,rx,4916
+425,triamcinolone (injection),rx,4888
+426,triamcinolone (oral),rx,4888
+427,trifarotene,rx,4916
+428,trifarotene topical,rx,4916
+429,trimethoprim,rx,4917
+430,ubrogepant,rx,4890
+431,ubrogepant brand name: ubrelvy,rx,4890
+432,upadacitinib,rx,4914
+433,upadacitinib brand name: rinvoq,rx,4914
+434,ustekinumab,rx,4918
+435,vancomycin (intravenous route),rx,4906
+436,vancomycin (oral route),rx,4906
+437,vancomycin (oral),rx,4906
+438,zolmitriptan,rx,4890
+439,zolmitriptan (oral),rx,4890
