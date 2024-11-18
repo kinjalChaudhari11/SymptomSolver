@@ -87,23 +87,21 @@ CREATE TABLE HasDiagnosis (
 
 ```
 SELECT 'Male' as Gender, d.DiseaseName, COUNT(*) as PatientCount
-FROM Patient p
-JOIN HasDiagnosis hd ON p.Username = hd.Username
-JOIN Diagnosis d ON hd.SymptomGroupId = d.SymptomGroupId
+FROM Patient p NATURAL JOIN HasDiagnosis hd NATURAL JOIN Diagnosis d
 WHERE p.Gender = 'Male'
 GROUP BY d.DiseaseName
+
 UNION
+
 SELECT 'Female' as Gender, d.DiseaseName, COUNT(*) as PatientCount
-FROM Patient p
-JOIN HasDiagnosis hd ON p.Username = hd.Username
-JOIN Diagnosis d ON hd.SymptomGroupId = d.SymptomGroupId
+FROM Patient p NATURAL JOIN HasDiagnosis hd NATURAL JOIN Diagnosis d
 WHERE p.Gender = 'Female'
 GROUP BY d.DiseaseName
+
 UNION
+
 SELECT 'Non-Binary' as Gender, d.DiseaseName, COUNT(*) as PatientCount
-FROM Patient p
-JOIN HasDiagnosis hd ON p.Username = hd.Username
-JOIN Diagnosis d ON hd.SymptomGroupId = d.SymptomGroupId
+FROM Patient p NATURAL JOIN HasDiagnosis hd NATURAL JOIN Diagnosis d
 WHERE p.Gender = 'Non-Binary'
 GROUP BY d.DiseaseName
 ORDER BY DiseaseName, Gender LIMIT 15; 
@@ -117,7 +115,7 @@ WITH SymptomRanking AS (
         PARTITION BY d.DiseaseName 
         ORDER BY COUNT(*) DESC
     ) as SymptomRank
-    FROM Diagnosis d JOIN HasSymptom hs ON d.SymptomGroupId = hs.SymptomGroupId JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
+    FROM Diagnosis d NATURAL JOIN HasSymptom hs NATURAL JOIN KnownSymptoms ks
     GROUP BY d.DiseaseName, ks.SymptomName
 )
 SELECT DiseaseName, SymptomName, SymptomFrequency
@@ -128,16 +126,45 @@ LIMIT 15;
 ```
 <img width="749" alt="Screenshot 2024-11-18 at 1 19 51 PM" src="https://github.com/user-attachments/assets/1ae1e43c-f034-4147-8dac-c86d0aa87bad">
 
-3.  Display all the current medications and allergy inducing medications for a user
+3.  Displays all the current medications and allergy inducing medications for a user
 ```
-SELECT p.Username, p.FirstName, p.LastName, mp.CurrentMedication, mp.AllergicMedication, 
-    GROUP_CONCAT(DISTINCT m.MedicationName) as PrescribedMedications
-FROM Patient p JOIN HasProfile hp ON p.Username = hp.Username
-    JOIN MedicalProfile mp ON hp.ProfileIndex = mp.ProfileIndex
-    LEFT JOIN HasDiagnosis hd ON p.Username = hd.Username
-    LEFT JOIN Medication m ON hd.SymptomGroupId = m.SymptomGroupId
+SELECT p.Username, p.FirstName, p.LastName, mp.CurrentMedication, mp.AllergicMedication
+FROM Patient p NATURAL JOIN HasProfile hp NATURAL JOIN MedicalProfile mp
 GROUP BY  p.Username, p.FirstName, p.LastName, mp.CurrentMedication, mp.AllergicMedication
 LIMIT 15;
 ```
-<img width="1374" alt="Screenshot 2024-11-18 at 1 32 44 PM" src="https://github.com/user-attachments/assets/cc3b344e-e354-4dc7-8366-1cee4001f060">
-4.  
+<img width="1184" alt="Screenshot 2024-11-18 at 2 21 05 PM" src="https://github.com/user-attachments/assets/a3304bff-7d1e-43b9-b202-02dd21750531">
+
+4.  Displays all diagnoses and their related symptoms for each patient
+```
+SELECT p.Username, p.FirstName, p.LastName, d.DiseaseName, GROUP_CONCAT(DISTINCT ks.SymptomName) AS Symptoms
+FROM Patient p NATURAL JOIN HasDiagnosis hd NATURAL JOIN Diagnosis d NATURAL JOIN HasSymptom hs NATURAL JOIN KnownSymptoms ks
+GROUP BY p.Username, p.FirstName, p.LastName, d.DiseaseName
+LIMIT 15;
+```
+<img width="1485" alt="Screenshot 2024-11-18 at 2 29 08 PM" src="https://github.com/user-attachments/assets/528e50a4-9e22-4315-bd55-05c3a07c5c3f">
+
+## Indexing
+### 1.  Compare the number of patients with each disease by gender
+
+Original cost: 
+<img width="1000" alt="Screenshot 2024-11-18 at 5 27 27 PM" src="https://github.com/user-attachments/assets/59c72dbe-e6b1-4933-9b17-b18595f3f63b">
+
+
+### 2.  Display the top 3 symptoms for the disease
+
+Original cost: 
+<img width="1324" alt="Screenshot 2024-11-18 at 5 35 02 PM" src="https://github.com/user-attachments/assets/450663bb-3e6a-4791-a26b-bb564b35acc4">
+
+
+### 3.  Displays all the current medications and allergy inducing medications for a user
+
+Original cost: 
+<img width="1115" alt="Screenshot 2024-11-18 at 5 36 25 PM" src="https://github.com/user-attachments/assets/dde02fbe-1d9a-4d55-b529-a9dfe636366f">
+
+
+### 4.  Displays all diagnoses and their related symptoms for each patient
+
+Original cost: 
+<img width="1284" alt="Screenshot 2024-11-18 at 5 37 57 PM" src="https://github.com/user-attachments/assets/5a403c41-f5d6-4afb-941e-94390f213e8c">
+
