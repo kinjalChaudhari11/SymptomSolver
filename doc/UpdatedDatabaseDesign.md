@@ -147,24 +147,61 @@ LIMIT 15;
 ## Indexing
 ### 1.  Compare the number of patients with each disease by gender
 
-Original cost: 
+Original Cost: 
 <img width="1000" alt="Screenshot 2024-11-18 at 5 27 27 PM" src="https://github.com/user-attachments/assets/59c72dbe-e6b1-4933-9b17-b18595f3f63b">
 
+Indexing Design #1: 
+
+Indexing Design #2: 
+
+Indexing Design #3: 
 
 ### 2.  Display the top 3 symptoms for the disease
 
-Original cost: 
+Original Cost: 
 <img width="1324" alt="Screenshot 2024-11-18 at 5 35 02 PM" src="https://github.com/user-attachments/assets/450663bb-3e6a-4791-a26b-bb564b35acc4">
+
+Indexing Design #1: 
+
+Indexing Design #2: 
+
+Indexing Design #3: 
 
 
 ### 3.  Displays all the current medications and allergy inducing medications for a user
 
-Original cost: 
+Original Cost: 
 <img width="1115" alt="Screenshot 2024-11-18 at 5 36 25 PM" src="https://github.com/user-attachments/assets/dde02fbe-1d9a-4d55-b529-a9dfe636366f">
 
+Indexing Design #1: 
+
+Indexing Design #2: 
+
+Indexing Design #3: 
 
 ### 4.  Displays all diagnoses and their related symptoms for each patient
 
-Original cost: 
+Original Cost: 
 <img width="1284" alt="Screenshot 2024-11-18 at 5 37 57 PM" src="https://github.com/user-attachments/assets/5a403c41-f5d6-4afb-941e-94390f213e8c">
 
+Indexing Design #1: 
+```
+ALTER TABLE Patient
+ADD INDEX idx_patient_names (Username, FirstName, LastName);
+```
+<img width="1481" alt="Screenshot 2024-11-18 at 6 26 45 PM" src="https://github.com/user-attachments/assets/8c07450a-5684-4a50-829f-a793f8757f5e">
+
+
+Indexing Design #2
+```
+ALTER TABLE Diagnosis
+ADD INDEX idx_diagnosis_composite (SymptomGroupId, DiseaseName);
+```
+<img width="1490" alt="Screenshot 2024-11-18 at 6 32 57 PM" src="https://github.com/user-attachments/assets/182b6b58-2d63-4b56-b933-0ffce899eecd">
+
+Indexing Design #3
+```
+ALTER TABLE KnownSymptoms
+ADD INDEX idx_knownsymptoms_name (SymptomName, SymptomIndex);
+```
+<img width="1487" alt="Screenshot 2024-11-18 at 6 36 50 PM" src="https://github.com/user-attachments/assets/96805eb0-1db6-470d-bce8-afdcbd78421e">
