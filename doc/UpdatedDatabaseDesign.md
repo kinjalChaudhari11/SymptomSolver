@@ -156,6 +156,7 @@ ALTER TABLE Patient ADD INDEX idx_gender (Gender);
 ```
 <img width="1490" alt="Screenshot 2024-11-18 at 7 33 34 PM" src="https://github.com/user-attachments/assets/225bd60b-80a3-4141-a919-96c60f721ac8">
 
+The chosen indexing strategy adds an index on the Gender column in the Patient table, as this column is used in the WHERE clause to filter data and group results by gender in the query. The index was expected to improve query performance by enabling faster filtering of rows based on gender values, thus reducing the need for a full table scan. However, in this case, the query cost did not decrease as expected, remaining at 2.60. This outcome suggests that while the index might have optimized some parts of the query, the overall execution plan still involved operations (like joins and aggregations) that dominated the query cost.
 
 Indexing Design #2: 
 ```
@@ -163,12 +164,15 @@ ALTER TABLE Diagnosis ADD INDEX idx_disease_name (DiseaseName);
 ```
 <img width="1487" alt="Screenshot 2024-11-18 at 7 37 15 PM" src="https://github.com/user-attachments/assets/842c49bb-e780-4fdc-b7a1-156e560ef1bc">
 
+The second indexing strategy involves adding an index on the DiseaseName column in the Diagnosis table. This column is used in the GROUP BY clause, making it a natural candidate for indexing to improve query performance when aggregating results by disease name. However, after implementing the index, the query cost remained at 2.60, indicating no significant change in overall performance. This is likely because the primary bottleneck in the query execution lies in the joins and union operations, which dominate the execution time and are not directly optimized by indexing DiseaseName.
+
 Indexing Design #3: 
 ```
 ALTER TABLE Patient ADD INDEX idx_username_gender (Username, Gender);
 ```
 <img width="1494" alt="Screenshot 2024-11-18 at 7 38 47 PM" src="https://github.com/user-attachments/assets/c2fd667e-b6d5-4eb2-ac0b-2736973089c5">
 
+The third indexing strategy adds a composite index on the Username and Gender columns in the Patient table. This choice was made because the query involves filtering by Gender and uses natural joins that rely on Username for matching records, so a composite index could optimize both filtering and join operations. However, the query cost remained unchanged at 2.60, indicating no significant performance improvement. This result suggests that while the composite index may help specific operations, the overall query performance is still dominated by other factors, such as the complexity of the union and aggregate operations, which are not directly optimized by this index.
 
 ### 2.  Display the top 3 symptoms for the disease
 
@@ -181,17 +185,23 @@ ALTER TABLE KnownSymptoms ADD INDEX idx_knownsymptoms_symptom (SymptomName, Symp
 ```
 <img width="741" alt="Screenshot 2024-11-18 at 7 16 49 PM" src="https://github.com/user-attachments/assets/54f11af0-320c-4084-8ecd-62ea00ae240e">
 
+The first indexing strategy for the query added a composite index on the SymptomName and SymptomIndex columns in the KnownSymptoms table. This choice was made because these columns are used in the join and aggregation operations, with SymptomName being a key attribute in filtering and grouping data. After applying the index, the query cost remained the same at 2.60, indicating no improvement in performance. This is likely because the query’s complexity, involving window functions (ROW_NUMBER()), aggregations, and sorting, is not fully optimized by this index alone, as these operations dominate the query execution time.
+
 Indexing Design #2: 
 ```
 ALTER TABLE Diagnosis ADD INDEX idx_diagnosis_composite (DiseaseName, SymptomGroupId);
 ```
 <img width="1487" alt="Screenshot 2024-11-18 at 7 19 51 PM" src="https://github.com/user-attachments/assets/4c047d38-7279-48f7-a60d-22360be90d3b">
 
+The second indexing strategy for the query involves adding a composite index on the DiseaseName and SymptomGroupId columns in the Diagnosis table. This choice was made because these columns are critical in the join and grouping operations, with DiseaseName used in the PARTITION BY clause and SymptomGroupId playing a role in linking tables. However, despite the introduction of this composite index, the query cost remained unchanged at 2.60. This suggests that the overall query performance is still dominated by the computationally intensive operations like the window function (ROW_NUMBER()), aggregation, and sorting, which the index alone could not optimize significantly.
+
 Indexing Design #3: 
 ```
 CREATE INDEX idx_diagnosis_disease ON Diagnosis(DiseaseName);
 ```
 <img width="1490" alt="Screenshot 2024-11-18 at 7 28 42 PM" src="https://github.com/user-attachments/assets/1ae13eff-9d4d-4f3f-a360-1e40cd3d2c38">
+
+The third indexing strategy involves creating an index on the DiseaseName column in the Diagnosis table. This column is central to the query, as it is used in the PARTITION BY clause of the ROW_NUMBER() window function and in grouping operations, making it a suitable candidate for indexing to optimize query performance. After implementing the index, the query cost remained at 2.60, indicating no significant improvement. This is because the query involves computationally intensive operations like window functions, aggregations, and joins, which are not substantially impacted by this single-column index.
 
 
 ### 3.  Displays all the current medications and allergy inducing medications for a user
