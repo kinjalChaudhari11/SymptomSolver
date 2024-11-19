@@ -1,0 +1,22 @@
+<div>
+  <h1>Results</h1>
+  <p><strong>First Name:</strong> {{ data.firstName }}</p>
+  <p><strong>Last Name:</strong> {{ data.lastName }}</p>
+  <p><strong>Username:</strong> {{ data.username }}</p>
+  <p><strong>Age:</strong> {{ data.age }}</p>
+  <p><strong>Gender:</strong> {{ data.gender }}</p>
+  <p><strong>Described Symptoms:</strong> {{ data.symptoms && data.symptoms.join(', ') }}</p>
+
+
+  <div *ngIf="diagnosis.length > 0; else noDiagnosis">
+    <h3>Diagnosis:</h3>
+    <ul>
+      <li *ngFor="let disease of diagnosis">{{ disease }}</li>
+    </ul>
+  </div>
+  <ng-template #noDiagnosis>
+    <p>No diagnosis available. Please try again.</p>
+  </ng-template>
+
+  <button (click)="goBack()">Go Back</button>
+</div>
