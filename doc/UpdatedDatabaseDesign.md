@@ -151,10 +151,24 @@ Original Cost:
 <img width="1000" alt="Screenshot 2024-11-18 at 5 27 27 PM" src="https://github.com/user-attachments/assets/59c72dbe-e6b1-4933-9b17-b18595f3f63b">
 
 Indexing Design #1: 
+```
+ALTER TABLE Patient ADD INDEX idx_gender (Gender);
+```
+<img width="1490" alt="Screenshot 2024-11-18 at 7 33 34 PM" src="https://github.com/user-attachments/assets/225bd60b-80a3-4141-a919-96c60f721ac8">
+
 
 Indexing Design #2: 
+```
+ALTER TABLE Diagnosis ADD INDEX idx_disease_name (DiseaseName);
+```
+<img width="1487" alt="Screenshot 2024-11-18 at 7 37 15 PM" src="https://github.com/user-attachments/assets/842c49bb-e780-4fdc-b7a1-156e560ef1bc">
 
 Indexing Design #3: 
+```
+ALTER TABLE Patient ADD INDEX idx_username_gender (Username, Gender);
+```
+<img width="1494" alt="Screenshot 2024-11-18 at 7 38 47 PM" src="https://github.com/user-attachments/assets/c2fd667e-b6d5-4eb2-ac0b-2736973089c5">
+
 
 ### 2.  Display the top 3 symptoms for the disease
 
@@ -162,10 +176,22 @@ Original Cost:
 <img width="1324" alt="Screenshot 2024-11-18 at 5 35 02 PM" src="https://github.com/user-attachments/assets/450663bb-3e6a-4791-a26b-bb564b35acc4">
 
 Indexing Design #1: 
+```
+ALTER TABLE KnownSymptoms ADD INDEX idx_knownsymptoms_symptom (SymptomName, SymptomIndex);
+```
+<img width="741" alt="Screenshot 2024-11-18 at 7 16 49 PM" src="https://github.com/user-attachments/assets/54f11af0-320c-4084-8ecd-62ea00ae240e">
 
 Indexing Design #2: 
+```
+ALTER TABLE Diagnosis ADD INDEX idx_diagnosis_composite (DiseaseName, SymptomGroupId);
+```
+<img width="1487" alt="Screenshot 2024-11-18 at 7 19 51 PM" src="https://github.com/user-attachments/assets/4c047d38-7279-48f7-a60d-22360be90d3b">
 
 Indexing Design #3: 
+```
+CREATE INDEX idx_diagnosis_disease ON Diagnosis(DiseaseName);
+```
+<img width="1490" alt="Screenshot 2024-11-18 at 7 28 42 PM" src="https://github.com/user-attachments/assets/1ae13eff-9d4d-4f3f-a360-1e40cd3d2c38">
 
 
 ### 3.  Displays all the current medications and allergy inducing medications for a user
@@ -174,10 +200,24 @@ Original Cost:
 <img width="1115" alt="Screenshot 2024-11-18 at 5 36 25 PM" src="https://github.com/user-attachments/assets/dde02fbe-1d9a-4d55-b529-a9dfe636366f">
 
 Indexing Design #1: 
+```
+ALTER TABLE Patient ADD INDEX idx_patient_names (Username, FirstName, LastName);
+```
+<img width="1366" alt="Screenshot 2024-11-18 at 6 56 16 PM" src="https://github.com/user-attachments/assets/0a7941bb-aa82-4e67-b2d6-1bf1ca45b5fd">
+
 
 Indexing Design #2: 
+```
+ALTER TABLE MedicalProfile ADD INDEX idx_current_medication (CurrentMedication);
+```
+<img width="1484" alt="Screenshot 2024-11-18 at 7 02 08 PM" src="https://github.com/user-attachments/assets/6f61ac48-f5fa-4afa-bb71-60a6b6ee4e76">
+
 
 Indexing Design #3: 
+```
+ALTER TABLE MedicalProfile ADD INDEX idx_medprofile_medications (CurrentMedication, AllergicMedication);
+```
+<img width="1478" alt="Screenshot 2024-11-18 at 7 08 11 PM" src="https://github.com/user-attachments/assets/3ef008b7-1088-401d-8fe6-3262b4564768">
 
 ### 4.  Displays all diagnoses and their related symptoms for each patient
 
@@ -186,28 +226,22 @@ Original Cost:
 
 Indexing Design #1: 
 ```
-ALTER TABLE Patient
-ADD INDEX idx_patient_names (Username, FirstName, LastName);
+ALTER TABLE Patient ADD INDEX idx_patient_names (Username, FirstName, LastName);
 ```
 <img width="1481" alt="Screenshot 2024-11-18 at 6 26 45 PM" src="https://github.com/user-attachments/assets/8c07450a-5684-4a50-829f-a793f8757f5e">
 
-Based on the EXPLAIN ANALYZE output, the addition of idx_patient_names index on Patient(Username, FirstName, LastName) showed a modest improvement in the query execution plan. The index is being used as a covering index for the Patient table scan (shown by "Covering index scan on p using idx_patient_names" with cost=102.35), eliminating the need for a full table scan. However, the overall query cost remains relatively high at 7465.48 due to the multiple nested loop joins and grouping operations. The index design was chosen because these columns appear in both the GROUP BY clause and are part of the JOIN conditions, making them good candidates for indexing. There's still room for optimization, particularly in the join operations between HasDiagnosis, Diagnosis, HasSymptom, and KnownSymptoms tables, which continue to show significant costs in the execution plan.
 
 Indexing Design #2
 ```
-ALTER TABLE Diagnosis
-ADD INDEX idx_diagnosis_composite (SymptomGroupId, DiseaseName);
+ALTER TABLE Diagnosis ADD INDEX idx_diagnosis_composite (SymptomGroupId, DiseaseName);
 ```
 <img width="1490" alt="Screenshot 2024-11-18 at 6 32 57 PM" src="https://github.com/user-attachments/assets/182b6b58-2d63-4b56-b933-0ffce899eecd">
 
-Looking at the EXPLAIN ANALYZE output after adding idx_diagnosis_composite (SymptomGroupId, DiseaseName) on the Diagnosis table, the query execution plan shows little structural improvement with the overall cost remaining at 7465.48. While this index includes columns used in both JOIN and GROUP BY clauses, the execution plan indicates it's not being utilized effectively as the query continues to use the PRIMARY key index for Diagnosis table lookups ("Single-row index lookup on d using PRIMARY"). This suggests that the composite index on Diagnosis isn't providing additional benefit over the existing PRIMARY key index, likely because the query optimizer determined that using the PRIMARY key for single-row lookups was still the most efficient path given the join order and data distribution.
 
 Indexing Design #3
 ```
-ALTER TABLE KnownSymptoms
-ADD INDEX idx_knownsymptoms_name (SymptomName, SymptomIndex);
+ALTER TABLE KnownSymptoms ADD INDEX idx_knownsymptoms_name (SymptomName, SymptomIndex);
 ```
 <img width="1487" alt="Screenshot 2024-11-18 at 6 36 50 PM" src="https://github.com/user-attachments/assets/96805eb0-1db6-470d-bce8-afdcbd78421e">
 
-The addition of idx_knownsymptoms_name (SymptomName, SymptomIndex) on the KnownSymptoms table did not yield improvements in the query execution plan, with the overall cost remaining at 7465.48. The execution plan shows that the query optimizer continues to prefer using the PRIMARY key index for KnownSymptoms lookups ("Single-row index lookup on ks using PRIMARY") instead of the new composite index. This is likely because the join operation is primarily driven by the SymptomIndex column matches, and the SymptomName is only used in the final GROUP_CONCAT operation, making the PRIMARY key index more efficient for the join operation than our new composite index which has SymptomName as its leading column.
 
