@@ -191,6 +191,7 @@ ADD INDEX idx_patient_names (Username, FirstName, LastName);
 ```
 <img width="1481" alt="Screenshot 2024-11-18 at 6 26 45 PM" src="https://github.com/user-attachments/assets/8c07450a-5684-4a50-829f-a793f8757f5e">
 
+Based on the EXPLAIN ANALYZE output, the addition of idx_patient_names index on Patient(Username, FirstName, LastName) showed a modest improvement in the query execution plan. The index is being used as a covering index for the Patient table scan (shown by "Covering index scan on p using idx_patient_names" with cost=102.35), eliminating the need for a full table scan. However, the overall query cost remains relatively high at 7465.48 due to the multiple nested loop joins and grouping operations. The index design was chosen because these columns appear in both the GROUP BY clause and are part of the JOIN conditions, making them good candidates for indexing. There's still room for optimization, particularly in the join operations between HasDiagnosis, Diagnosis, HasSymptom, and KnownSymptoms tables, which continue to show significant costs in the execution plan.
 
 Indexing Design #2
 ```
@@ -199,9 +200,14 @@ ADD INDEX idx_diagnosis_composite (SymptomGroupId, DiseaseName);
 ```
 <img width="1490" alt="Screenshot 2024-11-18 at 6 32 57 PM" src="https://github.com/user-attachments/assets/182b6b58-2d63-4b56-b933-0ffce899eecd">
 
+Looking at the EXPLAIN ANALYZE output after adding idx_diagnosis_composite (SymptomGroupId, DiseaseName) on the Diagnosis table, the query execution plan shows little structural improvement with the overall cost remaining at 7465.48. While this index includes columns used in both JOIN and GROUP BY clauses, the execution plan indicates it's not being utilized effectively as the query continues to use the PRIMARY key index for Diagnosis table lookups ("Single-row index lookup on d using PRIMARY"). This suggests that the composite index on Diagnosis isn't providing additional benefit over the existing PRIMARY key index, likely because the query optimizer determined that using the PRIMARY key for single-row lookups was still the most efficient path given the join order and data distribution.
+
 Indexing Design #3
 ```
 ALTER TABLE KnownSymptoms
 ADD INDEX idx_knownsymptoms_name (SymptomName, SymptomIndex);
 ```
 <img width="1487" alt="Screenshot 2024-11-18 at 6 36 50 PM" src="https://github.com/user-attachments/assets/96805eb0-1db6-470d-bce8-afdcbd78421e">
+
+The addition of idx_knownsymptoms_name (SymptomName, SymptomIndex) on the KnownSymptoms table did not yield improvements in the query execution plan, with the overall cost remaining at 7465.48. The execution plan shows that the query optimizer continues to prefer using the PRIMARY key index for KnownSymptoms lookups ("Single-row index lookup on ks using PRIMARY") instead of the new composite index. This is likely because the join operation is primarily driven by the SymptomIndex column matches, and the SymptomName is only used in the final GROUP_CONCAT operation, making the PRIMARY key index more efficient for the join operation than our new composite index which has SymptomName as its leading column.
+
