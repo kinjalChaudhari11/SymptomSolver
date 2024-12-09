@@ -1,30 +1,37 @@
 <div>
   <h2>Symptom Input</h2>
   <form>
+    <div class="description-section">
+      <label for="description">Describe your symptoms:</label>
+      <textarea
+        id="description"
+        [(ngModel)]="symptomDescription"
+        name="description"
+        rows="4"
+        placeholder="Describe how you're feeling in detail..."
+      ></textarea>
+    </div>
+
+
     <label for="username">Username:</label>
     <input type="text" id="username" [(ngModel)]="username" required name="username" />
+
 
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" [(ngModel)]="firstName" required name="firstName" />
 
+
     <label for="lastName">Last Name:</label>
     <input type="text" id="lastName" [(ngModel)]="lastName" required name="lastName" />
+
 
     <label for="gender">Gender:</label>
     <input type="text" id="gender" [(ngModel)]="gender" required name="gender" />
 
+
     <label for="age">Age:</label>
     <input type="number" id="age" [(ngModel)]="age" required name="age" />
 
-    <h3>Select Symptoms</h3>
-    <div *ngFor="let symptom of allSymptoms">
-      <input
-        type="checkbox"
-        [id]="symptom"
-        (change)="onSymptomChange(symptom, $event)"
-      />
-      <label [attr.for]="symptom">{{ symptom }}</label>
-    </div>
 
     <button type="button" (click)="submitData()">Submit</button>
     <button type="button" (click)="goBack()">Go Back</button>
