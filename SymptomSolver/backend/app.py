@@ -257,6 +257,12 @@ def get_diagnosis():
                 "medications": medications
             })
 
+        # get top 3 symptoms using stored procedure
+        cursor.callproc("GetTop3SymptomsForPatient", [username])
+        top_symptoms = []
+        for result in cursor.stored_results():
+            top_symptoms.extend(result.fetchall())
+
 
         response = {
             "diagnosis": diagnoses_with_meds,
@@ -267,7 +273,8 @@ def get_diagnosis():
                 "age": age,
                 "gender": gender,
                 "symptoms": symptoms
-            }
+            },
+            "top_symptoms": top_symptoms  # Include top symptoms in the response
         }
 
 
@@ -287,6 +294,40 @@ def get_diagnosis():
             cursor.close()
         if conn:
             conn.close()
+
+# endpoint for sp 2
+@app.route('/api/compare-disease-by-gender', methods=['GET'])
+def compare_disease_by_gender():
+    try:
+        username = request.args.get('username')
+
+        connection = mysql.connector.connect(
+            host=app.config['MYSQL_HOST'],
+            user=app.config['MYSQL_USER'],
+            password=app.config['MYSQL_PASSWORD'],
+            database=app.config['MYSQL_DB']
+        )
+
+        cursor = connection.cursor(dictionary=True)
+
+        # call stored procedure
+        cursor.callproc('CompareDiseaseByGender', (username,))
+
+        # fetch all the results from the stored procedure
+        result = []
+        for row in cursor.stored_results():
+            result = row.fetchall()
+
+        cursor.close()
+        connection.close()
+
+        # return the results as JSON
+        return jsonify(result)
+
+    except mysql.connector.Error as err:
+        return jsonify({"error": f"Error: {err}"}), 500
+    
+
        
 @app.route("/test-db-structure")
 def test_db_structure():
@@ -499,6 +540,8 @@ def debug_diagnoses():
             cursor.close()
         if conn:
             conn.close()
+
+
            
 @app.route("/")
 def home():

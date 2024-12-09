@@ -166,7 +166,9 @@ CALL GetTop3SymptomsForPatient(username) --dynamically call the username
 -- to create a visualization of the number of patients by gender that has each disease
 DELIMITER $$
 
-CREATE PROCEDURE CompareDiseaseByGender()
+CREATE PROCEDURE CompareDiseaseByGender(
+    IN patientUsername VARCHAR(255)
+)
 BEGIN
     -- Generate a summary of the number of patients with each disease grouped by gender
     SELECT p.Gender, d.DiseaseName, COUNT(*) AS PatientCount
@@ -174,6 +176,7 @@ BEGIN
     NATURAL JOIN HasDiagnosis hd
     NATURAL JOIN Diagnosis d
     WHERE p.Gender IN ('Male', 'Female', 'Non-Binary')
+    AND hd.Username = patientUsername  -- filter for the patient's diagnoses
     GROUP BY p.Gender, d.DiseaseName
     ORDER BY d.DiseaseName, p.Gender
 END $$
