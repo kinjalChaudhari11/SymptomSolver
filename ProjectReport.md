@@ -13,15 +13,14 @@ The project focuses on symptom input and diagnosis and medication matching as th
 The use of advanced database features such as triggers and transactions in our system significantly streamlines data processing and enhances the overall user experience by ensuring fast and accurate results. Triggers are employed to automatically enforce critical constraints, such as preventing duplicate usernames during user submissions, which maintains data integrity without requiring additional application-level checks. Transactions, on the other hand, ensure that complex operations, such as checking for medication-allergy conflicts or generating diagnostic insights based on user submissions, are executed atomically and consistently. These features reduce the likelihood of errors, improve system reliability, and enable real-time feedback for users. By automating these essential processes within the database layer, we optimize performance and provide users with a seamless experience, allowing them to receive precise recommendations and relevant warnings without unnecessary delays.
 ### Team Member Challenges-
 Linnea: Encountered challenges while loading datasets into the database due to inconsistent formats. She performed data exploration in Python, using techniques like data cleaning, transformation, and mapping to reformat rows and ensure compatibility with the database schema. 
-Kinjal: Faced challenges with the creative component, as the BERT model often produced inaccurate results when processing users' free-response queries. Although the model employed NLP techniques to extract medical symptoms from colloquial language and match them to database entries, inconsistencies in phrasing and limited training data led to mismatches, impacting the system's accuracy.
+Kinjal: Faced challenges with the creative component, as the BERT model often produced inaccurate results when processing users' free-response queries. Although the model employed natural language processing (NLP) techniques to extract medical symptoms from colloquial language and match them to database entries, inconsistencies in phrasing and limited training data led to mismatches, impacting the system's accuracy.
 Manasi: Struggled with designing complex queries for Stage 4 Checkpoint 2 that aligned with the database schema. Limited time for testing made it challenging to ensure that these queries didn’t affect the front-end performance or cause crashes during user interaction.
 ### Other Changes from the Original Proposal
 The original proposal mentioned a general vision of health information accessibility. Specific improvements, such as database enhancements or interface tweaks, are likely adaptations made during development but are not explicitly documented.
 ### Future Work
-* To improve beyond the interface:
-* Further training the BERT model using more natural laguage processing techniques to enhance symptom matching accuracy
+* Improve interface aesthetically
+* Further training the BERT model using NLP techniques and other tools to enhance symptom matching accuracy
 * Expand the symptom database to include diverse conditions
 * Improve data visualizations for better user engagement
-* Add a security framework for protecting sensitive health data
 ### Division of Labor and Teamwork Management
-The team divided responsibilities among members, with roles split between database management, front-end development, and integration tasks.
+The team worked together on all components until Stage 3. The team then divided responsibilities among members, with Linnea on database management, Kinjal on front-end development, and Manasi on integration tasks.
