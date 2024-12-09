@@ -7,7 +7,6 @@ import numpy as np
 from scipy.spatial.distance import cosine
 import os
 
-
 app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
@@ -169,14 +168,13 @@ def process_description():
         if conn:
             conn.close()
 
-
 @app.route("/api/diagnosis", methods=["POST", "OPTIONS"])
 def get_diagnosis():
     if request.method == "OPTIONS":
         response = jsonify({"status": "ok"})
-        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:4200')
+        response.headers.add('Access-Control-Allow-Origin', '*')
         response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        response.headers.add('Access-Control-Allow-Methods', 'POST, OPTIONS')
         return response
 
 
@@ -195,76 +193,106 @@ def get_diagnosis():
 
     try:
         conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
+        cursor = conn.cursor(dictionary=True)
 
 
-        # Patient insert remains the same
-        cursor.execute(
-            """
-            INSERT INTO Patient (Username, FirstName, LastName, Gender, Age)
-            VALUES (%s, %s, %s, %s, %s)
-            ON DUPLICATE KEY UPDATE FirstName=%s, LastName=%s, Gender=%s, Age=%s
-            """,
-            (username, first_name, last_name, gender, age, first_name, last_name, gender, age)
-        )
-        conn.commit()
+        # Check if user exists
+        cursor.execute("SELECT * FROM Patient WHERE Username = %s", (username,))
+        existing_user = cursor.fetchone()
 
 
-        # HasDiagnosis insert remains the same
+        if not existing_user:
+            # Insert new user
+            cursor.execute(
+                """
+                INSERT INTO Patient (Username, FirstName, LastName, Gender, Age)
+                VALUES (%s, %s, %s, %s, %s)
+                """,
+                (username, first_name, last_name, gender, age)
+            )
+            conn.commit()
+        else:
+            # Update existing user
+            cursor.execute(
+                """
+                UPDATE Patient
+                SET FirstName = %s, LastName = %s, Gender = %s, Age = %s
+                WHERE Username = %s
+                """,
+                (first_name, last_name, gender, age, username)
+            )
+            conn.commit()
+
+
+        # Process diagnoses
+        diagnoses_with_meds = []
         for symptom in symptoms:
             cursor.execute(
                 """
-                INSERT INTO HasDiagnosis (Username, SymptomGroupId)
-                SELECT %s, hs.SymptomGroupId
+                SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
                 FROM HasSymptom hs
                 JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
+                JOIN Diagnosis d ON d.SymptomGroupId = hs.SymptomGroupId
                 WHERE ks.SymptomName = %s
-                ON DUPLICATE KEY UPDATE SymptomGroupId=hs.SymptomGroupId
                 """,
-                (username, symptom)
+                (symptom,)
             )
+            diagnoses = cursor.fetchall()
+
+
+            for diagnosis in diagnoses:
+                # Add to HasDiagnosis
+                cursor.execute(
+                    """
+                    INSERT IGNORE INTO HasDiagnosis (Username, SymptomGroupId)
+                    VALUES (%s, %s)
+                    """,
+                    (username, diagnosis['SymptomGroupId'])
+                )
+
+
+                # Get medications
+                cursor.execute(
+                    """
+                    SELECT MedicationName, Prescription
+                    FROM Medication
+                    WHERE SymptomGroupId = %s
+                    """,
+                    (diagnosis['SymptomGroupId'],)
+                )
+                medications = cursor.fetchall()
+
+
+                # Check for conflicts
+                cursor.execute(
+                    """
+                    SELECT GROUP_CONCAT(m.MedicationName SEPARATOR ', ')
+                    FROM Medication m
+                    WHERE m.SymptomGroupId = %s
+                    AND m.MedicationName IN (
+                        SELECT mp.AllergicMedication
+                        FROM MedicalProfile mp
+                        JOIN HasProfile hp ON mp.ProfileIndex = hp.ProfileIndex
+                        WHERE hp.Username = %s
+                    )
+                    """,
+                    (diagnosis['SymptomGroupId'], username)
+                )
+                conflict = cursor.fetchone()['GROUP_CONCAT(m.MedicationName SEPARATOR \', \')']
+
+
+                diagnoses_with_meds.append({
+                    "disease": diagnosis['DiseaseName'],
+                    "medications": [{"name": med['MedicationName'], "prescription": med['Prescription']}
+                                  for med in medications],
+                    "conflict": conflict
+                })
+
+
         conn.commit()
 
 
-        # Get diagnoses
-        cursor.execute(
-            """
-            SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
-            FROM Diagnosis d
-            JOIN HasDiagnosis hd ON d.SymptomGroupId = hd.SymptomGroupId
-            WHERE hd.Username = %s
-            """,
-            (username,)
-        )
-        diagnoses = cursor.fetchall()
-
-
-        diagnoses_with_meds = []
-        for disease_name, symptom_group_id in diagnoses:
-            # Get medications using SymptomGroupId
-            cursor.execute(
-                """
-                SELECT MedicationName, Prescription
-                FROM Medication
-                WHERE SymptomGroupId = %s
-                """,
-                (symptom_group_id,)
-            )
-            medications = [{"name": med[0], "prescription": med[1]} for med in cursor.fetchall()]
-           
-            diagnoses_with_meds.append({
-                "disease": disease_name,
-                "medications": medications
-            })
-
-        # get top 3 symptoms using stored procedure
-        cursor.callproc("GetTop3SymptomsForPatient", [username])
-        top_symptoms = []
-        for result in cursor.stored_results():
-            top_symptoms.extend(result.fetchall())
-
-
-        response = {
+        response = jsonify({
             "diagnosis": diagnoses_with_meds,
             "data": {
                 "username": username,
@@ -273,20 +301,17 @@ def get_diagnosis():
                 "age": age,
                 "gender": gender,
                 "symptoms": symptoms
-            },
-            "top_symptoms": top_symptoms  # Include top symptoms in the response
-        }
-
-
-        return jsonify(response)
+            }
+        })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
 
 
     except mysql.connector.Error as err:
-        print(f"Database error: {str(err)}")  # Add logging
-        return jsonify({
-            "error": str(err),
-            "message": "An error occurred while processing your request"
-        }), 500
+        print(f"Database error: {str(err)}")
+        error_response = jsonify({"error": str(err), "message": "An error occurred"})
+        error_response.headers.add('Access-Control-Allow-Origin', '*')
+        return error_response, 500
 
 
     finally:
@@ -295,39 +320,162 @@ def get_diagnosis():
         if conn:
             conn.close()
 
-# endpoint for sp 2
-@app.route('/api/compare-disease-by-gender', methods=['GET'])
-def compare_disease_by_gender():
+
+##for transaction 2
+@app.route("/api/check-conflicts", methods=["POST", "OPTIONS"])
+def check_conflicts():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:4200')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+
+
+    data = request.json
+    username = data.get("username")
+    symptoms = data.get("symptoms", [])
+
+
+    if not username or not symptoms:
+        return jsonify({"error": "Invalid input"}), 400
+
+
     try:
-        username = request.args.get('username')
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
 
-        connection = mysql.connector.connect(
-            host=app.config['MYSQL_HOST'],
-            user=app.config['MYSQL_USER'],
-            password=app.config['MYSQL_PASSWORD'],
-            database=app.config['MYSQL_DB']
-        )
 
-        cursor = connection.cursor(dictionary=True)
+        cursor.execute("START TRANSACTION;")
 
-        # call stored procedure
-        cursor.callproc('CompareDiseaseByGender', (username,))
 
-        # fetch all the results from the stored procedure
-        result = []
-        for row in cursor.stored_results():
-            result = row.fetchall()
+        # Get ProfileIndex
+        cursor.execute("""
+            SELECT ProfileIndex
+            FROM HasProfile
+            WHERE Username = %s
+            LIMIT 1;
+        """, (username,))
+        profile_result = cursor.fetchone()
+       
+        if not profile_result:
+            cursor.execute("ROLLBACK;")
+            return jsonify({"error": "User profile not found"}), 404
+           
+        profile_index = profile_result[0]
 
-        cursor.close()
-        connection.close()
 
-        # return the results as JSON
-        return jsonify(result)
+        # Get SymptomGroupIds for the symptoms
+                # Get symptom indices first
+        placeholders = ', '.join(['%s'] * len(symptoms))
+        cursor.execute(f"""
+            SELECT DISTINCT hs.SymptomGroupId
+            FROM HasSymptom hs
+            JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
+            WHERE ks.SymptomName IN ({placeholders})
+            GROUP BY hs.SymptomGroupId
+        """, tuple(symptoms))
+       
+        symptom_group_ids = [row[0] for row in cursor.fetchall()]
+
+
+        # Check for conflicts
+        conflicts = []
+        for group_id in symptom_group_ids:
+            cursor.execute("""
+                SELECT GROUP_CONCAT(m.MedicationName SEPARATOR ', ')
+                FROM Medication m
+                WHERE m.SymptomGroupId = %s
+                AND m.MedicationName IN (
+                    SELECT mp.AllergicMedication
+                    FROM MedicalProfile mp
+                    WHERE mp.ProfileIndex = %s
+                );
+            """, (group_id, profile_index))
+           
+            conflict = cursor.fetchone()[0]
+            if conflict:
+                conflicts.append(conflict)
+
+
+        cursor.execute("COMMIT;")
+
+
+        if conflicts:
+            message = f"Warning: The following medications conflict with your allergies: {', '.join(conflicts)}. Please consult your doctor for alternatives."
+        else:
+            message = "No conflicts detected between recommended medications and your allergies."
+
+
+        return jsonify({"message": message})
+
+
+    except Exception as e:
+        if cursor:
+            cursor.execute("ROLLBACK;")
+        return jsonify({"error": str(e)}), 500
+
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+
+# Flask endpoint
+@app.route("/api/delete-account", methods=["POST", "OPTIONS"])
+def delete_account():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST, OPTIONS')
+        return response
+
+
+    data = request.json
+    username = data.get("username")
+   
+    conn = None
+    cursor = None
+
+
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+
+        # Delete from HasDiagnosis first
+        cursor.execute("DELETE FROM HasDiagnosis WHERE Username = %s", (username,))
+       
+        # Delete from HasProfile
+        cursor.execute("DELETE FROM HasProfile WHERE Username = %s", (username,))
+       
+        # Finally delete from Patient
+        cursor.execute("DELETE FROM Patient WHERE Username = %s", (username,))
+       
+        conn.commit()
+
+
+        response = jsonify({"message": "Account deleted successfully"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
 
     except mysql.connector.Error as err:
-        return jsonify({"error": f"Error: {err}"}), 500
-    
+        if cursor:
+            cursor.execute("ROLLBACK")
+        error_response = jsonify({"error": str(err), "message": "Failed to delete account"})
+        error_response.headers.add('Access-Control-Allow-Origin', '*')
+        return error_response, 500
 
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
        
 @app.route("/test-db-structure")
 def test_db_structure():
@@ -541,7 +689,185 @@ def debug_diagnoses():
         if conn:
             conn.close()
 
+@app.route("/api/diagnosis-with-top-symptoms", methods=["POST", "OPTIONS"])
+def get_diagnosis_with_top_symptoms():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
 
+    data = request.json
+    username = data.get("username")
+    first_name = data.get("firstName")
+    last_name = data.get("lastName")
+    age = data.get("age")
+    gender = data.get("gender")
+    symptoms = data.get("symptoms", [])
+
+    conn = None
+    cursor = None
+
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+        # Patient insert
+        cursor.execute(
+            """
+            INSERT INTO Patient (Username, FirstName, LastName, Gender, Age)
+            VALUES (%s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE FirstName=%s, LastName=%s, Gender=%s, Age=%s
+            """,
+            (username, first_name, last_name, gender, age, first_name, last_name, gender, age)
+        )
+        conn.commit()
+
+        # HasDiagnosis insert
+        for symptom in symptoms:
+            cursor.execute(
+                """
+                INSERT INTO HasDiagnosis (Username, SymptomGroupId)
+                SELECT %s, hs.SymptomGroupId
+                FROM HasSymptom hs
+                JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
+                WHERE ks.SymptomName = %s
+                ON DUPLICATE KEY UPDATE SymptomGroupId=hs.SymptomGroupId
+                """,
+                (username, symptom)
+            )
+        conn.commit()
+
+        # Get diagnoses
+        cursor.execute(
+            """
+            SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
+            FROM Diagnosis d
+            JOIN HasDiagnosis hd ON d.SymptomGroupId = hd.SymptomGroupId
+            WHERE hd.Username = %s
+            """,
+            (username,)
+        )
+        diagnoses = cursor.fetchall()
+
+        diagnoses_with_meds = []
+        for disease_name, symptom_group_id in diagnoses:
+            cursor.execute(
+                """
+                SELECT MedicationName, Prescription
+                FROM Medication
+                WHERE SymptomGroupId = %s
+                """,
+                (symptom_group_id,)
+            )
+            medications = [{"name": med[0], "prescription": med[1]} for med in cursor.fetchall()]
+            
+            diagnoses_with_meds.append({
+                "disease": disease_name,
+                "medications": medications
+            })
+
+        # Get top 3 symptoms
+        cursor.callproc("GetTop3SymptomsForPatient", [username])
+        top_symptoms = []
+        for result in cursor.stored_results():
+            top_symptoms.extend(result.fetchall())
+
+        response = {
+            "diagnosis": diagnoses_with_meds,
+            "data": {
+                "username": username,
+                "firstName": first_name,
+                "lastName": last_name,
+                "age": age,
+                "gender": gender,
+                "symptoms": symptoms
+            },
+            "top_symptoms": top_symptoms
+        }
+
+        return jsonify(response)
+
+    except mysql.connector.Error as err:
+        print(f"Database error: {str(err)}")
+        return jsonify({
+            "error": str(err),
+            "message": "An error occurred while processing your request"
+        }), 500
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+@app.route("/api/gender-disease-comparison", methods=["GET", "OPTIONS"])
+def compare_diseases_by_gender():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'GET')
+        return response
+
+    username = request.args.get('username')
+    if not username:
+        return jsonify({"error": "Username is required"}), 400
+
+    conn = None
+    cursor = None
+
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor(dictionary=True)
+
+        # Get user's gender
+        cursor.execute(
+            "SELECT Gender FROM Patient WHERE Username = %s",
+            (username,)
+        )
+        user = cursor.fetchone()
+        if not user:
+            return jsonify({"error": "User not found"}), 404
+
+        user_gender = user['Gender']
+
+        # Get disease comparison
+        cursor.execute("""
+            SELECT 
+                d.DiseaseName,
+                COUNT(CASE WHEN p.Gender = %s THEN 1 END) as same_gender_count,
+                COUNT(CASE WHEN p.Gender != %s THEN 1 END) as other_gender_count,
+                COUNT(*) as total_count
+            FROM Patient p
+            JOIN HasDiagnosis hd ON p.Username = hd.Username
+            JOIN Diagnosis d ON hd.SymptomGroupId = d.SymptomGroupId
+            GROUP BY d.DiseaseName
+            HAVING same_gender_count > 0 OR other_gender_count > 0
+            ORDER BY total_count DESC
+            LIMIT 10
+        """, (user_gender, user_gender))
+
+        comparisons = cursor.fetchall()
+
+        response = jsonify({
+            "userGender": user_gender,
+            "comparisons": comparisons
+        })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+    except mysql.connector.Error as err:
+        error_response = jsonify({"error": str(err), "message": "Database error occurred"})
+        error_response.headers.add('Access-Control-Allow-Origin', '*')
+        return error_response, 500
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
            
 @app.route("/")
 def home():
