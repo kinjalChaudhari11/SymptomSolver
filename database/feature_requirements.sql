@@ -125,6 +125,8 @@ SELECT @conflict_message AS Message; -- display message with rest of results
 
 
 -- Stored Procedure 1:
+-- displays top 3 symptoms for the disease(s) that were displayed for that user
+-- kind of like "watch out for these symptoms as well"
 DELIMITER $$
 
 CREATE PROCEDURE GetTop3SymptomsForPatient(
@@ -161,3 +163,19 @@ CALL GetTop3SymptomsForPatient(username) --dynamically call the username
 
 
 -- Stored Procedure 2:
+-- to create a visualization of the number of patients by gender that has each disease
+DELIMITER $$
+
+CREATE PROCEDURE CompareDiseaseByGender()
+BEGIN
+    -- Generate a summary of the number of patients with each disease grouped by gender
+    SELECT p.Gender, d.DiseaseName, COUNT(*) AS PatientCount
+    FROM Patient p
+    NATURAL JOIN HasDiagnosis hd
+    NATURAL JOIN Diagnosis d
+    WHERE p.Gender IN ('Male', 'Female', 'Non-Binary')
+    GROUP BY p.Gender, d.DiseaseName
+    ORDER BY d.DiseaseName, p.Gender
+END $$
+
+DELIMITER ;
