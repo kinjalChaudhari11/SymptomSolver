@@ -1,22 +1,33 @@
 <div>
   <h1>Results</h1>
-  <p><strong>First Name:</strong> {{ data.firstName }}</p>
-  <p><strong>Last Name:</strong> {{ data.lastName }}</p>
-  <p><strong>Username:</strong> {{ data.username }}</p>
-  <p><strong>Age:</strong> {{ data.age }}</p>
-  <p><strong>Gender:</strong> {{ data.gender }}</p>
-  <p><strong>Described Symptoms:</strong> {{ data.symptoms && data.symptoms.join(', ') }}</p>
 
 
-  <div *ngIf="diagnosis.length > 0; else noDiagnosis">
-    <h3>Diagnosis:</h3>
-    <ul>
-      <li *ngFor="let disease of diagnosis">{{ disease }}</li>
-    </ul>
+  <p><strong>First Name:</strong> {{data.firstName}}</p>
+  <p><strong>Last Name:</strong> {{data.lastName}}</p>
+  <p><strong>Username:</strong> {{data.username}}</p>
+  <p><strong>Age:</strong> {{data.age}}</p>
+  <p><strong>Gender:</strong> {{data.gender}}</p>
+  <p><strong>Described Symptoms:</strong> {{data.symptoms.join(', ')}}</p>
+
+
+  <h2>Diagnosis:</h2>
+  <div *ngIf="diagnosis && diagnosis.length > 0">
+    <div *ngFor="let item of diagnosis">
+      <h3>{{item.disease}}</h3>
+      <div *ngIf="item.medications && item.medications.length > 0">
+        <h4>Recommended Medications:</h4>
+        <ul>
+          <li *ngFor="let med of item.medications">
+            {{med.name}} <span *ngIf="med.prescription">- {{med.prescription}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <ng-template #noDiagnosis>
-    <p>No diagnosis available. Please try again.</p>
-  </ng-template>
+  <div *ngIf="!diagnosis || diagnosis.length === 0">
+    <p>No diagnoses with available medications found.</p>
+  </div>
+
 
   <button (click)="goBack()">Go Back</button>
 </div>
