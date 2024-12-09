@@ -189,9 +189,6 @@ def get_diagnosis():
     symptoms = data.get("symptoms", [])
 
 
-    print(f"\nProcessing diagnosis for user {username} with symptoms: {symptoms}")
-
-
     conn = None
     cursor = None
 
@@ -201,7 +198,7 @@ def get_diagnosis():
         cursor = conn.cursor()
 
 
-        # Insert patient info
+        # Patient insert remains the same
         cursor.execute(
             """
             INSERT INTO Patient (Username, FirstName, LastName, Gender, Age)
@@ -213,118 +210,72 @@ def get_diagnosis():
         conn.commit()
 
 
-        # Get all SymptomGroupIds for the provided symptoms
-        all_group_ids = []
+        # HasDiagnosis insert remains the same
         for symptom in symptoms:
             cursor.execute(
                 """
-                SELECT DISTINCT hs.SymptomGroupId
+                INSERT INTO HasDiagnosis (Username, SymptomGroupId)
+                SELECT %s, hs.SymptomGroupId
                 FROM HasSymptom hs
                 JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
                 WHERE ks.SymptomName = %s
+                ON DUPLICATE KEY UPDATE SymptomGroupId=hs.SymptomGroupId
                 """,
-                (symptom,)
+                (username, symptom)
             )
-            group_ids = cursor.fetchall()
-            all_group_ids.extend([g[0] for g in group_ids])
+        conn.commit()
 
 
-        print(f"Found group IDs: {all_group_ids}")
+        # Get diagnoses
+        cursor.execute(
+            """
+            SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
+            FROM Diagnosis d
+            JOIN HasDiagnosis hd ON d.SymptomGroupId = hd.SymptomGroupId
+            WHERE hd.Username = %s
+            """,
+            (username,)
+        )
+        diagnoses = cursor.fetchall()
 
 
-        if all_group_ids:
-            # Insert all group IDs into HasDiagnosis
-            for group_id in all_group_ids:
-                cursor.execute(
-                    """
-                    INSERT INTO HasDiagnosis (Username, SymptomGroupId)
-                    VALUES (%s, %s)
-                    ON DUPLICATE KEY UPDATE SymptomGroupId = VALUES(SymptomGroupId)
-                    """,
-                    (username, group_id)
-                )
-            conn.commit()
-
-
-            # Get diagnoses
-            placeholders = ','.join(['%s'] * len(all_group_ids))
+        diagnoses_with_meds = []
+        for disease_name, symptom_group_id in diagnoses:
+            # Get medications using SymptomGroupId
             cursor.execute(
-                f"""
-                SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
-                FROM Diagnosis d
-                WHERE d.SymptomGroupId IN ({placeholders})
+                """
+                SELECT MedicationName, Prescription
+                FROM Medication
+                WHERE SymptomGroupId = %s
                 """,
-                all_group_ids
+                (symptom_group_id,)
             )
-            diagnoses = cursor.fetchall()
-            print(f"Found diagnoses: {diagnoses}")
+            medications = [{"name": med[0], "prescription": med[1]} for med in cursor.fetchall()]
+           
+            diagnoses_with_meds.append({
+                "disease": disease_name,
+                "medications": medications
+            })
 
 
-            diagnoses_with_meds = []
-            seen_diseases = set()
-
-
-            for disease_name, symptom_group_id in diagnoses:
-                print(f"\nProcessing disease: {disease_name} with SymptomGroupId: {symptom_group_id}")
-               
-                if disease_name in seen_diseases:
-                    continue
-
-
-                seen_diseases.add(disease_name)
-               
-                # Check for medications
-                cursor.execute(
-                    """
-                    SELECT DISTINCT MedicationName, Prescription
-                    FROM Medication
-                    WHERE SymptomGroupId = %s
-                    """,
-                    (symptom_group_id,)
-                )
-                medications = [{"name": med[0], "prescription": med[1]} for med in cursor.fetchall()]
-                print(f"Found medications for {disease_name}: {medications}")
-
-
-                if medications:  # Only add if we actually got medications
-                    diagnoses_with_meds.append({
-                        "disease": disease_name,
-                        "medications": medications
-                    })
-
-
-            print(f"\nFinal response diagnoses: {diagnoses_with_meds}")
-            response = {
-                "diagnosis": diagnoses_with_meds,
-                "data": {
-                    "username": username,
-                    "firstName": first_name,
-                    "lastName": last_name,
-                    "age": age,
-                    "gender": gender,
-                    "symptoms": symptoms
-                }
+        response = {
+            "diagnosis": diagnoses_with_meds,
+            "data": {
+                "username": username,
+                "firstName": first_name,
+                "lastName": last_name,
+                "age": age,
+                "gender": gender,
+                "symptoms": symptoms
             }
-        else:
-            # No group IDs found for the symptoms
-            response = {
-                "diagnosis": [],
-                "data": {
-                    "username": username,
-                    "firstName": first_name,
-                    "lastName": last_name,
-                    "age": age,
-                    "gender": gender,
-                    "symptoms": symptoms
-                }
-            }
+        }
 
 
         return jsonify(response)
 
 
     except mysql.connector.Error as err:
-        print(f"Database error: {str(err)}")
+        print(f"Database error: {str(err)}")  # Add logging
         return jsonify({
             "error": str(err),
             "message": "An error occurred while processing your request"
@@ -336,9 +287,7 @@ def get_diagnosis():
             cursor.close()
         if conn:
             conn.close()
-
-
-           
+       
 @app.route("/test-db-structure")
 def test_db_structure():
     conn = None
@@ -475,6 +424,73 @@ def debug_symptom(symptom_name):
             })
        
         return jsonify({"error": "Symptom not found"})
+       
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+@app.route("/debug-medications", methods=["GET"])
+def debug_medications():
+    conn = None
+    cursor = None
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+       
+        # Get all medications with their symptom group IDs
+        cursor.execute("""
+            SELECT SymptomGroupId, MedicationName, Prescription
+            FROM Medication
+            LIMIT 50
+        """)
+        medications = cursor.fetchall()
+       
+        return jsonify({
+            "medications": [
+                {
+                    "symptom_group_id": med[0],
+                    "medication_name": med[1],
+                    "prescription": med[2]
+                } for med in medications
+            ]
+        })
+       
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+
+@app.route("/debug-diagnoses", methods=["GET"])
+def debug_diagnoses():
+    conn = None
+    cursor = None
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+       
+        # Get diagnoses with their symptom group IDs
+        cursor.execute("""
+            SELECT SymptomGroupId, DiseaseName
+            FROM Diagnosis
+            LIMIT 50
+        """)
+        diagnoses = cursor.fetchall()
+       
+        return jsonify({
+            "diagnoses": [
+                {
+                    "symptom_group_id": diag[0],
+                    "disease_name": diag[1]
+                } for diag in diagnoses
+            ]
+        })
        
     except mysql.connector.Error as err:
         return jsonify({"error": str(err)}), 500

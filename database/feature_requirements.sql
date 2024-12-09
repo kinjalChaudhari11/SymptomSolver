@@ -56,27 +56,35 @@ DELIMITER ;
 
 
 -- Transaction 1
+-- Use high-prevalence condition data to trigger resource planning
 START TRANSACTION;
--- count how many users have been diagnosed with this condition
+-- get the number of patients diagnosed with the high-prevalence condition
 SET @user_diagnosis_count = (
     SELECT COUNT(*)
     FROM HasDiagnosis
-    WHERE SymptomGroupId = @symptom_group_id -- assume @symptom_group_id stores the diagnosis
+    WHERE SymptomGroupId = @symptom_group_id
 );
--- generate dynamic message if count exceeds threshold (e.g. 5 users)
 IF @user_diagnosis_count > 5 THEN
-    SET @count_message = CONCAT(
-        'This condition, ',
+    SET @prevalence_message = CONCAT(
+        'The condition ',
         (SELECT DiseaseName FROM Diagnosis WHERE SymptomGroupId = @symptom_group_id),
-        ', has been diagnosed in over ', @user_diagnosis_count, ' patients. You are not alone!'
+        ' has been diagnosed in over ', @user_diagnosis_count, ' patients.',
+        ' Please consider increasing available resources or scheduling additional healthcare personnel.'
     );
-ELSE
-    SET @count_message = NULL;
+    -- calculate projected medication demand
+    SET @medication_demand = (
+        SELECT COUNT(*) * 3  -- assuming each patient requires 3 doses of medication
+        FROM HasDiagnosis hd
+        JOIN Medication m ON hd.SymptomGroupId = m.SymptomGroupId
+        WHERE hd.SymptomGroupId = @symptom_group_id
+    );
+    SET @resource_message = CONCAT(' Projected medication demand: ', @medication_demand, ' units.');
+    SET @full_message = CONCAT(@prevalence_message, @resource_message);
+
+    SELECT @full_message AS ResourcePlan;
 END IF;
+
 COMMIT;
-
-SELECT @count_message AS Message; -- display message with rest of results
-
 
 
 -- Transaction 2
