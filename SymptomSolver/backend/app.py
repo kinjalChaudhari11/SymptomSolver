@@ -7,6 +7,167 @@ import numpy as np
 from scipy.spatial.distance import cosine
 import os
 
+app = Flask(__name__)
+CORS(app, resources={
+    r"/*": {
+        "origins": ["http://localhost:4200"],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"]
+    }
+})
+
+
+# Database configuration
+db_config = {
+    "host": "35.193.142.184",
+    "user": "root",
+    "password": "KinjalIsAFruit",
+    "database": "SymptomSolver"
+}
+
+
+# Initialize BioBERT
+tokenizer = None
+model = None
+
+
+def load_biobert():
+    global tokenizer, model
+    if tokenizer is None or model is None:
+        print("Loading BioBERT model...")
+        tokenizer = AutoTokenizer.from_pretrained("dmis-lab/biobert-v1.1", cache_dir="./models")
+        model = AutoModel.from_pretrained("dmis-lab/biobert-v1.1", cache_dir="./models")
+        print("BioBERT model loaded successfully")
+
+
+def get_bert_embedding(text):
+    """Get BioBERT embeddings for input text."""
+    if tokenizer is None or model is None:
+        load_biobert()
+   
+    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
+    with torch.no_grad():
+        outputs = model(**inputs)
+    return outputs.last_hidden_state.mean(dim=1).squeeze().numpy()
+
+
+def preprocess_description(description, known_symptoms):
+    """Preprocess text using symptoms from database."""
+    text = description.lower()
+   
+    # Split into phrases
+    phrases = [p.strip() for p in text.split("and")]
+   
+    # Get embeddings for each phrase
+    phrase_embeddings = [get_bert_embedding(phrase) for phrase in phrases]
+   
+    # For each known symptom, find the best matching phrase
+    processed_phrases = []
+    for phrase, phrase_emb in zip(phrases, phrase_embeddings):
+        best_match = None
+        best_similarity = 0
+       
+        for symptom in known_symptoms:
+            symptom_emb = get_bert_embedding(symptom)
+            similarity = 1 - cosine(phrase_emb, symptom_emb)
+           
+            if similarity > best_similarity:
+                best_similarity = similarity
+                best_match = symptom
+       
+        if best_similarity > 0.7:  # Only use matches above threshold
+            processed_phrases.append(best_match)
+        else:
+            processed_phrases.append(phrase)
+   
+    return " and ".join(processed_phrases)
+
+
+def map_description_to_symptoms(description, known_symptoms):
+    """Map free text description to known symptoms using BioBERT embeddings."""
+    # First preprocess the description
+    processed_description = preprocess_description(description, known_symptoms)
+    description_embedding = get_bert_embedding(processed_description)
+   
+    # Split description into individual phrases
+    phrases = [p.strip() for p in processed_description.lower().split("and")]
+   
+    matches = []
+    for symptom in known_symptoms:
+        best_similarity = 0
+        # Compare each phrase with the symptom
+        for phrase in phrases:
+            symptom_embedding = get_bert_embedding(symptom)
+            similarity = 1 - cosine(description_embedding, symptom_embedding)
+            best_similarity = max(best_similarity, similarity)
+           
+        # Only include if similarity is very high
+        if best_similarity > 0.75:  # Increased threshold
+            matches.append({
+                "symptom": symptom,
+                "confidence": float(best_similarity)
+            })
+   
+    # Sort by confidence and take only very strong matches
+    matches.sort(key=lambda x: x["confidence"], reverse=True)
+   
+    # Filter matches by checking if key words from symptom appear in description
+    filtered_matches = []
+    for match in matches[:10]:  # Look at top 10 potential matches
+        symptom_words = set(match["symptom"].lower().split())
+        desc_words = set(processed_description.lower().split())
+       
+        # If any key word from symptom appears in description
+        word_overlap = symptom_words.intersection(desc_words)
+        if word_overlap or match["confidence"] > 0.85:  # Very high confidence can bypass word match
+            filtered_matches.append(match["symptom"])
+   
+    return filtered_matches[:5]  # Return top 5 filtered matches
+
+
+# Rest of your code remains the same...
+
+
+@app.route("/api/process-description", methods=["POST", "OPTIONS"])
+def process_description():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:4200')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+
+
+    data = request.json
+    description = data.get("description")
+   
+    if not description:
+        return jsonify({"error": "No description provided"}), 400
+   
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+       
+        # Get known symptoms from database
+        cursor.execute("SELECT DISTINCT SymptomName FROM KnownSymptoms")
+        known_symptoms = [row[0] for row in cursor.fetchall()]
+       
+        # Map description to symptoms
+        matched_symptoms = map_description_to_symptoms(description, known_symptoms)
+       
+        return jsonify({
+            "matched_symptoms": matched_symptoms
+        })
+       
+    except mysql.connector.Error as err:
+        return jsonify({"error": str(err)}), 500
+       
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
 @app.route("/api/diagnosis", methods=["POST", "OPTIONS"])
 def get_diagnosis():
     if request.method == "OPTIONS":
@@ -532,65 +693,6 @@ def debug_diagnoses():
 def home():
     return "Test for if backend is running!"
 
-# Route to trigger the resource planning logic
-@app.route('/api/resource-plan', methods=['GET'])
-def generate_resource_plan():
-    # Get symptom_group_id from request arguments
-    symptom_group_id = request.args.get('symptom_group_id')
-    
-    if not symptom_group_id:
-        return jsonify({"error": "Missing symptom_group_id"}), 400
-    
-    # Call the function to process resource planning logic
-    result = process_resource_planning(symptom_group_id)
-    
-    return jsonify({"resource_plan": result})
-
-def process_resource_planning(symptom_group_id):
-    conn = mysql.connector.connect(**db_config)
-    cursor = conn.cursor()
-
-    try:
-        # Get the number of diagnosed patients
-        cursor.execute(
-            "SELECT COUNT(*) FROM HasDiagnosis WHERE SymptomGroupId = %s", (symptom_group_id,)
-        )
-        user_diagnosis_count = cursor.fetchone()[0]
-        
-        if user_diagnosis_count > 5:
-            # Get the disease name from the Diagnosis table
-            cursor.execute(
-                "SELECT DiseaseName FROM Diagnosis WHERE SymptomGroupId = %s", (symptom_group_id,)
-            )
-            disease_name = cursor.fetchone()[0]
-
-            # Prevalence message
-            prevalence_message = f"The condition {disease_name} has been diagnosed in over {user_diagnosis_count} patients. Please consider increasing available resources or scheduling additional healthcare personnel."
-
-            # Calculate projected medication demand (3 doses per patient)
-            cursor.execute(
-                """
-                SELECT COUNT(*) * 3
-                FROM HasDiagnosis hd
-                JOIN Medication m ON hd.SymptomGroupId = m.SymptomGroupId
-                WHERE hd.SymptomGroupId = %s
-                """, (symptom_group_id,)
-            )
-            medication_demand = cursor.fetchone()[0]
-
-            # Resource message
-            resource_message = f"Projected medication demand: {medication_demand} units."
-
-            # Combine the messages
-            full_message = f"{prevalence_message} {resource_message}"
-
-            return full_message
-        else:
-            return "No action required, condition is not prevalent enough."
-
-    finally:
-        cursor.close()
-        conn.close()
 
 if __name__ == "__main__":
     os.makedirs("./models", exist_ok=True)
