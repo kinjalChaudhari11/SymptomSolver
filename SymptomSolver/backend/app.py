@@ -688,6 +688,186 @@ def debug_diagnoses():
             cursor.close()
         if conn:
             conn.close()
+
+@app.route("/api/diagnosis-with-top-symptoms", methods=["POST", "OPTIONS"])
+def get_diagnosis_with_top_symptoms():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+
+    data = request.json
+    username = data.get("username")
+    first_name = data.get("firstName")
+    last_name = data.get("lastName")
+    age = data.get("age")
+    gender = data.get("gender")
+    symptoms = data.get("symptoms", [])
+
+    conn = None
+    cursor = None
+
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+
+        # Patient insert
+        cursor.execute(
+            """
+            INSERT INTO Patient (Username, FirstName, LastName, Gender, Age)
+            VALUES (%s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE FirstName=%s, LastName=%s, Gender=%s, Age=%s
+            """,
+            (username, first_name, last_name, gender, age, first_name, last_name, gender, age)
+        )
+        conn.commit()
+
+        # HasDiagnosis insert
+        for symptom in symptoms:
+            cursor.execute(
+                """
+                INSERT INTO HasDiagnosis (Username, SymptomGroupId)
+                SELECT %s, hs.SymptomGroupId
+                FROM HasSymptom hs
+                JOIN KnownSymptoms ks ON hs.SymptomIndex = ks.SymptomIndex
+                WHERE ks.SymptomName = %s
+                ON DUPLICATE KEY UPDATE SymptomGroupId=hs.SymptomGroupId
+                """,
+                (username, symptom)
+            )
+        conn.commit()
+
+        # Get diagnoses
+        cursor.execute(
+            """
+            SELECT DISTINCT d.DiseaseName, d.SymptomGroupId
+            FROM Diagnosis d
+            JOIN HasDiagnosis hd ON d.SymptomGroupId = hd.SymptomGroupId
+            WHERE hd.Username = %s
+            """,
+            (username,)
+        )
+        diagnoses = cursor.fetchall()
+
+        diagnoses_with_meds = []
+        for disease_name, symptom_group_id in diagnoses:
+            cursor.execute(
+                """
+                SELECT MedicationName, Prescription
+                FROM Medication
+                WHERE SymptomGroupId = %s
+                """,
+                (symptom_group_id,)
+            )
+            medications = [{"name": med[0], "prescription": med[1]} for med in cursor.fetchall()]
+            
+            diagnoses_with_meds.append({
+                "disease": disease_name,
+                "medications": medications
+            })
+
+        # Get top 3 symptoms
+        cursor.callproc("GetTop3SymptomsForPatient", [username])
+        top_symptoms = []
+        for result in cursor.stored_results():
+            top_symptoms.extend(result.fetchall())
+
+        response = {
+            "diagnosis": diagnoses_with_meds,
+            "data": {
+                "username": username,
+                "firstName": first_name,
+                "lastName": last_name,
+                "age": age,
+                "gender": gender,
+                "symptoms": symptoms
+            },
+            "top_symptoms": top_symptoms
+        }
+
+        return jsonify(response)
+
+    except mysql.connector.Error as err:
+        print(f"Database error: {str(err)}")
+        return jsonify({
+            "error": str(err),
+            "message": "An error occurred while processing your request"
+        }), 500
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+@app.route("/api/gender-disease-comparison", methods=["GET", "OPTIONS"])
+def compare_diseases_by_gender():
+    if request.method == "OPTIONS":
+        response = jsonify({"status": "ok"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'GET')
+        return response
+
+    username = request.args.get('username')
+    if not username:
+        return jsonify({"error": "Username is required"}), 400
+
+    conn = None
+    cursor = None
+
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor(dictionary=True)
+
+        # Get user's gender
+        cursor.execute(
+            "SELECT Gender FROM Patient WHERE Username = %s",
+            (username,)
+        )
+        user = cursor.fetchone()
+        if not user:
+            return jsonify({"error": "User not found"}), 404
+
+        user_gender = user['Gender']
+
+        # Get disease comparison
+        cursor.execute("""
+            SELECT 
+                d.DiseaseName,
+                COUNT(CASE WHEN p.Gender = %s THEN 1 END) as same_gender_count,
+                COUNT(CASE WHEN p.Gender != %s THEN 1 END) as other_gender_count,
+                COUNT(*) as total_count
+            FROM Patient p
+            JOIN HasDiagnosis hd ON p.Username = hd.Username
+            JOIN Diagnosis d ON hd.SymptomGroupId = d.SymptomGroupId
+            GROUP BY d.DiseaseName
+            HAVING same_gender_count > 0 OR other_gender_count > 0
+            ORDER BY total_count DESC
+            LIMIT 10
+        """, (user_gender, user_gender))
+
+        comparisons = cursor.fetchall()
+
+        response = jsonify({
+            "userGender": user_gender,
+            "comparisons": comparisons
+        })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+    except mysql.connector.Error as err:
+        error_response = jsonify({"error": str(err), "message": "Database error occurred"})
+        error_response.headers.add('Access-Control-Allow-Origin', '*')
+        return error_response, 500
+
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
            
 @app.route("/")
 def home():
