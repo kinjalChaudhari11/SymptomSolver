@@ -26,3 +26,130 @@ ALTER TABLE Patient
 ALTER COLUMN Gender SET DEFAULT 'Prefer Not to Say'; -- thoughts on this ??
 
 
+-- working draft 
+
+-- Trigger
+DELIMITER $$
+
+CREATE TRIGGER check_username_uniqueness
+BEFORE INSERT ON users
+FOR EACH ROW
+BEGIN
+    -- Check if the username exists for a different individual
+    IF EXISTS (
+        SELECT 1
+        FROM users
+        WHERE username = NEW.username
+          AND (first_name != NEW.first_name 
+               OR last_name != NEW.last_name 
+               OR gender != NEW.gender 
+               OR age != NEW.age)
+    ) THEN
+        -- Prevent the insert by raising an error
+        SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'The username is already in use by a different individual.';
+    END IF;
+END$$
+
+DELIMITER ;
+
+
+
+-- Transaction 1
+START TRANSACTION;
+-- count how many users have been diagnosed with this condition
+SET @user_diagnosis_count = (
+    SELECT COUNT(*)
+    FROM HasDiagnosis
+    WHERE SymptomGroupId = @symptom_group_id -- assume @symptom_group_id stores the diagnosis
+);
+-- generate dynamic message if count exceeds threshold (e.g. 5 users)
+IF @user_diagnosis_count > 5 THEN
+    SET @count_message = CONCAT(
+        'This condition, ',
+        (SELECT DiseaseName FROM Diagnosis WHERE SymptomGroupId = @symptom_group_id),
+        ', has been diagnosed in over ', @user_diagnosis_count, ' patients. You are not alone!'
+    );
+ELSE
+    SET @count_message = NULL;
+END IF;
+COMMIT;
+
+SELECT @count_message AS Message; -- display message with rest of results
+
+
+
+-- Transaction 2
+START TRANSACTION;
+-- get user's ProfileIndex
+SET @profile_index = (
+    SELECT ProfileIndex
+    FROM HasProfile
+    WHERE Username = @username -- assume @username is provided
+    LIMIT 1
+);
+-- check for conflicts between recommended medications and user's allergies
+SET @conflicting_medications = (
+    SELECT GROUP_CONCAT(m.MedicationName SEPARATOR ', ')
+    FROM Medication m
+    WHERE m.SymptomGroupId = @symptom_group_id
+    AND m.MedicationName IN (
+        SELECT mp.AllergicMedication
+        FROM MedicalProfile mp
+        WHERE mp.ProfileIndex = @profile_index
+    )
+);
+-- generate dynamic message based on the conflicts
+IF @conflicting_medications IS NOT NULL THEN
+    SET @conflict_message = CONCAT(
+        'Warning: The following recommended medications conflict with your allergies: ',
+        @conflicting_medications, '. Please consult your doctor for an alternative.'
+    );
+ELSE
+    SET @conflict_message = 'No conflicts detected between the recommended medications and your allergies.';
+END IF;
+COMMIT;
+
+SELECT @conflict_message AS Message; -- display message with rest of results
+
+
+
+
+
+-- Stored Procedure 1:
+DELIMITER $$
+
+CREATE PROCEDURE GetTop3SymptomsForPatient(
+    IN patientUsername VARCHAR(255)
+)
+BEGIN
+    WITH SymptomRanking AS (
+        SELECT 
+            d.DiseaseName, ks.SymptomName, 
+            COUNT(*) AS SymptomFrequency, 
+            ROW_NUMBER() OVER (
+                PARTITION BY d.DiseaseName 
+                ORDER BY COUNT(*) DESC
+            ) AS SymptomRank
+        FROM Diagnosis d 
+        NATURAL JOIN HasSymptom hs 
+        NATURAL JOIN KnownSymptoms ks
+        JOIN HasDiagnosis hd ON d.SymptomGroupId = hd.SymptomGroupId
+        WHERE hd.Username = patientUsername -- Dynamically filter by patient
+        GROUP BY d.DiseaseName, ks.SymptomName
+    )
+    SELECT DiseaseName, SymptomName, SymptomFrequency
+    FROM SymptomRanking
+    WHERE SymptomRank <= 3
+    ORDER BY DiseaseName, SymptomFrequency DESC
+END$$
+
+DELIMITER ;
+
+-- usage:
+CALL GetTop3SymptomsForPatient(username) --dynamically call the username
+
+
+
+
+-- Stored Procedure 2:
